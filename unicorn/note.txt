@@ -1,0 +1,21 @@
+https://docs.google.com/presentation/d/1UpFtsxGXfIdAAJZv_wZEk_l3hdnddieM7fW-XvQGsZ4/edit?pli=1#slide=id.g263039920db_0_26
+
+https://easings.net/en#easeOutElastic
+
+// Scroll touch dep
+https://cssmix.net/examples/5738/slider-with-infinite-loop-with-drag-and-scroll
+
+// Loop scroll gsap
+https://codepen.io/supah/pen/VwegJwV
+
+
+// mouse swipe1
+https://codepen.io/olig/pen/rgmPyb
+
+// mouse swipe2
+https://codepen.io/pierremy/pen/eYRpOjX
+
+
+
+// Gsap + swipe
+https://gsap.com/community/forums/topic/38060-swiper-slide-change-on-scroll-using-scroll-trigger-with-pin/

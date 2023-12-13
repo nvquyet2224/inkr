@@ -1,0 +1,336 @@
+.gallery_box {
+    position: relative;
+    width: 100vw
+}
+
+.gallery_container {
+    overflow: hidden
+}
+
+.gallery_container.draggable {
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.gallery_container.dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.gallery_container.wheelDragging {
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.swiper-wrapper {
+    display: flex;
+    will-change: transform
+}
+
+.gallery_box[data-desktop-axis=y] .swiper-wrapper {
+    flex-direction: column
+}
+
+.gallery_box[data-desktop-axis=x] .swiper-wrapper {
+    flex-direction: row
+}
+
+.gallery_item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.slider_arrows__l9BS9 {
+    justify-content: space-between;
+    z-index: 100
+}
+
+.slider_arrows__l9BS9.slider_mobile___3Y4z {
+    display: none
+}
+
+.slider_arrows__l9BS9 button[disabled] {
+    opacity: .2
+}
+
+@media(max-width:767px) {
+    .slider_arrows__l9BS9.slider_mobile___3Y4z {
+        display: flex
+    }
+
+    .gallery_box[data-mobile-axis=y] .swiper-wrapper {
+        flex-direction: column
+    }
+
+    .gallery_box[data-mobile-axis=x] .swiper-wrapper {
+        flex-direction: row
+    }
+}
+
+.client_brand--body {
+    overflow: hidden;
+    transition: height .6s cubic-bezier(.165, .84, .44, 1), opacity .6s cubic-bezier(.165, .84, .44, 1)
+}
+
+.acc_line {
+    position: relative;
+    overflow: hidden;
+    height: 1px;
+    width: 100%
+}
+
+.Accordion_work__IgFMS .acc_line {
+    width: calc(100% - 4vw);
+    margin: 0 2vw
+}
+
+.acc_line--lite {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #d6d6d6
+}
+
+.acc_line--dark {
+    height: 100%;
+    width: 100%;
+    background-color: #2a2a2a;
+    transform: translate(100%)
+}
+
+[aria-hidden=false]+.acc_line .acc_line--dark {
+    transform: translate(0) !important
+}
+
+[aria-hidden=true].client_brand--body {
+    opacity: 0
+}
+
+[aria-hidden=false].client_brand--body {
+    opacity: 1
+}
+
+@media screen and (max-width:480px) {
+    .Accordion_work__IgFMS .acc_line {
+        width: calc(100% - 8vw);
+        margin: 0 4vw
+    }
+}
+
+.section_client {
+    position: relative;
+    margin: 4vw 0 8vw
+}
+
+.client_heading--wrap {
+    overflow: hidden
+}
+
+.client_heading {
+    margin-left: 2vw
+}
+
+.client_card {
+    margin: 4vw 0 8vw
+}
+
+.ClientList_sliderViewport__TI7Wn {
+    padding: 0 2vw
+}
+
+.client_card--swiper,
+.swiper-slide {
+    display: flex;
+    align-items: stretch
+}
+
+.swiper-slide {
+    height: auto !important;
+    width: 22.5vw !important;
+    margin-right: 2vw;
+    flex-direction: column
+}
+
+.swiper-slide:last-child {
+    margin-right: 0
+}
+
+.client_logo {
+    width: 64%;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center
+}
+
+.client_logo {
+    width: 100%;
+    height: 100%
+}
+
+.client_card_detail {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.client_card_text {
+    margin-bottom: 2vw
+}
+
+.client_brand {
+    margin: 2vw
+}
+
+.client_brand [aria-expanded=false] .acc_action--less,
+.client_brand [aria-expanded=true] .acc_action--more {
+    display: none
+}
+
+.client_brand [aria-expanded=true] .acc_action--less {
+    display: block
+}
+
+.client_brand--head {
+    padding: 1.4vw 0;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1;
+    display: grid;
+    grid-column-gap: 2vw;
+    column-gap: 2vw;
+    grid-template-areas: "Area Area Area Area Area-2 Area-2 Area-2 Area-3";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: left
+}
+
+.client_name {
+    grid-area: Area;
+    justify-self: start
+}
+
+.client_tag {
+    grid-area: Area-2;
+    justify-self: start
+}
+
+.acc_action {
+    grid-area: Area-3;
+    justify-self: end
+}
+
+.client_brand--detail {
+    display: grid;
+    padding-bottom: 1.4vw;
+    grid-column-gap: 2vw;
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    row-gap: 2vw;
+    grid-template-areas: ". . . . Area Area Area";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    transition: opacity .6s cubic-bezier(.165, .84, .44, 1)
+}
+
+.ClientList_bodyP__q_cS1 {
+    grid-area: Area;
+    margin-bottom: 1.4vw
+}
+
+@media screen and (max-width:1280px) {
+    .client_brand--head {
+        padding: 2.4vw 0
+    }
+}
+
+@media screen and (max-width:992px) {
+    .client_card {
+        margin: 8vw 0 10vw
+    }
+
+    .client_card--swiper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+        grid-column-gap: 2vw;
+        column-gap: 2vw;
+        grid-row-gap: 8vw;
+        row-gap: 8vw
+    }
+
+    .swiper-slide {
+        width: 100% !important
+    }
+
+    .client_logo {
+        width: 56%;
+        margin-bottom: 2vw
+    }
+
+    .client_brand--head {
+        padding: 3.2vw 0
+    }
+}
+
+@media screen and (max-width:480px) {
+    .client_heading {
+        margin-left: 4vw
+    }
+
+    .client_card {
+        margin: 16vw 0 12vw
+    }
+
+    .ClientList_sliderViewport__TI7Wn {
+        padding: 0 4vw
+    }
+
+    .client_card--swiper {
+        display: flex;
+        column-gap: 0;
+        row-gap: 0
+    }
+
+    .swiper-slide {
+        width: 80vw !important;
+        margin-right: 4vw
+    }
+
+    .client_card_text {
+        margin-bottom: 8vw
+    }
+
+    .client_brand {
+        margin: 4vw
+    }
+
+    .client_brand .ClientList_lineDark__qB_Mt {
+        transform: translateX(100%)
+    }
+
+    .client_brand--head {
+        padding: 6vw 0;
+        grid-template-areas: "Area Area-2";
+        grid-template-columns: 1fr 1fr
+    }
+
+    .acc_action {
+        grid-area: Area-2
+    }
+
+    .client_brand--detail {
+        padding-bottom: 8vw;
+        row-gap: 8vw;
+        grid-template-areas: "." "Area";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto
+    }
+
+    .ClientList_bodyP__q_cS1 {
+        margin-bottom: 8vw
+    }
+}

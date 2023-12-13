@@ -1,0 +1,312 @@
+.footer_content {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #2a2a2a;
+    background-color: #fafafa
+}
+
+.footer_box {
+    position: relative;
+    height: 100%
+}
+
+.footer_nav {
+    width: 100%;
+    height: 56px
+}
+
+.footer_nav--box {
+    display: grid;
+    height: 100%;
+    align-items: center;
+    grid-column-gap: 2vw;
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    row-gap: 2vw;
+    grid-template-areas: "Area . Area-2 Area-2";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto
+}
+
+.footer_logo {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none
+}
+
+.footer_nav--items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: Area-2
+}
+
+.footer_body {
+    height: calc(100vh - 4vw);
+    justify-content: center
+}
+
+.footer_body,
+.footer_work {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.footer_work {
+    grid-area: Area;
+    justify-self: start;
+    gap: .5vw;
+    margin-bottom: 8vw
+}
+
+.footer_next__flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start
+}
+
+.footer_count {
+    margin-top: .45vw;
+    margin-left: .6vw
+}
+
+.footer_contact {
+    grid-area: Area-2
+}
+
+.footer_contact--heading {
+    margin-bottom: 2vw
+}
+
+.footer_company {
+    grid-area: Area-3
+}
+
+.footer_address {
+    grid-area: Area-4
+}
+
+.footer_address,
+.footer_company {
+    display: flex;
+    align-items: flex-start;
+    gap: 2vw
+}
+
+.footer_list--title {
+    margin-bottom: .5vw !important;
+    color: #757575
+}
+
+.footer_list {
+    width: 22.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.footer_list li {
+    align-items: flex-start
+}
+
+.footer_line {
+    margin-bottom: .2vw
+}
+
+.footer_meta {
+    position: absolute;
+    bottom: 0;
+    height: 4vw;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-areas: "Area Area . . Area-2 Area-2 Area-2 Area-3";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 2vw;
+    column-gap: 2vw;
+    grid-row-gap: 2vw;
+    row-gap: 2vw;
+    border-top: 1px solid #ccc;
+    white-space: nowrap
+}
+
+.footer_copyright {
+    grid-area: Area
+}
+
+.footer_meta--links {
+    display: flex;
+    gap: 2vw;
+    grid-area: Area-2
+}
+
+.footer_meta--size {
+    display: flex;
+    width: 10.25vw
+}
+
+.footer_totop {
+    grid-area: Area-3;
+    justify-self: flex-end
+}
+
+@media screen and (max-width: 480px) {
+
+    .footer_content,
+    .footer_wrap__auto {
+        height: auto
+    }
+
+    .footer_nav {
+        display: none
+    }
+
+    .footer_body {
+        height: auto
+    }
+
+    .footer_body--box {
+        display: grid;
+        padding-top: 18vw;
+        margin-bottom: 20vw;
+        grid-template-areas: "Area" "Area-2" "Area-3" "Area-4";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 4vw;
+        column-gap: 4vw;
+        grid-row-gap: 8vw;
+        row-gap: 8vw
+    }
+
+    .footer_work {
+        gap: 2vw
+    }
+
+    .footer_contact {
+        margin-bottom: 4vw
+    }
+
+    .footer_contact--heading {
+        margin-bottom: 4vw;
+        width: 76%
+    }
+
+    .footer_address,
+    .footer_company {
+        flex-direction: column;
+        gap: 8vw
+    }
+
+    .footer_list {
+        width: 100%
+    }
+
+    .footer_meta {
+        position: relative;
+        height: auto;
+        bottom: auto;
+        padding-top: 4vw;
+        padding-bottom: 8vw;
+        grid-template-areas: "Area Area Area Area" "Area-2 Area-2 Area-3 Area-3";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 4vw
+    }
+
+    .footer_copyright {
+        grid-area: Area-2
+    }
+
+    .footer_list--title {
+        margin-bottom: 2vw !important
+    }
+
+    .footer_meta--links {
+        width: 100%;
+        justify-content: space-between;
+        grid-area: Area
+    }
+
+    .footer_meta--size {
+        width: auto
+    }
+
+    .footer_totop {
+        grid-area: Area-3
+    }
+}
+
+@media screen and (min-width: 481px)and (max-width:768px) {
+    .footer_nav--item {
+        margin-left: 16px;
+        flex: 0 0 auto
+    }
+
+    .footer_body--box {
+        display: grid;
+        padding-top: 18vw;
+        margin-bottom: 20vw;
+        grid-template-areas: "Area" "Area-2" "Area-3" "Area-4";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 4vw;
+        column-gap: 4vw;
+        grid-row-gap: 8vw;
+        row-gap: 8vw
+    }
+
+    .footer_contact {
+        width: 50%
+    }
+
+    .footer_list {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .footer_body--box {
+        display: grid;
+        grid-template-areas: "Area Area Area Area . . . ." "Area-2 Area-2 . . Area-3 Area-3 Area-3 Area-3" "Area-2 Area-2 . . Area-4 Area-4 Area-4 Area-4";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 2vw;
+        column-gap: 2vw;
+        grid-row-gap: 2vw;
+        row-gap: 2vw;
+        padding-bottom: 4vw
+    }
+
+    .footer_contact {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .footer_logo {
+        font-size: 1.2vw
+    }
+
+    .footer_nav--items {
+        justify-content: space-between
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .footer_logo {
+        font-size: 1.1vw
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .footer_logo {
+        font-size: .8vw
+    }
+}

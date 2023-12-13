@@ -1,0 +1,133 @@
+.section_gallery {
+    margin: 8vw 0 0
+}
+
+.gallery_box {
+    position: relative;
+    width: 100vw
+}
+
+.gallery_container {
+    overflow: hidden
+}
+
+.gallery_container.draggable {
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.gallery_container.dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.gallery_container.wheelDragging {
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.section_gallery .swiper-wrapper {
+    display: flex;
+    will-change: transform
+}
+
+.gallery_box[data-desktop-axis=y] .swiper-wrapper {
+    flex-direction: column
+}
+
+.gallery_box[data-desktop-axis=x] .swiper-wrapper {
+    flex-direction: row
+}
+
+.gallery_item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+@media(max-width: 767px) {
+    .gallery_box[data-mobile-axis=y] .swiper-wrapper {
+        flex-direction: column
+    }
+
+    .gallery_box[data-mobile-axis=x] .swiper-wrapper {
+        flex-direction: row
+    }
+}
+
+.gallery_box {
+    position: relative;
+    width: 100vw
+}
+
+.gallery_container {
+    overflow: hidden
+}
+
+.gallery_container.draggable {
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.gallery_container.dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.gallery_container.wheelDragging {
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.gallery_box[data-desktop-axis=y] .swiper-wrapper {
+    flex-direction: column
+}
+
+.gallery_box[data-desktop-axis=x] .swiper-wrapper {
+    flex-direction: row
+}
+
+.gallery_item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.section_gallery .gallery_container {
+    height: 24vw;
+    padding: 0 2vw
+}
+
+.gallery_swiper {
+    height: 100%
+}
+
+.section_gallery .swiper-slide {
+    width: auto !important;
+    height: 100%;
+    margin-right: 2vw
+}
+
+.gallery_item--img {
+    height: 100%
+}
+
+.gallery_item--img img {
+    width: auto;
+    height: 100%;
+    object-fit: cover
+}
+
+@media screen and (max-width: 480px) {
+    .section_gallery .gallery_container {
+        height: 44vw;
+        padding: 0 4vw
+    }
+    .section_gallery .swiper-slide {
+        margin-right: 4vw
+    }
+}

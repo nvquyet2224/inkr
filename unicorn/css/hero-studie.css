@@ -1,0 +1,148 @@
+.hero_studie_item {
+    position: relative;
+    width: 22.5vw
+}
+
+.hero_studie_inr {
+    position: relative
+}
+
+.hero_studie_number {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    margin-left: .2vw;
+    transform: rotate(-90deg);
+    transform-origin: 100% 0
+}
+
+.hero_studie_number--value {
+    text-align: right
+}
+
+.hero_studie_img {
+    overflow: hidden;
+    transition: border-radius .5s cubic-bezier(.165, .84, .44, 1)
+}
+
+.hero_studie_img:hover {
+    border-radius: 50%;
+}
+
+.hero_studie_img--wrap {
+    width: 100%;
+    object-fit: cover
+}
+
+.hero_studie__line {
+    width: 100%;
+    height: 1px;
+    margin-top: 1vw;
+    background-color: #2a2a2a
+}
+
+.hero_studie_info {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: .5vw;
+    padding-top: .8vw
+}
+
+.hero_studie_tags {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    overflow: hidden
+}
+
+.hero_studie_tag--item {
+    overflow: hidden
+}
+
+.hero_studie_tag--detail {
+    display: flex;
+    align-items: center
+}
+
+.hero_studie_tag--space {
+    margin: 0 4px
+}
+
+.hero_studie_tag--item:last-child .hero_studie_tag--space {
+    display: none
+}
+
+.hero_studie_year {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden
+}
+
+.hero_studie_name {
+    overflow: hidden
+}
+
+@media screen and (min-width: 1921px) {
+    .hero_studie_number {
+        margin-left: .2vw
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .hero_studie_item {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero_studie_number {
+        display: none
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero_studie__line {
+        margin-top: 4vw
+    }
+
+    .hero_studie_info {
+        margin-bottom: 0;
+        padding-top: 4vw;
+        padding-bottom: 3.2vw
+    }
+}
+
+
+.hero_studie {
+    display: grid
+}
+
+@media screen and (max-width: 480px) {
+
+
+    .hero_studie {
+        grid-template-columns: 1fr;
+        column-gap: 4vw;
+        row-gap: 10vw
+    }
+
+}
+
+@media screen and (min-width: 481px)and (max-width:768px) {
+    .hero_studie {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2vw;
+        row-gap: 2vw
+    }
+}
+
+@media screen and (min-width: 1281px) {
+
+    .hero_studie {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2vw
+    }
+}
