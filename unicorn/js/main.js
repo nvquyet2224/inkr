@@ -652,6 +652,40 @@ function cardSlider() {
   }
 }
 
+function studiesAnimation() {
+  if (document.querySelector(".studies--container")) {
+    new Swiper(".studies--container", {
+      direction: 'vertical',
+      slidesPerView: 1,
+      speed: 1000,
+      // paginationClickable: true,
+      // spaceBetween: 0,
+      // mousewheelControl: true,
+      // mousewheelForceToAxis: true,
+      // speed: 600
+      mousewheel: {
+        invert: false,
+      },
+    });
+  }
+
+  // $('.swiper-container').swiper({
+  //   pagination: '.swiper-pagination',
+  //   paginationClickable: true,
+  //   paginationBulletRender: function(index, className) {
+  //     return '<span class="' + className + '">' + (index + 1) + '</span>';
+  //   },
+  //   direction: 'vertical',
+  //   slidesPerView: 1,
+  //   paginationClickable: true,
+  //   spaceBetween: 30,
+  //   mousewheelControl: true,
+  //   mousewheelForceToAxis: true,
+  //   speed: 600
+  // });
+  
+}
+
 (function () {
   const lenis = new Lenis({
     duration: 1.2,
@@ -745,6 +779,8 @@ function cardSlider() {
     // Slider
     gallerySlider();
     cardSlider();
+
+    studiesAnimation();
 
     document
       .querySelector(".transition_wrapper__loading")

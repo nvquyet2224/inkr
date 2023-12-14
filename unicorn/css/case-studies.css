@@ -1512,7 +1512,9 @@
 }
 
 .CaseStudies_bgimgWrap__WFOTE .CaseStudies_img__QAU2y {
-    height: 100vh
+    height: 100vh;
+    /*more*/
+    width: 100%;
 }
 
 .CaseStudies_bgimgWrap__WFOTE .CaseStudies_link__4SmFN {
@@ -1584,7 +1586,17 @@
 .CaseStudies_img__QAU2y img {
     width: 100%;
     height: 100%;
-    object-fit: cover
+    object-fit: cover;
+    /*more animation*/
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.swiper-slide-active .CaseStudies_img__QAU2y img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .CaseStudies_img__QAU2y:after {
