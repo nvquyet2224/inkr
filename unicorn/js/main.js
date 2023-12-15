@@ -509,16 +509,16 @@ function aboutAnimation() {
           separator = wrap.querySelector(".pillar_separator--bg");
         if (listItem.length > 0) {
           if (ScrollTrigger.create({
-                trigger: wrap,
-                start: "clamp(top 80px)",
-                end: "clamp(bottom 80px)",
-                scrub: !0,
-                animation: gsap.fromTo(document.querySelector('.pillar_progress--bg'), {
-                    x: "-100%"
-                }, {
-                    x: "100%"
-                })
-            }),
+            trigger: wrap,
+            start: "clamp(top 80px)",
+            end: "clamp(bottom 80px)",
+            scrub: !0,
+            animation: gsap.fromTo(document.querySelector('.pillar_progress--bg'), {
+              x: "-100%"
+            }, {
+              x: "100%"
+            })
+          }),
             window.innerWidth > 480) {
             let r = gsap.timeline({
               scrollTrigger: {
@@ -534,14 +534,14 @@ function aboutAnimation() {
               stagger: 0.03,
             }),
               separator &&
-                r.to(
-                  separator,
-                  {
-                    x: 0,
-                    ease: "quartOut",
-                  },
-                  "<55%"
-                );
+              r.to(
+                separator,
+                {
+                  x: 0,
+                  ease: "quartOut",
+                },
+                "<55%"
+              );
           } else {
             let r = gsap.timeline({
               scrollTrigger: {
@@ -557,14 +557,14 @@ function aboutAnimation() {
               stagger: 0.02,
             }),
               separator &&
-                r.to(
-                  separator,
-                  {
-                    x: 0,
-                    ease: "quartOut",
-                  },
-                  "<30%"
-                );
+              r.to(
+                separator,
+                {
+                  x: 0,
+                  ease: "quartOut",
+                },
+                "<30%"
+              );
           }
         }
       }
@@ -584,7 +584,7 @@ function aboutAnimation() {
         end: () => (
           (x.current = 0),
           null == item || item.querySelectorAll(".pillar_list").forEach((e, r) => {
-                r < (null == item ? void 0 : item.querySelectorAll(".pillar_list").length) - 1 && (x.current = x.current + e.clientHeight);
+            r < (null == item ? void 0 : item.querySelectorAll(".pillar_list").length) - 1 && (x.current = x.current + e.clientHeight);
           }),
           window.innerWidth > 480 ? x.current + "px 80px" : x.current + (window.innerWidth / 100) * 4 + "px " + (heading.clientHeight + 56) + "px"
         ),
@@ -594,29 +594,29 @@ function aboutAnimation() {
       },
     });
     r.addLabel("0").to(".pillar_heading--items", {
-          y: -(100 / listWrap.length) + "%",
-          duration: 0.01 * 100
+      y: -(100 / listWrap.length) + "%",
+      duration: 0.01 * 100
     }).to(".pillar_number--list", {
-        y: -(100 / listWrap.length) + "%",
-        duration: 0.01 * 100
+      y: -(100 / listWrap.length) + "%",
+      duration: 0.01 * 100
     }, "<").addLabel("1").to(".pillar_heading--items", {
-        y: -(100 / listWrap.length * 2) + "%",
-        duration: 0.02 * 100
+      y: -(100 / listWrap.length * 2) + "%",
+      duration: 0.02 * 100
     }).to(".pillar_number--list", {
-        y: -(100 / listWrap.length * 2) + "%",
-        duration: 0.002 * 100
+      y: -(100 / listWrap.length * 2) + "%",
+      duration: 0.002 * 100
     }, "<").addLabel("2").to(".pillar_heading--items", {
-        y: -(100 / listWrap.length * 3) + "%",
-        duration: 0.03 * 100
+      y: -(100 / listWrap.length * 3) + "%",
+      duration: 0.03 * 100
     }).to(".pillar_number--list", {
-        y: -(100 / listWrap.length * 3) + "%",
-        duration: 0.03 * 100
+      y: -(100 / listWrap.length * 3) + "%",
+      duration: 0.03 * 100
     }, "<").addLabel("3").to(".pillar_heading--items", {
-        y: -(100 / listWrap.length * 4) + "%",
-        duration: 0.04 * 100
+      y: -(100 / listWrap.length * 4) + "%",
+      duration: 0.04 * 100
     }).to(".pillar_number--list", {
-        y: -(100 / listWrap.length * 4) + "%",
-        duration: 0.04 * 100
+      y: -(100 / listWrap.length * 4) + "%",
+      duration: 0.04 * 100
     }, "<").addLabel("4");
 
   }
@@ -652,46 +652,59 @@ function cardSlider() {
   }
 }
 
-function studiesAnimation() {
+function studiesSlider() {
   if (document.querySelector(".studies--container")) {
     new Swiper(".studies--container", {
       direction: 'vertical',
       slidesPerView: 1,
       speed: 1000,
-      // paginationClickable: true,
-      // spaceBetween: 0,
-      // mousewheelControl: true,
-      // mousewheelForceToAxis: true,
-      // speed: 600
+      on: {
+        transitionStart: (swiper) => {
+          const index = swiper.activeIndex;
+          gsap.to(document.querySelector('.CaseStudies_headingList__Sb5V2'), {
+            y: -(100 / 5 * index) + "%",
+            duration: 1
+          }).to(document.querySelector('.CaseStudies_caseImgInner__UdS05'), {
+            y: -(100 / 5 * index) + "%",
+            duration: 1
+          }, "<").to(document.querySelector('.CaseStudies_countWrap__X6NeR > div'), {
+            y: -(100 / 5 * index) + "%",
+            duration: 1
+          }, "<");
+          // gsap.to(document.querySelector('.CaseStudies_headingList__Sb5V2'), {
+          //   y: -(100 / 5 * index) + "%",
+          //   duration: 1
+          // });
+          // gsap.to(document.querySelector('.CaseStudies_caseImgInner__UdS05'), {
+          //   y: -(100 / 5 * index) + "%",
+          //   duration: 1
+          // });
+          // gsap.to(document.querySelector('.CaseStudies_countWrap__X6NeR > div'), {
+          //   y: -(100 / 5 * index) + "%",
+          //   duration: 1
+          // });
+
+        }
+      },
       mousewheel: {
         invert: false,
       },
     });
   }
-
-  // $('.swiper-container').swiper({
-  //   pagination: '.swiper-pagination',
-  //   paginationClickable: true,
-  //   paginationBulletRender: function(index, className) {
-  //     return '<span class="' + className + '">' + (index + 1) + '</span>';
-  //   },
-  //   direction: 'vertical',
-  //   slidesPerView: 1,
-  //   paginationClickable: true,
-  //   spaceBetween: 30,
-  //   mousewheelControl: true,
-  //   mousewheelForceToAxis: true,
-  //   speed: 600
-  // });
-  
 }
+
+
+// Before loaded
+gallerySlider();
+cardSlider();
+studiesSlider();
 
 (function () {
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   });
-  lenis.on("scroll", (e) => {});
+  lenis.on("scroll", (e) => { });
 
   function raf(time) {
     lenis.raf(time);
@@ -777,10 +790,10 @@ function studiesAnimation() {
     cursorAnimation();
 
     // Slider
-    gallerySlider();
-    cardSlider();
+    //gallerySlider();
+    //cardSlider();
 
-    studiesAnimation();
+    //studiesSlider();
 
     document
       .querySelector(".transition_wrapper__loading")
@@ -802,3 +815,13 @@ function studiesAnimation() {
     });
   }
 })();
+
+
+
+
+function studiesAnimation() {
+  //hover: "CaseStudies_hover__tV3mf",
+  //active: "CaseStudies_active__YYwS3",
+  let s = document.querySelector('.CaseStudies_hover__tV3mf');
+
+}
