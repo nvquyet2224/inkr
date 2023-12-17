@@ -33,9 +33,10 @@
   <link href="css/common.css" rel="preload stylesheet" as="style">
   <link href="css/work.css" rel="preload stylesheet" as="style">
   <link href="css/footer.css" rel="preload stylesheet" as="style">
+  <link href="css/modal.css" rel="preload stylesheet" as="style">
 </head>
 
-<body>
+<body id="workPage">
 
   <div id="__next">
     <div class="transition_wrapper__loading">
@@ -122,1286 +123,671 @@
     </header>
 
     <main class="global_container global_grey--bg">
-      <header class="Work_header__2M9DQ">
-        <div class="Work_headerGrid__aJtS9 global_margin">
-          <div class="Work_titleWrap__RbgWN">
-            <h1 class="Work_title__ZIhQ3 text_xl--size global_pagename split done" aria-label="Work">
+      <header class="work_header">
+        <div class="work_header--grid global_margin">
+          <div class="work_title">
+            <h1 class="work_title--text text_xl--size global_pagename split done" aria-label="Work">
               <div class="wrap" aria-hidden="true">
                 <div class="line">
                   <div class="wrap">
-                    <div class="word animation_moveUp">Work</div>
+                    <div class="word animation_moveUp" style="--delay:0.75s">Work</div>
                   </div>
                 </div>
               </div>
             </h1>
-            <div class="Global_overflow__XL3V_">
-              <div class="Work_num__N32Si animation_moveUp">20</div>
+            <div class="work_title--number">
+              <div class="work_num--value animation_moveUp" style="--delay:1.1s">20</div>
             </div>
           </div>
-          <div class="Work_filterWrap__ZQb6O">
-            <div class="text_xs--size animation_moveUp">Filter:</div><button
-              class="Work_activeFilter__xLZr2 text_xs--size global_link animation_moveUp">
+          <div class="work_filter">
+            <div class="text_xs--size animation_moveUp" style="--delay:1.25s">Filter:</div><button
+              class="work_activeFilter--box text_xs--size global_link animation_moveUp" style="--delay:1.3s">
               <div>all work</div>
               <div>&nbsp;+</div>
             </button>
-            <div class="Work_filterDropdown__Mx2KR" style="height: 0;">
-              <button class="Work_filterLabel__PiiZV text_xxs__co--size">All Work
-                [20]</button><button class="Work_filterLabel__PiiZV text_xxs__co--size">Strategy [10]</button><button
-                class="Work_filterLabel__PiiZV text_xxs__co--size">Brand Identity [12]</button><button
-                class="Work_filterLabel__PiiZV text_xxs__co--size">Creative Direction [13]</button><button
-                class="Work_filterLabel__PiiZV text_xxs__co--size">Digital Design [17]</button><button
-                class="Work_filterLabel__PiiZV text_xxs__co--size">Concept Design [3]</button><button
-                class="Work_filterLabel__PiiZV text_xxs__co--size">Web Development [13]</button>
+            <div class="work_filter--dropdown" style="height: 0;">
+              <button class="work_filter--label text_xxs__co--size">All Work
+                [20]</button><button class="work_filter--label text_xxs__co--size">Strategy [10]</button><button
+                class="work_filter--label text_xxs__co--size">Brand Identity [12]</button><button
+                class="work_filter--label text_xxs__co--size">Creative Direction [13]</button><button
+                class="work_filter--label text_xxs__co--size">Digital Design [17]</button><button
+                class="work_filter--label text_xxs__co--size">Concept Design [3]</button><button
+                class="work_filter--label text_xxs__co--size">Web Development [13]</button>
             </div>
           </div>
-          <div class="Work_viewToggleWrap__7P7XE">
-            <div class="Work_view__ZpT6X animation_moveUp">
-              <div class="Work_hover___x8t_"></div><button class="Work_switch__qI0db text_xs--size Work_active__8aB3g"
-                data-grid="true">GRID</button><button class="Work_switch__qI0db text_xs--size"
-                data-list="true">LIST</button>
+          <div class="work_switch--toggle">
+            <div class="work_switch--wrap animation_moveUp" style="--delay:1.4s">
+              <div class="work_switch--hover"></div>
+              <button class="work_switch--but text_xs--size work_switch--active" data-grid="true">GRID</button>
+              <button class="work_switch--but text_xs--size" data-list="true">LIST</button>
             </div>
           </div>
         </div>
-        <div class="Work_borderHWrap__QcuDl global_margin">
-          <div class="Work_borderH__oOVl6 Animation_fillWidth__a_5um"></div>
+        <div class="work_borderH--wrap global_margin">
+          <div class="work_borderH animation_fillWidth__bd" style="--delay:1.1s"></div>
         </div>
       </header>
-      <div class="Work_viewWrap__6EEa1">
-        <section class="WorkGrid_sectionGrid__AlC22">
-          <div class="WorkGrid_borderV__TbcQ0 Animation_fillHeight__1omqo"></div>
-          <div class="WorkGrid_grid__q1g65"><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9"
-              data-hover="Fitsole" data-flip-id="auto-1">
+      <div class="work_view--wrap">
+        <section class="work_section">
+          <div class="workGrid_borderV__box animation_fillHeight__bg" style="--delay:1.1s"></div>
+          <div class="workGrid">
+            <button class="workGrid_item item__relative" data-hover="Fitsole" data-flip-id="auto-1">
               <div id="fitsole"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_ animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
                       height="1920" sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video">
+                    <video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848294809/rendition/1080p/file.mp4?loc=external&amp;signature=e94b8ae94f5fa581d866693c8fa3ae602ca26ed182d2b233e4195d188d8bf9ea">
-                    </video></div>
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848294809/rendition/1080p/file.mp4?loc=external&amp;signature=e94b8ae94f5fa581d866693c8fa3ae602ca26ed182d2b233e4195d188d8bf9ea">
+                    </video>
+                  </div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
                       <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Fitsole">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Fitsole</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Fitsole">Fitsole</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 Animation_fillWidth__a_5um"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line animation_fillWidth__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Banyana Ba Style"
-              data-flip-id="auto-2">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Banyana Ba Style" data-flip-id="auto-2">
               <div id="banyana-ba-style"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_ animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
                       height="1920" sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video">
+                    <video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848289632/rendition/1080p/file.mp4?loc=external&amp;signature=0d428e4c70e1b9c08efb4c2b5c90f546382961ffdb325a037f97f7133a82b2dd">
-                    </video></div>
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848289632/rendition/1080p/file.mp4?loc=external&amp;signature=0d428e4c70e1b9c08efb4c2b5c90f546382961ffdb325a037f97f7133a82b2dd">
+                    </video>
+                  </div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Brand Identity - Creative Direction - Digital Design</div>
+                    <div class="workGrid_year">
                       <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Banyana Ba Style ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Banyana </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Ba </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Style </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Banyana Ba Style">Banyana <br>Ba
+                      <br>Style</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 Animation_fillWidth__a_5um"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line animation_fillWidth__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="VANA" data-flip-id="auto-3">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="VANA" data-flip-id="auto-3">
               <div id="vana"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_ animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
                       height="1920" sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848299841/rendition/1080p/file.mp4?loc=external&amp;signature=4a2df6e0892fbebf9cd2604e22e6313b68e44a2d5aa68424da0a4318b3662e1a">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848299841/rendition/1080p/file.mp4?loc=external&amp;signature=4a2df6e0892fbebf9cd2604e22e6313b68e44a2d5aa68424da0a4318b3662e1a">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
                       <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="VANA">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">VANA</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="VANA">VANA</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 Animation_fillWidth__a_5um"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line animation_fillWidth__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Sneaker LAB"
-              data-flip-id="auto-4">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Sneaker LAB" data-flip-id="auto-4">
               <div id="sneaker-lab"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_ animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img animation_fadeRotate"><img alt="" fetchpriority="high" width="2560"
                       height="1920" sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Sneakerlab_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t WorkBlock_contained__aBOYf"><video autoplay="" loop="" muted=""
-                      playsinline="" preload="metadata">
+                  <div class="workGrid_video WorkBlock_contained__aBOYf"><video class="lozad" autoplay loop
+                      muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848298578/rendition/1080p/file.mp4?loc=external&amp;signature=5cfd1c47e70dbad11b0d70f3a88818bfa352e5173f0cc7a7edd6a3fb8c6e68b6">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848298578/rendition/1080p/file.mp4?loc=external&amp;signature=5cfd1c47e70dbad11b0d70f3a88818bfa352e5173f0cc7a7edd6a3fb8c6e68b6">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE animation_moveUp">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Creative Direction - Digital Design</div>
+                    <div class="workGrid_year">
                       <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Sneaker LAB ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Sneaker </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">LAB </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Sneaker LAB">Sneaker <br>LAB</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 Animation_fillWidth__a_5um"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line animation_fillWidth__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Emma is Social"
-              data-flip-id="auto-5">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Emma is Social" data-flip-id="auto-5">
               <div id="emma-is-social"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Emma_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848294423/rendition/1080p/file.mp4?loc=external&amp;signature=3db82ffa75da1a255f4a210563c9500e21f1e54909b993d433bafd0ab0fde8d4">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848294423/rendition/1080p/file.mp4?loc=external&amp;signature=3db82ffa75da1a255f4a210563c9500e21f1e54909b993d433bafd0ab0fde8d4">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2022</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Emma is Social ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Emma </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">is </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Social </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Emma is Social">Emma <br>is <br>Social</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Swag" data-flip-id="auto-6">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Swag" data-flip-id="auto-6">
               <div id="swag"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Swag_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848299529/rendition/1080p/file.mp4?loc=external&amp;signature=91106ac6b5128209d160e84952d567ea1ee1a37d781d69aa04f7fc8354d94b7a">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848299529/rendition/1080p/file.mp4?loc=external&amp;signature=91106ac6b5128209d160e84952d567ea1ee1a37d781d69aa04f7fc8354d94b7a">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2023</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2023</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Swag">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Swag</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Swag">Swag</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Blocklords"
-              data-flip-id="auto-7">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Blocklords" data-flip-id="auto-7">
               <div id="blocklords"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t WorkBlock_contained__aBOYf"><video autoplay="" loop="" muted=""
-                      playsinline="" preload="metadata">
+                  <div class="workGrid_video WorkBlock_contained__aBOYf"><video class="lozad" autoplay loop
+                      muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848293373/rendition/1080p/file.mp4?loc=external&amp;signature=4a32958428ac89c87c494c82107d91a97d7dd3209be5a2c8afe38b557830c012">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848293373/rendition/1080p/file.mp4?loc=external&amp;signature=4a32958428ac89c87c494c82107d91a97d7dd3209be5a2c8afe38b557830c012">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2022</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Blocklords">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Blocklords</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Blocklords">Blocklords</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="MetaKing Studios"
-              data-flip-id="auto-8">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="MetaKing Studios" data-flip-id="auto-8">
               <div id="metaking-studios"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_MK_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848296579/rendition/1080p/file.mp4?loc=external&amp;signature=2874db9088e7b6506e38758963b71311799cadb0150c3aac8956830b6a7e19b1">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848296579/rendition/1080p/file.mp4?loc=external&amp;signature=2874db9088e7b6506e38758963b71311799cadb0150c3aac8956830b6a7e19b1">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2022</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="MetaKing Studios ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">MetaKing </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Studios </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="MetaKing Studios">MetaKing <br>Studios</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Web OGs_"
-              data-flip-id="auto-9">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Web OGs_" data-flip-id="auto-9">
               <div id="web-ogs_"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Web-OGs_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848300611/rendition/1080p/file.mp4?loc=external&amp;signature=650014b7bfa6e8315218949f044e55319954bd54aa9e96ad377af486eb8eebb1">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848300611/rendition/1080p/file.mp4?loc=external&amp;signature=650014b7bfa6e8315218949f044e55319954bd54aa9e96ad377af486eb8eebb1">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2023</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2023</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Web OGs_ ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Web </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">OGs_ </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Web OGs_">Web <br>OGs_</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Lemkus"
-              data-flip-id="auto-10">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Lemkus" data-flip-id="auto-10">
               <div id="lemkus"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Lemkus_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t WorkBlock_contained__aBOYf"><video autoplay="" loop="" muted=""
-                      playsinline="" preload="metadata">
+                  <div class="workGrid_video WorkBlock_contained__aBOYf"><video class="lozad" autoplay loop
+                      muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848296208/rendition/1080p/file.mp4?loc=external&amp;signature=c012eb271b5bd08a4717a578f699d8e419a280ebd3158a1b02692f13462655af">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848296208/rendition/1080p/file.mp4?loc=external&amp;signature=c012eb271b5bd08a4717a578f699d8e419a280ebd3158a1b02692f13462655af">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2021</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2021</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Lemkus">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Lemkus</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Lemkus">Lemkus</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Sophie Dallamore"
-              data-flip-id="auto-11">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Sophie Dallamore" data-flip-id="auto-11">
               <div id="sophie-dallamore"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Sophie_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/852280342/rendition/1080p/file.mp4?loc=external&amp;signature=999896e594e77d88e55858378bf5341e9bd0f22cdc8959d3fd329f02d9311983">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/852280342/rendition/1080p/file.mp4?loc=external&amp;signature=999896e594e77d88e55858378bf5341e9bd0f22cdc8959d3fd329f02d9311983">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2022</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Brand Identity - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Sophie Dallamore ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Sophie </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Dallamore </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Sophie Dallamore">Sophie <br>Dallamore</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="DPS" data-flip-id="auto-12">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="DPS" data-flip-id="auto-12">
               <div id="dps"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_DPS_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848753862/rendition/1080p/file.mp4?loc=external&amp;signature=f497adf7b5ca19e2778b4ce77a3d9bceee8cca8b65607b9708df9358c9ed1309">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848753862/rendition/1080p/file.mp4?loc=external&amp;signature=f497adf7b5ca19e2778b4ce77a3d9bceee8cca8b65607b9708df9358c9ed1309">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Concept Design</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2021</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Concept Design</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2021</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="DPS">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">DPS</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="DPS">DPS</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Kia" data-flip-id="auto-13">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Kia" data-flip-id="auto-13">
               <div id="kia"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_KIA_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848295570/rendition/1080p/file.mp4?loc=external&amp;signature=a19f047af96ecc4ed85ecfe0338573fea15a60437ac124fc62136dbc39cbe687">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848295570/rendition/1080p/file.mp4?loc=external&amp;signature=a19f047af96ecc4ed85ecfe0338573fea15a60437ac124fc62136dbc39cbe687">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2021</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2021</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Kia">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Kia</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Kia">Kia</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Tiger Wheel and Tyre"
-              data-flip-id="auto-14">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Tiger Wheel and Tyre" data-flip-id="auto-14">
               <div id="tiger-wheel-and-tyre"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Tiger_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848299755/rendition/1080p/file.mp4?loc=external&amp;signature=63321e6d7521a166da0200b31a02c51e4e265fe2d93acd7c73c755b9520d6b12">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848299755/rendition/1080p/file.mp4?loc=external&amp;signature=63321e6d7521a166da0200b31a02c51e4e265fe2d93acd7c73c755b9520d6b12">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2021</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2021</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Tiger Wheel and Tyre ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Tiger </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Wheel </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">and </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp" ">Tyre </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Tiger Wheel and Tyre ">Tiger <br>Wheel <br>and <br>Tyre</h2>
                   </div>
                 </div>
               </div>
-              <div class=" WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                              <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class=" workGrid_border workGrid_border__left">
+                              <div class="workGrid_border__line workBlock_filled__bd"></div>
                             </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Private Luxury"
-              data-flip-id="auto-15">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Private Luxury" data-flip-id="auto-15">
               <div id="private-luxury"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_PrivateLux_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848987937/rendition/1080p/file.mp4?loc=external&amp;signature=6d38f1f3348bee5a4e3be4390f58b9c94c9551ba7542f2d6162a9f1161eed8c9">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848987937/rendition/1080p/file.mp4?loc=external&amp;signature=6d38f1f3348bee5a4e3be4390f58b9c94c9551ba7542f2d6162a9f1161eed8c9">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2020</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Brand Identity - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2020</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Private Luxury ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Private </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Luxury </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Private Luxury ">Private <br>Luxury</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="The Last Dance"
-              data-flip-id="auto-16">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="The Last Dance" data-flip-id="auto-16">
               <div id="the-last-dance"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_TheLastDance_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848752560/rendition/1080p/file.mp4?loc=external&amp;signature=5a66c451c1d9caf72223b83e9cc10fd7c7368ffcc1fda1ba890ffd043ded14b0">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848752560/rendition/1080p/file.mp4?loc=external&amp;signature=5a66c451c1d9caf72223b83e9cc10fd7c7368ffcc1fda1ba890ffd043ded14b0">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Concept Design</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2020</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Concept Design</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2020</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="The Last Dance ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">The </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Last </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Dance </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="The Last Dance ">The <br>Last <br>Dance</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Alexis Christodoulou Studio"
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Alexis Christodoulou Studio"
               data-flip-id="auto-17">
               <div id="alexis-christodoulou-studio"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Alexis_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848753186/rendition/1080p/file.mp4?loc=external&amp;signature=ef42432debd31b21081f62d752f1253db6cbfba9a59436e62259398427abcf44">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848753186/rendition/1080p/file.mp4?loc=external&amp;signature=ef42432debd31b21081f62d752f1253db6cbfba9a59436e62259398427abcf44">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">
+                      <div class="workGrid_tag--item">
+                        <div class="workGrid_tag--move">
                           <div class="text_xxs__co--size global_link">Concept Design</div>
                         </div>
                       </div>
                     </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2020</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2020</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Alexis Christodoulou Studio ">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Alexis </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Christodoulou </div>
-                          </div>
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Studio </div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split"
+                      aria-label="Alexis Christodoulou Studio">Alexis <br>Christodoulou <br>Studio</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Picube"
-              data-flip-id="auto-18">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Picube" data-flip-id="auto-18">
               <div id="picube"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Picube_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848297176/rendition/1080p/file.mp4?loc=external&amp;signature=734684009b7aa553a0ae1b4b34325356cb594c627e3a00f53d1c9ac462b29064">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848297176/rendition/1080p/file.mp4?loc=external&amp;signature=734684009b7aa553a0ae1b4b34325356cb594c627e3a00f53d1c9ac462b29064">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2021</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Brand Identity - Digital Design</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2021</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Picube">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Picube</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Picube">Picube</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Batoka"
-              data-flip-id="auto-19">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Batoka" data-flip-id="auto-19">
               <div id="batoka"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Batoka_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848985493/rendition/1080p/file.mp4?loc=external&amp;signature=7c67a0cd6b95a336f7453b5f4975f9a9b38cc0a7ce361456135e0a024eabe248">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848985493/rendition/1080p/file.mp4?loc=external&amp;signature=7c67a0cd6b95a336f7453b5f4975f9a9b38cc0a7ce361456135e0a024eabe248">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Brand Identity</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2022</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2022</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Batoka">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Batoka</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Batoka">Batoka</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_right__TJxC4">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__right">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9" data-hover="Afrisam"
-              data-flip-id="auto-20">
+            </button>
+            <button class="workGrid_item item__relative" data-hover="Afrisam" data-flip-id="auto-20">
               <div id="afrisam"></div>
-              <div>
-                <div class="WorkBlock_visualWrap__6kIpG">
-                  <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+              <div class="workGrid_detail">
+                <div class="workGrid_media">
+                  <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                       sizes="(max-width: 480px) 92vw, 48vw"
                       srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w4480.webp 4480w"
                       src="https://dashdigital.studio/_next/static/chunks/images/Work_Afrisam_Cover_w4480.webp">
                   </div>
-                  <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" muted="" playsinline=""
-                      preload="metadata">
+                  <div class="workGrid_video"><video class="lozad" autoplay loop muted playsinline preload="metadata">
                       <source
-                        src="https://player.vimeo.com/progressive_redirect/playback/848747967/rendition/1080p/file.mp4?loc=external&amp;signature=a8c38d55aa9d185a66885ab9e3040cba4053a3d70efd1aa007e24f93597be3ae">
+                        data-src="https://player.vimeo.com/progressive_redirect/playback/848747967/rendition/1080p/file.mp4?loc=external&amp;signature=a8c38d55aa9d185a66885ab9e3040cba4053a3d70efd1aa007e24f93597be3ae">
                     </video></div>
                 </div>
-                <div class="WorkBlock_infoWrap__gQeJv">
-                  <div class="WorkBlock_info__8cSKV">
-                    <div class="WorkBlock_tagList__w3Ycc">
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Strategy</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Creative Direction</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Digital Design</div>
-                          <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                        </div>
-                      </div>
-                      <div class="WorkBlock_tagWrap__MJETI">
-                        <div class="WorkBlock_tagMove__TSqmE">
-                          <div class="text_xxs__co--size global_link">Web Development</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="WorkBlock_yearWrap__rz_OE">
-                      <div class="text_xxs__co--size">2021</div>
+                <div class="workGrid_info">
+                  <div class="workGrid_info--text">
+                    <div class="workGrid_tag">Strategy - Creative Direction - Digital Design - Web Development</div>
+                    <div class="workGrid_year">
+                      <div class="text_xxs__co--size animation_moveUp">2021</div>
                     </div>
                   </div>
-                  <div class="WorkBlock_nameWrap___u_Q_">
-                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Afrisam">
-                      <div class="wrap" aria-hidden="true">
-                        <div class="line">
-                          <div class="wrap">
-                            <div class="word animation_moveUp">Afrisam</div>
-                          </div>
-                        </div>
-                      </div>
-                    </h2>
+                  <div class="workBlock_name--wrap">
+                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Afrisam">Afrisam</h2>
                   </div>
                 </div>
               </div>
-              <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+              <div class="workGrid_border workGrid_border__left">
+                <div class="workGrid_border__line workBlock_filled__bd"></div>
               </div>
-            </button></div>
+            </button>
+          </div>
         </section>
       </div>
     </main>
@@ -1493,97 +879,10 @@
 
   </div>
 
-  <div id="__lightbox" style="display: none;">
-    <div class="Modals_overlay__9SYTV Modals_enterDone__2RbOq">
-      <div class="Modals_lightbox__HgQG2">
-        <div class="LightboxInner_lightboxInner__IAkYJ">
-          <div class="LightboxInner_slider__5fRFN gallery_box">
-            <div class="LightboxInner_sliderViewport__QcV_T gallery_container draggable" data-hover="Drag">
-              <div class="LightboxInner_sliderContainer__8ijFW swiper-wrapper">
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item selected">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup01_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item selected">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Cover_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Logo_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg LightboxInner_show__6rAGN"><video
-                      class="LightboxInner_container__34vK_" loop="" playsinline="" preload="metadata"
-                      src="https://player.vimeo.com/progressive_redirect/playback/848299970/rendition/1080p/file.mp4?loc=external&amp;signature=61bed3d2c82d72564b698955dfebc6fb45a9808913a9223b64d0f647d18f62c1">
-                      <source class="source-lg"
-                        data-src="https://player.vimeo.com/progressive_redirect/playback/848299970/rendition/1080p/file.mp4?loc=external&amp;signature=61bed3d2c82d72564b698955dfebc6fb45a9808913a9223b64d0f647d18f62c1"
-                        type="video/mp4">
-                      <source class="source-sm"
-                        data-src="https://player.vimeo.com/progressive_redirect/playback/848299970/rendition/360p/file.mp4?loc=external&amp;signature=f49f506b1d433888518f005ae4df549042791e7147bf3e728a46af9ea20d71c0"
-                        type="video/mp4">
-                    </video>
-                    <div class="LightboxInner_loader__lfzG6">
-                      <div class="LightboxInner_progressWrap__tHUW_">
-                        <div class="LightboxInner_progress__OwtgO"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Socials_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Mockup03_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout02_w4480.webp"></div>
-                </div>
-                <div class="LightboxInner_sliderSlide__E2PLt gallery_item">
-                  <div class="LightboxInner_slideInner__Yc5fg"><img alt="" loading="lazy" width="2560" height="1920"
-                      sizes="(max-width: 480px) 92vw, 48vw"
-                      srcset="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w4480.webp 4480w"
-                      src="https://dashdigital.studio/_next/static/chunks/images/Work_VANA_Layout03_w4480.webp"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="LightboxInner_lightboxInfo__TCxxp global_margin">
-            <div class="LightboxInner_lightboxProgress__zK9Gk">
-              <div>01</div>
-              <div>—</div>
-              <div>09</div>
-            </div>
-            <div class="LightboxInner_lightboxName__zNXls text_xs--size">VANA</div><button
-              class="LightboxInner_lightboxClose__0eLGu text_xs--size">CLOSE</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="__lightbox"></div>
 
   <script src="js/lenis.min.js"></script>
+  <script src="js/lozad.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>

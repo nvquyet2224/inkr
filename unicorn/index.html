@@ -30,7 +30,7 @@
   <link href="css/footer.css" rel="preload stylesheet" as="style">
 </head>
 
-<body>
+<body id="homePage">
   <div class="transition_wrapper__loading">
     <div class="transition_logo">
       <div class="transition_logo--back" aria-disabled="true">DashDigital®</div>
@@ -130,7 +130,7 @@
           <a class="hero_studie_item" data-hover="Fitsole" href="fitsole.html">
             <div class="hero_studie_inr">
               <div class="hero_studie_number">
-                <div class="hero_studie_number--value text_xxs__co--size Animation_moveDown__hzkjH">00-1
+                <div class="hero_studie_number--value text_xxs__co--size animation_moveDown">00-1
                 </div>
               </div>
               <div class="hero_studie_img">
@@ -186,7 +186,7 @@
           <a class="hero_studie_item" data-hover="Lemkus" href="lemkus.html">
             <div class="hero_studie_inr">
               <div class="hero_studie_number">
-                <div class="hero_studie_number--value text_xxs__co--size Animation_moveDown__hzkjH">00-2
+                <div class="hero_studie_number--value text_xxs__co--size animation_moveDown">00-2
                 </div>
               </div>
               <div class="hero_studie_img">
@@ -236,7 +236,7 @@
           <a class="hero_studie_item" data-hover="Sophie Dallamore" href="sophie-dallamore.html">
             <div class="hero_studie_inr">
               <div class="hero_studie_number">
-                <div class="hero_studie_number--value text_xxs__co--size Animation_moveDown__hzkjH">00-3
+                <div class="hero_studie_number--value text_xxs__co--size animation_moveDown">00-3
                 </div>
               </div>
               <div class="hero_studie_img">
@@ -285,7 +285,7 @@
           <a class="hero_studie_item" data-hover="VANA" href="vana.html">
             <div class="hero_studie_inr">
               <div class="hero_studie_number">
-                <div class="hero_studie_number--value text_xxs__co--size Animation_moveDown__hzkjH">00-4
+                <div class="hero_studie_number--value text_xxs__co--size animation_moveDown">00-4
                 </div>
               </div>
               <div class="hero_studie_img">
@@ -370,12 +370,12 @@
             <div class="video_progress_bar"></div>
           </div>
         </div>
-        <div class="video_expand--box"><video autoplay="" loop="" muted="" playsinline="" preload="metadata"
-            src="https://player.vimeo.com/progressive_redirect/playback/680969423/rendition/1080p?loc=external&amp;signature=326681dfdb6f21bb1f3167ee7dfbf2d20af353931436bfe0e6946a5c95501f56">
-            <source class="source-lg"
-              data-src="https://player.vimeo.com/progressive_redirect/playback/680969423/rendition/1080p?loc=external&amp;signature=326681dfdb6f21bb1f3167ee7dfbf2d20af353931436bfe0e6946a5c95501f56">
-            <source class="source-sm"
-              data-src="https://player.vimeo.com/progressive_redirect/playback/680969423/rendition/360p?loc=external&amp;signature=6c2b5107c646d668a1c451bcdebdccf6cec2cf5f1cd56879e35fb9e1c5b55493">
+        <div class="video_expand--box">
+          <video class="lozad source-lg" autoplay loop muted playsinline preload="metadata">
+            <source data-src="https://player.vimeo.com/progressive_redirect/playback/680969423/rendition/1080p?loc=external&amp;signature=326681dfdb6f21bb1f3167ee7dfbf2d20af353931436bfe0e6946a5c95501f56">
+          </video>
+          <video class="lozad source-sm" autoplay loop muted playsinline preload="metadata">
+            <source data-src="https://player.vimeo.com/progressive_redirect/playback/680969423/rendition/360p?loc=external&amp;signature=6c2b5107c646d668a1c451bcdebdccf6cec2cf5f1cd56879e35fb9e1c5b55493">
           </video>
         </div>
       </div>
@@ -492,7 +492,7 @@
         </div>
       </div>
       <div class="client_heading client_heading--wrap">
-        <h3 class="Text_M__tK_lp">Brands We've Worked With<!-- --> </h3>
+        <h3 class="text_mtK">Brands We've Worked With<!-- --> </h3>
       </div>
       <ol class="client_brand" aria-label="Accordion Buttons" role="tablist">
         <li role="tab"><button id="acc-control-4" aria-expanded="false" aria-controls="acc-content-4">
@@ -997,6 +997,7 @@
   <div id="__lightbox"></div>
 
   <script src="js/lenis.min.js"></script>
+  <script src="js/lozad.min.js"></script>
   <script src="js/gsap.min.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>

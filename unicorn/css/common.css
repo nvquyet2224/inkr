@@ -1,3 +1,310 @@
+.text_l--size,
+.text_ML,
+.text_mtK,
+.text_s--size,
+.text_xl--size,
+.text_xs--size,
+.text_xxs__co--size {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -.03em;
+    margin-left: -.03em
+}
+
+.text_xs--size,
+.text_xxs__co--size {
+    letter-spacing: -.02em;
+    margin-left: -.02em
+}
+
+.text_xxs__co--size {
+    font-size: 12px
+}
+
+.text_xs--size {
+    font-size: 14px
+}
+
+.text_s--size {
+    font-size: 1.48vw;
+    line-height: .9
+}
+
+.text_s--size .text_italic__style,
+.text_s--size.text_italic__style {
+    font-size: 1.48vw;
+    line-height: 1
+}
+
+.text_mtK {
+    font-size: 2.78vw
+}
+
+.text_mtK .text_italic__style {
+    font-size: 2.18vw
+}
+
+.text_ML {
+    font-size: 3.8vw;
+    line-height: .85
+}
+
+.text_l--size {
+    font-size: 4.8vw;
+    line-height: .8
+}
+
+.text_xl--size {
+    font-size: 7vw;
+    line-height: .8
+}
+
+.text_xl--size .text_italic__style {
+    font-size: 5.44vw
+}
+
+.text_normal {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300
+}
+
+.text_normal.Text_regular__M24Vo {
+    font-weight: 600
+}
+
+.text_normal p {
+    margin-bottom: 8px
+}
+
+.text_normal p:last-of-type {
+    margin-bottom: 0
+}
+
+.text_italic__style {
+    font-family: Editorial Neue, serif;
+    font-style: italic;
+    padding-right: .18em;
+    letter-spacing: -.06em
+}
+
+@media screen and (max-width: 480px) {
+    .text_s--size {
+        font-size: 4.4vw;
+        line-height: 1
+    }
+
+    .text_s--size .text_italic__style,
+    .text_s--size.text_italic__style {
+        font-size: 18px;
+        line-height: 1.4
+    }
+
+    .text_mtK {
+        font-size: 6.9vw;
+        line-height: 1.1
+    }
+
+    .text_mtK .text_italic__style {
+        font-size: 5.3vw
+    }
+
+    .text_ML {
+        font-size: 8.1vw;
+        line-height: .85
+    }
+
+    .text_l--size {
+        font-size: 9.5vw
+    }
+
+    .text_xl--size {
+        font-size: 11vw;
+        line-height: .9
+    }
+
+    .text_xl--size .text_italic__style {
+        font-size: 8.6vw
+    }
+
+    .text_normal {
+        font-size: 16px
+    }
+
+    .text_normal p {
+        margin-bottom: 2.8vw
+    }
+
+    .text_normal p:last-of-type {
+        margin-bottom: 0
+    }
+}
+
+@media screen and (min-width: 481px)and (max-width:768px) {
+    .text_s--size {
+        font-size: 3.4vw
+    }
+
+    .text_s--size .text_italic__style,
+    .text_s--size.text_italic__style {
+        font-size: 18px;
+        line-height: 1.2
+    }
+
+    .text_mtK {
+        font-size: 4vw
+    }
+
+    .text_mtK .text_italic__style {
+        font-size: 3.2vw
+    }
+
+    .text_l--size {
+        font-size: 6vw
+    }
+
+    .text_normal {
+        font-size: 14px
+    }
+
+    .text_normal p {
+        margin-bottom: 8px
+    }
+
+    .text_normal p:last-of-type {
+        margin-bottom: 0
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .text_s--size {
+        font-size: 2.2vw
+    }
+
+    .text_s--size .text_italic__style,
+    .text_s--size.text_italic__style {
+        font-size: 16px;
+        line-height: 1.4
+    }
+
+    .text_mtK {
+        font-size: 4vw
+    }
+
+    .text_mtK .text_italic__style {
+        font-size: 3.1vw
+    }
+
+    .text_l--size {
+        font-size: 6vw
+    }
+
+    .text_normal {
+        font-size: 14px
+    }
+
+    .text_normal p {
+        margin-bottom: 8px
+    }
+
+    .text_normal p:last-of-type {
+        margin-bottom: 0
+    }
+}
+
+@media screen and (min-width: 1281px) {
+    .text_xxs__co--size {
+        font-size: 12px
+    }
+
+    .text_xs--size {
+        font-size: 14px
+    }
+
+    .text_s--size {
+        font-size: 1.5vw
+    }
+
+    .text_s--size .text_italic__style,
+    .text_s--size.text_italic__style {
+        font-size: 1.5vw;
+        line-height: .9
+    }
+
+    .text_mtK {
+        font-size: 2.8vw
+    }
+
+    .text_mtK .text_italic__style {
+        font-size: 2.18vw
+    }
+
+    .text_l--size {
+        font-size: 4.86vw
+    }
+
+    .text_normal {
+        font-size: 1.111111vw
+    }
+
+    .text_normal p {
+        margin-bottom: .72vw
+    }
+
+    .text_normal p:last-of-type {
+        margin-bottom: 0
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .text_xxs__co--size {
+        font-size: .9vw
+    }
+
+    .text_xs--size {
+        font-size: 1vw
+    }
+
+    .text_s--size {
+        font-size: 1.5vw
+    }
+
+    .text_mtK {
+        font-size: 2.78vw
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    .text_xxs__co--size {
+        font-size: .6vw
+    }
+
+    .text_xs--size {
+        font-size: .7vw
+    }
+
+    .text_s--size {
+        font-size: 1.4vw
+    }
+
+    .text_normal {
+        font-size: .9vw
+    }
+
+    .text_normal p {
+        margin-bottom: .54vw
+    }
+
+    .text_normal p:last-of-type {
+        margin-bottom: 0
+    }
+}
+
+
 .global_container {
     padding-bottom: 2vw;
 }
@@ -14,6 +321,13 @@
     margin: 0 2vw
 }
 
+.source-sm {
+    display: none;
+}
+
+.source-lg {
+    display: block;
+}
 
 .header {
     position: fixed;
@@ -164,7 +478,7 @@
     .global_container {
         padding-bottom: 4vw
     }
-    
+
     .global_margin {
         margin: 0 4vw
     }
@@ -283,6 +597,14 @@
 
     .nav_menuBtn {
         z-index: 4
+    }
+
+    .source-sm {
+        display: block;
+    }
+
+    .source-lg {
+        display: none;
     }
 }
 

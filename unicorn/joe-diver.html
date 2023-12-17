@@ -123,18 +123,20 @@
         </header>
 
         <main class="global_container global_dark--bg">
-            <header class="Interview_header__AKwE1 global_margin">
-                <section class="Interview_grid__xrmS9">
-                    <h1 class="Interview_title__gCIc5 text_xl--size" aria-label="Joe Diver"><span><span
-                                class="Text_italic__TVafc animation_moveUp">Joe</span></span><span><span
+
+            <header class="interview_header global_margin">
+                <section class="interview_grid">
+                    <h1 class="interview_title text_xl--size" aria-label="Joe Diver"><span><span
+                                class="text_italic__style animation_moveUp">Joe</span></span><span><span
                                 class="animation_moveUp"> Diver</span></span></h1>
-                    <div class="Interview_subtitle__0OHyy text_xs--size"><span
-                            class="Interview_subtitleWrap__2SuSm"><span class="animation_moveUp">Behind The
-                                Design</span></span><span class="Interview_subtitleWrap__2SuSm"><span
+                    <div class="interview_subTitle text_xs--size"><span class="interview_subTitle--wrap"><span
+                                class="animation_moveUp">Behind The
+                                Design</span></span><span class="interview_subTitle--wrap"><span
                                 class="animation_moveUp">Interview
-                                Series</span></span></div>
-                    <div class="Interview_details__S8h_T">
-                        <div class="Interview_inner__XndlZ text_xs--size">
+                                Series</span></span>
+                    </div>
+                    <div class="Interview_detail">
+                        <div class="Interview_detail--inr text_xs--size">
                             <div class="animation_moveUp">Interview</div>
                             <div class="animation_moveUp">•</div>
                             <div class="animation_moveUp">3 Oct 2023</div>
@@ -144,25 +146,27 @@
                         <div class="text_normal animation_fadeUp__des">London based graphic
                             designer specialising in Brand Identity, Web Design and Creative Direction.</div>
                     </div>
-                    <div class="Interview_share__bNKCw text_xs--size"><button
-                            class="Interview_shareButton__S1g5Q text_xs--size global_link animation_moveUp"><span>Share</span><svg
+                    <div class="Interview_share text_xs--size">
+                        <button
+                            class="Interview_share--but text_xs--size global_link animation_moveUp"><span>Share</span><svg
                                 fill="none" height="12" viewBox="0 0 12 12" width="12"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke="#ccc4b9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
                                     d="m1.11108 5.38889v4.88891c0 .3241.12877.635.35798.8642.22922.2292.54009.358.86425.358h7.33333c.32415 0 .63506-.1288.86426-.358s.358-.5401.358-.8642v-4.88891m-2.44458-2.44445-2.44445-2.44444m0 0-2.44444 2.44444m2.44444-2.44444v6.3928">
                                 </path>
-                            </svg></button>
-                        <div class="Interview_shareDropdown__gm6r_"><button
-                                class="Interview_shareLink__ojIJa Interview_copyLink__vgCYx text_xs--size"><svg
-                                    fill="none" height="12" viewBox="0 0 12 12" width="12"
-                                    xmlns="http://www.w3.org/2000/svg">
+                            </svg>
+                        </button>
+                        <div class="Interview_share--dropdown">
+                            <button class="interview_share--link Interview_copyLink text_xs--size"><svg fill="none"
+                                    height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="m4.94405 6.52815c.22675.30342.51603.55447.84823.73614s.69955.2897 1.07713.31677c.37758.02706.75656-.02747 1.11123-.1599.35468-.13242.67675-.33965.94437-.60763l1.58399-1.58544c.4808-.49836.7469-1.16583.7409-1.85866-.006-.69282-.2836-1.35557-.7731-1.84549-.48946-.48992-1.15158-.76782-1.84376-.77384-.69217-.006021-1.35901.26032-1.8569.74165l-.90812.9037m1.18793 3.0764c-.22675-.30342-.51603-.55447-.84823-.73614s-.69955-.2897-1.07713-.31677c-.37758-.02706-.75656.02747-1.11123.15989-.35468.13243-.67675.33966-.94437.60764l-1.58394 1.58544c-.48088.49836-.746965 1.16583-.74095 1.85866.006015.69282.28365 1.35557.77311 1.84553.48945.4899 1.15157.7678 1.84374.7738.69218.006 1.35902-.2603 1.85691-.7417l.90284-.90365"
                                         stroke="#ccc4b9" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="1.125"></path>
                                 </svg><span>Copy Link</span></button>
-                            <ul class="Interview_shareLinks__hd5Zw">
-                                <li><a class="Interview_shareLink__ojIJa" target="_blank"
+                            <ul class="interview_shareLinks">
+                                <li>
+                                    <a class="interview_share--link" target="_blank"
                                         href="https://www.linkedin.com/sharing/share-offsite/?url=https://dashdigital.studio/insights/behind-the-design/joe-diver/"><svg
                                             fill="none" height="12" viewBox="0 0 12 12" width="12"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -174,8 +178,10 @@
                                                     d="m10.2778 11.5h-8.55558c-.67501 0-1.22222-.5472-1.22222-1.2222v-8.55558c0-.67501.54721-1.22222 1.22222-1.22222h8.55558c.675 0 1.2222.54721 1.2222 1.22222v8.55558c0 .675-.5472 1.2222-1.2222 1.2222zm-8.25002-8.4949c0 .53971.4342.97732.97004.97732.53583 0 .96978-.43761.96978-.97732s-.43395-.97732-.96978-.97732c-.53584 0-.97004.43761-.97004.97732zm.15775 6.96712h1.64035v-5.29629h-1.64035zm6.15436 0h1.63233v-3.35328c0-1.41881-.80427-2.10482-1.92766-2.10482-1.12391 0-1.59691.87522-1.59691.87522v-.71341h-1.57311v5.29629h1.57311v-2.78023c0-.74495.34292-1.18824.99926-1.18824.60334 0 .89298.42598.89298 1.18824z"
                                                     fill="#ccc4b9" fill-rule="evenodd"></path>
                                             </g>
-                                        </svg><span>Share via LinkedIn</span></a></li>
-                                <li><a class="Interview_shareLink__ojIJa" target="_blank"
+                                        </svg><span>Share via LinkedIn</span></a>
+                                </li>
+                                <li>
+                                    <a class="interview_share--link" target="_blank"
                                         href="https://twitter.com/intent/tweet?text=Joe%20Diver%20%7C%20Behind%20The%20Design%20-%20DashDigital%C2%AE%20Studio&amp;url=https://dashdigital.studio/insights/behind-the-design/joe-diver"><svg
                                             fill="none" height="12" viewBox="0 0 12 12" width="12"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -187,8 +193,10 @@
                                                     d="m7.02366 5.15775 4.00564-4.65775h-.9492l-3.47811 4.04426-2.77795-4.04426h-3.204045l4.200815 6.11563-4.200815 4.88437h.949265l3.67297-4.27087 2.93372 4.27087h3.20405l-4.35658-6.34225zm-1.30015 1.51176-.42563-.60897-3.38659-4.84572h1.45802l2.73301 3.91065.42563.60898 3.55255 5.08325h-1.45797l-2.89902-4.14795z"
                                                     fill="#ccc4b9"></path>
                                             </g>
-                                        </svg><span>Share via X</span></a></li>
-                                <li><a class="Interview_shareLink__ojIJa" target="_blank"
+                                        </svg><span>Share via X</span></a>
+                                </li>
+                                <li>
+                                    <a class="interview_share--link" target="_blank"
                                         href="http://www.facebook.com/sharer/sharer.php?u=https://dashdigital.studio/insights/behind-the-design/joe-diver&amp;t=Joe%20Diver%20%7C%20Behind%20The%20Design%20-%20DashDigital%C2%AE%20Studio"><svg
                                             fill="none" height="12" viewBox="0 0 12 12" width="12"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -200,9 +208,9 @@
                                                     d="m6 0c-3.31364 0-6 2.68636-6 6 0 3.00818 2.21591 5.4919 5.10327 5.9258v-4.33553h-1.48445v-1.57718h1.48445v-1.04945c0-1.73755.84655-2.50037 2.29064-2.50037.69163 0 1.05736.05127 1.23054.07473v1.37673h-.98509c-.61309 0-.82718.58118-.82718 1.23627v.86209h1.79673l-.24382 1.57718h-1.55291v4.34833c2.92855-.3973 5.18782-2.90124 5.18782-5.9386 0-3.31364-2.68637-6-6-6z"
                                                     fill="#ccc4b9"></path>
                                             </g>
-                                        </svg><span>Share via Facebook</span></a></li>
-                                <li><a class="Interview_shareLink__ojIJa" data-action="share/whatsapp/share"
-                                        target="_blank"
+                                        </svg><span>Share via Facebook</span></a>
+                                </li>
+                                <li><a class="interview_share--link" data-action="share/whatsapp/share" target="_blank"
                                         href="https://wa.me/?text=Joe%20Diver%20%7C%20Behind%20The%20Design%20-%20DashDigital%C2%AE%20Studio.%20Read%20the%20interview:%20https://dashdigital.studio/insights/behind-the-design/joe-diver"><svg
                                             fill="none" height="12" viewBox="0 0 12 12" width="12"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -219,7 +227,7 @@
                         </div>
                     </div>
                 </section>
-                <div class="Interview_lrgImg__zlbop">
+                <div class="interview_lrgImg">
                     <div class="animation_fadeRotate"><img alt="" fetchpriority="high" width="5528" height="3568"
                             sizes="(max-width: 480px) 92vw, 96vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/BTD_Joe-Diver_Cover_w4480.webp 4480w"
@@ -227,16 +235,17 @@
                     </div>
                 </div>
             </header>
+
             <section data-slice-type="interview_embed" data-slice-variation="default"
-                class="InterviewEmbed_section__cKASO global_margin">
-                <div class="InterviewEmbed_listen__TJtKj">
-                    <div class="InterviewEmbed_embed__i8z_z"><iframe width="100%" height="152"
+                class="interview_embed global_margin">
+                <div class="interview_embed--box">
+                    <div class="interview_embed--data"><iframe width="100%" height="152"
                             title="Spotify Embed: Behind The Design ft. Joe Diver" frameborder="0" allowfullscreen=""
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"
                             src="https://open.spotify.com/embed/episode/1GBwqIjHD01oMhNZTz6s8E?si=838ed107439d4b3e&amp;utm_source=oembed&amp;theme=0"></iframe>
                     </div>
-                    <div class="InterviewEmbed_button__dRpZ0"><svg fill="none" height="30" viewBox="0 0 30 30"
+                    <div class="interview_embed--view"><svg fill="none" height="30" viewBox="0 0 30 30"
                             width="30" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" fill="#2a2a2a" r="15"></circle>
                             <path
@@ -256,30 +265,32 @@
                                     <div class="button_text--size">Visit Apple Podcasts</div>
                                 </div>
                             </div>
-                        </a></div>
+                        </a>
+                    </div>
                 </div>
                 <div>
-                    <div class="InterviewEmbed_heading__NGhNd Text_M__tK_lp">Joe is widely Recognised for his
+                    <div class="interview_embed--heading text_mtK">Joe is widely Recognised for his
                         exceptional skill in typography and visual composition.</div>
-                    <div class="InterviewEmbed_description__GKWG5 text_normal">
+                    <div class="interview_embed--description text_normal">
                         <p>He has inspired us immensely over the past couple of years and the prospect of chatting with
                             him to explore his design journey is truly exciting. Let's step into Joe Diver's creative
                             space and unveil the chapters of his story.</p>
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="default"
                 class="InterviewSlice_section__VcGqQ global_margin">
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>You recently started a video tutorial series. Could you take us through the decision
                                 behind that and how it's coming along?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>What I was thinking about, maybe six months ago, is the fact that although many of the
                                 people who follow me are people who might be interested in my services (like brand
@@ -300,7 +311,7 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>I think that's one of the reasons why we've started this project, because it's exactly
                                 that level of transparency from top to bottom which is needed. I think a lot of it is
@@ -308,7 +319,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I've been really pleasantly surprised with the engagement. I think there's definitely an
                                 appetite for it and it's great that you guys are doing something similar, and obviously,
@@ -321,14 +332,14 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>We see you post self-initiated work which is always great. What is your percentage split
                                 of time between paid client work and self initiated / upskilling?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>It's difficult to say and I think as my career has advanced, I'd say the tide has turned
                                 way more towards client work. I think in the beginning when you are trying to develop
@@ -346,16 +357,17 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="img_vid_grid" data-slice-variation="default"
-                class="ImgVidGrid_section__J0Zkf global_margin ImgVidGrid_interview__2qVG2">
-                <div class="ImgVidGrid_grid__ogqWt">
-                    <div><img alt="" loading="lazy" width="2708" height="2708" class="ImgVidGrid_img__TE9mD"
+                class="imgVid global_margin ImgVidGrid_interview__2qVG2">
+                <div class="imgVid_grid">
+                    <div><img alt="" loading="lazy" width="2708" height="2708" class="imgVid_img"
                             sizes="(max-width: 480px) 92vw, 47vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/visual-communication-posters_w4480.webp">
                         <div class="ImgVidGrid_caption__iUTwf text_normal">Visual Communication 1</div>
                     </div>
-                    <div><img alt="" loading="lazy" width="2708" height="2708" class="ImgVidGrid_img__TE9mD"
+                    <div><img alt="" loading="lazy" width="2708" height="2708" class="imgVid_img"
                             sizes="(max-width: 480px) 92vw, 47vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/visual-communication-poster_w4480.webp">
@@ -363,11 +375,12 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="default"
                 class="InterviewSlice_section__VcGqQ global_margin">
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>I agree and often tell juniors exactly that. I think it's the self-initiated work that
                                 gets you the jobs, especially when you freelance and you're not picking up nice exciting
@@ -378,7 +391,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>It's a real mixture but I think social media is a big part of it. I've always put a lot
                                 of emphasis on building an online presence. Whether you like it or not, I feel like it's
@@ -400,14 +413,14 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>You mentioned working with Phil, would you then be white labelled under his studio or do
                                 you go in as a collaboration partner?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>It's a kind of collaboration partnership. Phil understands that people like myself, I
                                 have my own brand and I have my own work, and the way that I like to do things. And I
@@ -419,7 +432,7 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>I think the collaboration model is always so much better. It's something we value in the
                                 studio, because the roles and responsibilities or the accountability becomes a lot
@@ -428,7 +441,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>What a lot of people probably don't know about me is, as well as being very interested in
                                 the design world, a lot of my time I love listening to podcasts and watching YouTube on
@@ -452,17 +465,19 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="text_break" data-slice-variation="default"
-                class="TextBreak_section___Qfm6 global_margin">
-                <p class="Text_ML__9porR">I think I was always drawn to the fathers of Swiss design, people like Josef
+                class="textBreak_section global_margin">
+                <p class="text_ML">I think I was always drawn to the fathers of Swiss design, people like Josef
                     Müller-Brockmann and Wim Crouwel, and studied that massively.</p>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="wImages"
                 class="InterviewSlice_section__VcGqQ InterviewSlice_wImage___MuT3 global_margin">
                 <div class="InterviewSlice_qaWrap__L04Og">
                     <div class="InterviewSlice_qa__iUonW">
                         <div class="InterviewSlice_person__LskcB">
-                            <div class="text_s--size Text_italic__TVafc">DD</div>
+                            <div class="text_s--size text_italic__style">DD</div>
                             <div class="text_normal Text_regular__M24Vo">
                                 <p>Your style has a very editorial, grid-based approach, then layered with amazing
                                     textures. Where do you pull inspiration from and have you always been interested in
@@ -470,7 +485,7 @@
                             </div>
                         </div>
                         <div class="InterviewSlice_person__LskcB">
-                            <div class="text_s--size Text_italic__TVafc">JD</div>
+                            <div class="text_s--size text_italic__style">JD</div>
                             <div class="text_normal">
                                 <p>I think I've always been drawn to a very grid-based structure, and quite minimalistic
                                     aesthetics. Whether that be looking at certain furniture or architecture, for
@@ -505,28 +520,28 @@
                     </div>
                 </div>
             </section>
-            <section data-slice-type="parallax_image" data-slice-variation="default"
-                class="ParallaxImage_section__SooEb">
-                <div class="ParallaxImage_imgWrap__GtZo8">
-                    <div><img alt="" loading="lazy" width="5528" height="3568" class="ParallaxImage_img__uAYwF"
-                            sizes="100vw"
+
+            <section data-slice-type="parallax_image" data-slice-variation="default" class="parallax_image_section">
+                <div class="parallax_image--wrap">
+                    <div><img alt="" loading="lazy" width="5528" height="3568" class="parallax_image--img" sizes="100vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/au-collection-billboard_w4480.webp">
                     </div>
                 </div>
                 <div class="ParallaxImage_caption__Yxq3b text_normal global_margin">AU Billboard Mockup</div>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="default"
                 class="InterviewSlice_section__VcGqQ global_margin">
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>Do you have a set process for each project?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>&nbsp;I'd say I'm pretty fluid. It does vary in some ways and I think most designers will
                                 understand that. In most cases, you can never really say that in order to get to the end
@@ -551,13 +566,13 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>How do you normally work through a creative block? Any words of wisdom for us?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I think the first thing is to not fight it. Everyone gets it, you don't just have to be a
                                 designer or artist to get a creative block. I think if you feel that, It's useless
@@ -577,13 +592,13 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>What has been one of your biggest challenges in your career?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>For me when I was first starting out, I think it was confidence. This probably sounds a
                                 bit vulnerable but I think it definitely was. I didn't go to university to study design,
@@ -595,22 +610,24 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="text_break" data-slice-variation="default"
-                class="TextBreak_section___Qfm6 global_margin">
-                <p class="Text_ML__9porR">I'm self-taught. I've learned through doing, taking online courses, mentors,
+                class="textBreak_section global_margin">
+                <p class="text_ML">I'm self-taught. I've learned through doing, taking online courses, mentors,
                     and also working on so many different projects.</p>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="default"
                 class="InterviewSlice_section__VcGqQ global_margin">
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>So when you say you didn't study, so you're completely self-taught then?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I didn't study design at university. I just studied marketing, which definitely helps on
                                 the branding and web design side of things. But yeah, I'm self-taught. I've learned
@@ -621,7 +638,7 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>Where was the swing? Was it “I don't want to do this anymore” and, intentionally, “I'm
                                 going into design”? Or was it a gradual process that you started learning design and
@@ -630,7 +647,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I'd say it happened slowly, but probably from an outsider's perspective, maybe it
                                 happened quite quickly. I've always designed since I was very young, whether it be just
@@ -647,13 +664,13 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>What is the most valuable lesson you've learned in your design career?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I’d say trying to look at everything positively and treating everything as a learning
                                 opportunity. Whether it's a rejection, a failure, a success, or just a challenge. I
@@ -665,23 +682,25 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="text_break" data-slice-variation="default"
-                class="TextBreak_section___Qfm6 global_margin">
-                <p class="Text_ML__9porR">I’d say trying to look at everything positively and treating everything as a
+                class="textBreak_section global_margin">
+                <p class="text_ML">I’d say trying to look at everything positively and treating everything as a
                     learning opportunity. Whether it's a rejection, a failure, a success, or just a challenge.</p>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="wImages"
                 class="InterviewSlice_section__VcGqQ InterviewSlice_wImage___MuT3 global_margin">
                 <div class="InterviewSlice_qaWrap__L04Og">
                     <div class="InterviewSlice_qa__iUonW">
                         <div class="InterviewSlice_person__LskcB">
-                            <div class="text_s--size Text_italic__TVafc">DD</div>
+                            <div class="text_s--size text_italic__style">DD</div>
                             <div class="text_normal Text_regular__M24Vo">
                                 <p>Which past piece of work is your favourite and why?</p>
                             </div>
                         </div>
                         <div class="InterviewSlice_person__LskcB">
-                            <div class="text_s--size Text_italic__TVafc">JD</div>
+                            <div class="text_s--size text_italic__style">JD</div>
                             <div class="text_normal">
                                 <p>I'd say it would have to be a brand called <a class="Global_linkRedraw__GxzsY"
                                         target="_blank" href="https://parelstudios.com/">Parel Studios</a>, which you
@@ -712,11 +731,10 @@
                     </div>
                 </div>
             </section>
-            <section data-slice-type="parallax_image" data-slice-variation="default"
-                class="ParallaxImage_section__SooEb">
-                <div class="ParallaxImage_imgWrap__GtZo8">
-                    <div><img alt="" loading="lazy" width="5528" height="3568" class="ParallaxImage_img__uAYwF"
-                            sizes="100vw"
+
+            <section data-slice-type="parallax_image" data-slice-variation="default" class="parallax_image_section">
+                <div class="parallax_image--wrap">
+                    <div><img alt="" loading="lazy" width="5528" height="3568" class="parallax_image--img" sizes="100vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/parel-studios-logo-jersey_w4480.webp">
                     </div>
@@ -724,17 +742,18 @@
                 <div class="ParallaxImage_caption__Yxq3b text_normal global_margin">Parel Studios Branding
                 </div>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="default"
                 class="InterviewSlice_section__VcGqQ global_margin">
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>And looking at your career, what would you say are your career highlights so far?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I'd say they have come quite recently.</p>
                             <p>I haven't released this piece of work at all because I'm not allowed to share any of the
@@ -755,7 +774,7 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>I like that you mention Holiday Club, it swings back to what we spoke about earlier in
                                 terms of community and giving back. So it's clearly something that you really enjoy
@@ -764,7 +783,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I have set up a company called BCDFLOW. The aim is to release products tailored to
                                 helping designers looking to advance their career. The name stems from the pillars I
@@ -783,14 +802,14 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>With regards to clients, everyone always talks about purpose-driven work but it’s money
                                 vs purpose. In your mind, what wins?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I think it has to be for purpose, but I also think it has to be a mix. I think purpose
                                 comes first, but if you have that purpose and you have that passion for what you do I
@@ -804,16 +823,17 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="img_vid_grid" data-slice-variation="default"
-                class="ImgVidGrid_section__J0Zkf global_margin ImgVidGrid_interview__2qVG2">
-                <div class="ImgVidGrid_grid__ogqWt">
-                    <div><img alt="" loading="lazy" width="2708" height="2708" class="ImgVidGrid_img__TE9mD"
+                class="imgVid global_margin ImgVidGrid_interview__2qVG2">
+                <div class="imgVid_grid">
+                    <div><img alt="" loading="lazy" width="2708" height="2708" class="imgVid_img"
                             sizes="(max-width: 480px) 92vw, 47vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/99jackals-business-cards_w4480.webp">
                         <div class="ImgVidGrid_caption__iUTwf text_normal">99Jackals Business Card Mockups</div>
                     </div>
-                    <div><img alt="" loading="lazy" width="2708" height="2708" class="ImgVidGrid_img__TE9mD"
+                    <div><img alt="" loading="lazy" width="2708" height="2708" class="imgVid_img"
                             sizes="(max-width: 480px) 92vw, 47vw"
                             srcset="https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/99jackals-website_w4480.webp">
@@ -821,11 +841,12 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="interview_block" data-slice-variation="default"
                 class="InterviewSlice_section__VcGqQ global_margin">
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>I think maybe that is a good bridge into one of the last questions. If I had to say to
                                 you, Joe, you get to choose any clients in the world. Who is your dream client and why?
@@ -833,7 +854,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>You know what, I think most people would probably say Nike or Adidas. I'm actually going
                                 to pick a much smaller company based in the UK, which may be a really boring answer
@@ -849,7 +870,7 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>I prefer that answer, because it's something unexpected and I can go check them out. But
                                 are you the kind of person that approaches them and messages them on Instagram or
@@ -858,7 +879,7 @@
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>In the past, I have reached out to a couple brands and a couple artists and I made a
                                 video about one of them. An artist called Black Sam, that I reached out to, ended up
@@ -875,14 +896,14 @@
                 </div>
                 <div class="InterviewSlice_qa__iUonW">
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">DD</div>
+                        <div class="text_s--size text_italic__style">DD</div>
                         <div class="text_normal Text_regular__M24Vo">
                             <p>If you were to choose four of your favourite agencies, studios, or freelancers currently,
                                 who would they be?</p>
                         </div>
                     </div>
                     <div class="InterviewSlice_person__LskcB">
-                        <div class="text_s--size Text_italic__TVafc">JD</div>
+                        <div class="text_s--size text_italic__style">JD</div>
                         <div class="text_normal">
                             <p>I've got to say that's <a class="Global_linkRedraw__GxzsY" target="_self"
                                     href="https://dashdigital.studio/">DashDigital</a> first, of course. I honestly
@@ -919,16 +940,18 @@
                     </div>
                 </div>
             </section>
+
             <section data-slice-type="text_break" data-slice-variation="default"
-                class="TextBreak_section___Qfm6 global_margin">
-                <p class="Text_ML__9porR">I think we both probably agree that it's a great industry to be a part of,
+                class="textBreak_section global_margin">
+                <p class="text_ML">I think we both probably agree that it's a great industry to be a part of,
                     because there's always so much development.</p>
             </section>
+
             <section data-slice-type="text_pin" data-slice-variation="34GridPoster"
-                class="TextPin_section__KWiCd global_margin">
-                <div class="TextPin_grid__RQCJw">
-                    <div class="TextPin_pin__P75ar">
-                        <div class="TextPin_pinHeading__pVvY8 text_s--size">Behind the Designs Poster Series</div>
+                class="textPin_section global_margin">
+                <div class="textPin_grid">
+                    <div class="textPin_box">
+                        <div class="textPin_heading text_s--size">Behind the Designs Poster Series</div>
                         <div class="text_normal">
                             <p>Each poster is a tribute to the individual we interview, incorporating elements from
                                 their conversation into the artwork and designed to encapsulate their distinct style.
@@ -942,6 +965,7 @@
                     </div>
                 </div>
             </section>
+
             <section class="Interview_comingSoon__z_LIa global_margin">
                 <div class="Interview_borderH__pjUvs"></div>
                 <div class="Interview_borderV__e1BaL"></div>
@@ -951,14 +975,14 @@
                             srcset="https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/BTD_Isabel-Moranta_Card_w4480.webp">
                         <div class="InterviewBlock_notifyWrap__GyI_S">
-                            <div class="Text_M__tK_lp"><span class="Text_italic__TVafc">Coming</span> Soon</div>
+                            <div class="text_mtK"><span class="text_italic__style">Coming</span> Soon</div>
                         </div>
                     </div>
                     <div class="InterviewBlock_tagWrap__kbdQM text_xs--size">
                         <div>Interview</div>
                     </div>
-                    <div class="InterviewBlock_title__irhrM Text_M__tK_lp"><span
-                            class="Text_italic__TVafc">Isabel</span> Moranta</div>
+                    <div class="InterviewBlock_title__irhrM text_mtK"><span class="text_italic__style">Isabel</span>
+                        Moranta</div>
                     <div class="InterviewBlock_excerpt__3HNOW text_normal">Award-winning Designer and Art Director,
                         currently Associate Design Director at Media.Monks.</div>
                 </div>
@@ -968,18 +992,19 @@
                             srcset="https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w4480.webp 4480w"
                             src="https://dashdigital.studio/_next/static/chunks/images/BTD_By-Beyond_Card_w4480.webp">
                         <div class="InterviewBlock_notifyWrap__GyI_S">
-                            <div class="Text_M__tK_lp"><span class="Text_italic__TVafc">Coming</span> Soon</div>
+                            <div class="text_mtK"><span class="text_italic__style">Coming</span> Soon</div>
                         </div>
                     </div>
                     <div class="InterviewBlock_tagWrap__kbdQM text_xs--size">
                         <div>Interview</div>
                     </div>
-                    <div class="InterviewBlock_title__irhrM Text_M__tK_lp"><span class="Text_italic__TVafc">By</span>
+                    <div class="InterviewBlock_title__irhrM text_mtK"><span class="text_italic__style">By</span>
                         Beyond</div>
                     <div class="InterviewBlock_excerpt__3HNOW text_normal">Founders of By Beyond, Creative Studio
                         focussing on Brand Identity.</div>
                 </div>
             </section>
+
         </main>
 
         <div class="footer_content">
@@ -1000,8 +1025,7 @@
                 <div class="footer_body">
                     <div class="footer_body--box">
                         <div class="footer_work">
-                            <div class="text_xs--size">Next Page</div><a class="footer_next__flex"
-                                href="/contact.html">
+                            <div class="text_xs--size">Next Page</div><a class="footer_next__flex" href="/contact.html">
                                 <div class="text_l--size global_link global_link--work">Contact</div>
                             </a>
                         </div>
@@ -1071,11 +1095,12 @@
     <div id="__lightbox"></div>
 
     <script src="js/lenis.min.js"></script>
+    <script src="js/lozad.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
-    
+
 </body>
 
 </html>

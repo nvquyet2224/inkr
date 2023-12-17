@@ -1,6 +1,19 @@
+//document.addEventListener('touchstart', ()=>{}, { passive: true });
+
 document
   .querySelector(".transition_wrapper__loading")
   .classList.add("transition_loading");
+
+function loadingImg() {
+  const observer = lozad(".lozad", {
+    rootMargin: "200px 0px",
+    threshold: 0.1,
+    enableAutoReload: true,
+  });
+  observer.observe();
+}
+
+loadingImg();
 
 function navAnimation() {
   document.querySelector(".header_logo--link").style = "--delay:0.65s";
@@ -249,7 +262,19 @@ function navAnimation() {
   });
 }
 
-function faqAnimation() {
+function heroStudiesDelay() {
+  const items = document.querySelectorAll(".hero_studie_item");
+  let delay = 1.15;
+  items.forEach((elm, index) => {
+    const img = elm.querySelector(".hero_studie_img--wrap");
+    const number = elm.querySelector(".hero_studie_number--value");
+    img.style = `--delay:${delay + 0.05 * index}s`;
+    number.style = `--delay:${delay + 0.05 * index}s`;
+  });
+}
+
+function faqAnimation(obj) {
+  let { items, activeBtn, activeBody, detail } = obj;
   function getElement(e) {
     const line = e.querySelector(".acc_line--dark");
     return { line };
@@ -288,14 +313,10 @@ function faqAnimation() {
   function handleClick(e) {
     const button = e;
     const bodyNext = button.nextElementSibling;
-    const bodyH = bodyNext.querySelector(".client_brand--detail").offsetHeight;
+    const bodyH = bodyNext.querySelector(detail).offsetHeight;
     if (button.getAttribute("aria-expanded") === "false") {
-      const btnActive = document.querySelector(
-        '.client_brand button[aria-expanded="true"]'
-      );
-      const bodyActive = document.querySelector(
-        '.client_brand--body[aria-hidden="false"]'
-      );
+      const btnActive = document.querySelector(activeBtn);
+      const bodyActive = document.querySelector(activeBody);
 
       btnActive && btnActive.setAttribute("aria-expanded", "false");
       bodyActive && bodyActive.setAttribute("aria-hidden", "true");
@@ -311,7 +332,7 @@ function faqAnimation() {
     }
   }
 
-  document.querySelectorAll(".client_brand li").forEach((e) => {
+  document.querySelectorAll(items).forEach((e) => {
     e.querySelector("button").addEventListener("click", () => {
       handleClick(e.querySelector("button"));
     });
@@ -319,7 +340,7 @@ function faqAnimation() {
       e.addEventListener("mouseleave", handleLeave);
   }),
     () => {
-      document.querySelectorAll(".client_brand li").forEach((e) => {
+      document.querySelectorAll(items).forEach((e) => {
         e.removeEventListener("mouseenter", handleEnter),
           e.removeEventListener("mouseleave", handleLeave);
       });
@@ -499,129 +520,6 @@ function splitText() {
   }
 }
 
-function aboutAnimation() {
-  let listWrap = document.querySelectorAll(".pillar_list");
-
-  if (listWrap) {
-    listWrap.forEach((wrap, r) => {
-      if (wrap) {
-        let listItem = wrap.querySelectorAll(".pillar_list--item"),
-          separator = wrap.querySelector(".pillar_separator--bg");
-        if (listItem.length > 0) {
-          if (ScrollTrigger.create({
-            trigger: wrap,
-            start: "clamp(top 80px)",
-            end: "clamp(bottom 80px)",
-            scrub: !0,
-            animation: gsap.fromTo(document.querySelector('.pillar_progress--bg'), {
-              x: "-100%"
-            }, {
-              x: "100%"
-            })
-          }),
-            window.innerWidth > 480) {
-            let r = gsap.timeline({
-              scrollTrigger: {
-                trigger: wrap,
-                start: "clamp(0% 100%)",
-                end: "clamp(100% 20%)",
-                scrub: !0,
-              },
-            });
-            r.to(listItem, {
-              x: 0,
-              ease: "quartOut",
-              stagger: 0.03,
-            }),
-              separator &&
-              r.to(
-                separator,
-                {
-                  x: 0,
-                  ease: "quartOut",
-                },
-                "<55%"
-              );
-          } else {
-            let r = gsap.timeline({
-              scrollTrigger: {
-                trigger: listItem,
-                start: "clamp(0% 120%)",
-                end: "clamp(100% 0%)",
-                scrub: !0,
-              },
-            });
-            r.to(listItem, {
-              x: 0,
-              ease: "quartOut",
-              stagger: 0.02,
-            }),
-              separator &&
-              r.to(
-                separator,
-                {
-                  x: 0,
-                  ease: "quartOut",
-                },
-                "<30%"
-              );
-          }
-        }
-      }
-    });
-
-    let heading = document.querySelector('.pillar_col--heading');
-    let item = document.querySelector('.pillar_col--item');
-    let x = { current: 0 };
-
-    let r = gsap.timeline({
-      scrollTrigger: {
-        trigger: item,
-        start: () =>
-          window.innerWidth > 480
-            ? "clamp(top 80px)"
-            : "clamp(top " + (heading.clientHeight + 56) + "px)",
-        end: () => (
-          (x.current = 0),
-          null == item || item.querySelectorAll(".pillar_list").forEach((e, r) => {
-            r < (null == item ? void 0 : item.querySelectorAll(".pillar_list").length) - 1 && (x.current = x.current + e.clientHeight);
-          }),
-          window.innerWidth > 480 ? x.current + "px 80px" : x.current + (window.innerWidth / 100) * 4 + "px " + (heading.clientHeight + 56) + "px"
-        ),
-        scrub: !0,
-        ease: "none",
-        invalidateOnRefresh: !0,
-      },
-    });
-    r.addLabel("0").to(".pillar_heading--items", {
-      y: -(100 / listWrap.length) + "%",
-      duration: 0.01 * 100
-    }).to(".pillar_number--list", {
-      y: -(100 / listWrap.length) + "%",
-      duration: 0.01 * 100
-    }, "<").addLabel("1").to(".pillar_heading--items", {
-      y: -(100 / listWrap.length * 2) + "%",
-      duration: 0.02 * 100
-    }).to(".pillar_number--list", {
-      y: -(100 / listWrap.length * 2) + "%",
-      duration: 0.002 * 100
-    }, "<").addLabel("2").to(".pillar_heading--items", {
-      y: -(100 / listWrap.length * 3) + "%",
-      duration: 0.03 * 100
-    }).to(".pillar_number--list", {
-      y: -(100 / listWrap.length * 3) + "%",
-      duration: 0.03 * 100
-    }, "<").addLabel("3").to(".pillar_heading--items", {
-      y: -(100 / listWrap.length * 4) + "%",
-      duration: 0.04 * 100
-    }).to(".pillar_number--list", {
-      y: -(100 / listWrap.length * 4) + "%",
-      duration: 0.04 * 100
-    }, "<").addLabel("4");
-
-  }
-}
-
 function gallerySlider() {
   if (document.querySelector(".gallerySwiper")) {
     new Swiper(".gallerySwiper", {
@@ -652,93 +550,63 @@ function cardSlider() {
   }
 }
 
+function fullImgSlider() {
+  if (document.querySelector(".fullSliderSwiper")) {
+    document.querySelectorAll(".fullSliderSwiper").forEach((elm, index)=>{
+      new Swiper(elm, {
+        loop: false,
+        slidesPerView: "auto",
+        grabCursor: true,
+        freeMode: true,
+        freeModeMomentumBounce: false,
+        freeModeMomentumRatio: 0.1,
+        freeModeMomentumVelocityRatio: 0.8,
+      });
+    });
+  }
+}
+
 function studiesSlider() {
   if (document.querySelector(".studies--container")) {
     new Swiper(".studies--container", {
-      direction: 'vertical',
+      direction: "vertical",
       slidesPerView: 1,
       speed: 1000,
       on: {
         transitionStart: (swiper) => {
           const index = swiper.activeIndex;
-          gsap.to(document.querySelector('.CaseStudies_headingList__Sb5V2'), {
-            y: -(100 / 5 * index) + "%",
-            duration: 1
-          }).to(document.querySelector('.CaseStudies_caseImgInner__UdS05'), {
-            y: -(100 / 5 * index) + "%",
-            duration: 1
-          }, "<").to(document.querySelector('.CaseStudies_countWrap__X6NeR > div'), {
-            y: -(100 / 5 * index) + "%",
-            duration: 1
-          }, "<");
-          // gsap.to(document.querySelector('.CaseStudies_headingList__Sb5V2'), {
-          //   y: -(100 / 5 * index) + "%",
-          //   duration: 1
-          // });
-          // gsap.to(document.querySelector('.CaseStudies_caseImgInner__UdS05'), {
-          //   y: -(100 / 5 * index) + "%",
-          //   duration: 1
-          // });
-          // gsap.to(document.querySelector('.CaseStudies_countWrap__X6NeR > div'), {
-          //   y: -(100 / 5 * index) + "%",
-          //   duration: 1
-          // });
+          const heading = document.querySelector(".caseStudies_heading--list");
+          const numbers = heading.querySelectorAll("a").length;
+          const csImg = document.querySelector(".caseStudies_csImg--list");
+          const counters = document.querySelector(".caseStudies_count--items");
 
-        }
+          const y = -((100 / numbers) * index) + "%";
+          gsap.to(csImg, {
+            y: y,
+            duration: 1,
+          });
+          gsap.to(heading, {
+            y: y,
+            duration: 1,
+          });
+          gsap.to(counters, {
+            y: y,
+            duration: 0.8,
+          });
+        },
       },
       mousewheel: {
         invert: false,
+        passive: false,
       },
     });
   }
 }
 
-
-// Before loaded
-gallerySlider();
-cardSlider();
-studiesSlider();
-
-(function () {
-  const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  });
-  lenis.on("scroll", (e) => { });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-
-  setTimeout(function () {
-    const videoBox = document.querySelector(".video_box");
-    const heroImg = document.querySelector(".hero_banner img");
-    const footerBox = document.querySelector(".footer_box ");
-
-    const timeLineHero = gsap.timeline({ paused: true });
-    const timelineFooter = gsap.timeline({ paused: true });
-
-    if (window.innerWidth > 480 && videoBox) {
-      const timelineVideo = gsap.timeline({ paused: true });
-      timelineVideo.fromTo(
-        videoBox,
-        { width: "47vw" },
-        { width: "100vw", duration: 1.2, ease: "linear" }
-      );
-      ScrollTrigger.create({
-        animation: timelineVideo,
-        trigger: videoBox,
-        start: "clamp(0% 100%)",
-        end: "clamp(0% 0%+=56px)",
-        scrub: true,
-      });
-    }
-
-    timeLineHero.fromTo(heroImg, { y: "-14%" }, { y: "0%", ease: "none" });
-
+function footerAnimation() {
+  const footerBox = document.querySelector(".footer_box");
+  const timelineFooter = gsap.timeline({ paused: true });
+  if (footerBox) {
     timelineFooter.fromTo(
       footerBox,
       { y: "-20%" },
@@ -755,15 +623,6 @@ studiesSlider();
         },
       }
     );
-
-    ScrollTrigger.create({
-      animation: timeLineHero,
-      trigger: heroImg,
-      start: "clamp(0% 100%)",
-      end: "clamp(100% 0%)",
-      scrub: true,
-    });
-
     ScrollTrigger.create({
       animation: timelineFooter,
       trigger: footerBox,
@@ -771,33 +630,510 @@ studiesSlider();
       end: "clamp(100% 0%)",
       scrub: true,
     });
+  }
+}
 
-    // End Video home anim
+function homeVideoAnimation() {
+  heroStudiesDelay();
+  const videoBox = document.querySelector(".video_box");
+  if (videoBox) {
+    if (window.innerWidth > 480) {
+      const timelineVideo = gsap.timeline({ paused: true });
+      timelineVideo.fromTo(
+        videoBox,
+        { width: "47vw" },
+        { width: "100vw", duration: 1.2, ease: "linear" }
+      );
+      ScrollTrigger.create({
+        animation: timelineVideo,
+        trigger: videoBox,
+        start: "clamp(0% 100%)",
+        end: "clamp(0% 0%+=56px)",
+        scrub: true,
+      });
+    }
+  }
+}
 
-    // Nav
-    navAnimation();
+function heroBannerAnimation() {
+  const heroImg = document.querySelector(".hero_banner img");
+  if (heroImg) {
+    document.querySelector(".hero_banner .animation_fadeRotate").style =
+      "--delay:1s";
+    const timeLineHero = gsap.timeline({ paused: true });
+    timeLineHero.fromTo(heroImg, { y: "-14%" }, { y: "0%", ease: "none" });
+    ScrollTrigger.create({
+      animation: timeLineHero,
+      trigger: heroImg,
+      start: "clamp(0% 100%)",
+      end: "clamp(100% 0%)",
+      scrub: true,
+    });
+  }
+}
 
-    // Split text
-    splitText();
+function switchAnimation(obj) {
+  let { swith, hover, active, color, colorActive, dataClass } = obj;
+  function handleEnter(e) {
+    hover.style.width = e.target.clientWidth + "px";
+    if (e.target.hasAttribute(dataClass)) {
+      hover.style.width = swith[0].clientWidth + "px";
+      hover.style.transform = "translateX(0px)";
+      swith[0].style.color = colorActive;
+      swith[1].style.color = color;
+    } else {
+      hover.style.width = swith[1].clientWidth + "px";
+      hover.style.transform = `translateX(${swith[1].clientWidth}px)`;
+      swith[0].style.color = color;
+      swith[1].style.color = colorActive;
+    }
+  }
+  function handleLeave(e) {
+    if (!e.target.classList.contains(active)) {
+      if (e.target.hasAttribute(dataClass)) {
+        hover.style.width = swith[1].clientWidth + "px";
+        swith[0].style.color = color;
+        swith[1].style.color = colorActive;
+        hover.style.transform = `translateX(${swith[1].clientWidth}px)`;
+      } else {
+        hover.style.width = swith[0].clientWidth + "px";
+        hover.style.transform = `translateX(0px)`;
+        swith[0].style.color = colorActive;
+        swith[1].style.color = color;
+      }
+    }
+  }
+  swith[0].addEventListener("mouseenter", handleEnter);
+  swith[0].addEventListener("mouseleave", handleLeave);
+  swith[1].addEventListener("mouseenter", handleEnter);
+  swith[1].addEventListener("mouseleave", handleLeave);
 
-    // Faq
-    faqAnimation();
+  hover.style.width = swith[0].clientWidth + "px";
+  hover.style.transform = "translateX(0px)";
+  swith[0].style.color = colorActive;
+  swith[1].style.color = color;
+  swith[0].classList.add(active);
+}
 
-    // Button
-    buttonAnimation();
+function switcCaseStudiesClick(obj) {
+  let { swith, active } = obj;
+  const openClass = "caseStudies_gridOpen";
+  let caseBg = document.querySelector(".caseStudies_bgImg--wrap");
+  let caseThumb = document.querySelector(".caseStudies_csImg--list");
+  let caseGrid = document.querySelector(".caseStudies_grid--list");
+  let caseGridItems = document.querySelectorAll(
+    ".caseStudies_grid--list .caseStudies_grid--item"
+  );
 
-    // Cursor
-    cursorAnimation();
+  swith[0].addEventListener("click", (e) => {
+    if (!e.target.classList.contains(active)) {
+      swith[1].classList.remove(active);
+      swith[0].classList.add(active);
+      caseBg.classList.remove(openClass);
+      caseThumb.classList.remove(openClass);
+      caseGrid.classList.remove(openClass);
+    }
+  });
 
-    // Slider
-    //gallerySlider();
-    //cardSlider();
+  swith[1].addEventListener("click", (e) => {
+    if (!e.target.classList.contains(active)) {
+      swith[1].classList.add(active);
+      swith[0].classList.remove(active);
+      caseBg.classList.add(openClass);
+      caseThumb.classList.add(openClass);
+      caseGrid.classList.add(openClass);
+    }
+  });
 
-    //studiesSlider();
+  caseGridItems.forEach((elm, _i) => {
+    gsap.to(elm.querySelector("img"), {
+      y: "-12%",
+      ease: "linear",
+      scrollTrigger: {
+        trigger: elm,
+        start: "clamp(0% 100%)",
+        end: "clamp(100% 0%)",
+        scrub: true,
+      },
+    });
+  });
+}
 
+function switchWorkClick(obj) {}
+
+function splitWorkBlock() {
+  const headings = document.querySelectorAll(".workBlock_name--heading");
+  headings.forEach((elm, index) => {
+    let mainText = elm.innerHTML
+      .replace(/\t/g, " ")
+      .replace(/\r/g, " ")
+      .replace(/\n/g, " ")
+      .replace(/\s+/g, " ");
+    mainText = mainText.trim().split("<br>");
+    let count = 0;
+    let headingHtml = "";
+    headingHtml += '<div class="wrap" aria-hidden="true"><div class="line">';
+    for (let key of mainText) {
+      const items = key.trim().split(" ");
+      for (let i = 0; i < items.length; i++) {
+        const space = `&nbsp;`;
+        const delay = ((count + 1) * 0.05 + 0.7).toFixed(2) + "s";
+        headingHtml += `<div class="wrap"><div class="word animation_moveUp" style='--delay: ${delay}'>${items[i]}${space}</div></div>`;
+        count++;
+      }
+    }
+    headingHtml += "</div></div>";
+    elm.innerHTML = headingHtml;
+    elm.classList.add("done");
+  });
+}
+
+function appAnimation() {
+  navAnimation();
+  splitText();
+  buttonAnimation();
+  cursorAnimation();
+  footerAnimation();
+}
+
+function homePageAnimation() {
+  gallerySlider();
+  cardSlider();
+  homeVideoAnimation();
+  const faq = {
+    items: ".client_brand li",
+    activeBtn: '.client_brand button[aria-expanded="true"]',
+    activeBody: '.client_brand--body[aria-hidden="false"]',
+    detail: ".client_brand--detail",
+  };
+  faqAnimation(faq);
+}
+
+function workSplitTag() {
+  let tags = document.querySelectorAll(".workGrid_tag");
+  if (tags) {
+    tags.forEach((elm, _index) => {
+      let tagHtml = "";
+      let tagText = elm.innerHTML
+        .replace(/\t/g, " ")
+        .replace(/\r/g, " ")
+        .replace(/\n/g, " ")
+        .replace(/\s+/g, " ");
+      tagText = tagText.split("-");
+      for (let i = 0; i < tagText.length; i++) {
+        let txt = `<div class="text_xxs__co--size">${tagText[i]}</div>`;
+        let spr = `<div class="workGrid_tag--dash text_xxs__co--size"> - </div>`;
+        if (i === tagText.length - 1) {
+          spr = "";
+        }
+        tagHtml += `
+          <div class="workGrid_tag--item">
+            <div class="workGrid_tag--move animation_moveUp">
+              ${txt}
+              ${spr}
+            </div>
+          </div>
+        `;
+      }
+      elm.innerHTML = tagHtml;
+    });
+  }
+}
+
+function workBlockDelay() {
+  let blocks = document.querySelectorAll(".workGrid_item");
+  if (blocks) {
+    let delay = 1.2;
+    blocks.forEach((elm, index) => {
+      const img = elm.querySelector(".workGrid_img");
+      const line = elm.querySelector(".workGrid_border__line");
+      const words = elm.querySelectorAll(".word");
+      const moves = elm.querySelectorAll(".workGrid_tag--move");
+      const year = elm.querySelector(".workGrid_year .text_xxs__co--size");
+
+      let moveDelay = 1.4;
+      let wordDelay = 1.85;
+      img.style = `--delay:${delay + index / 10}s`;
+      line.style = `--delay:1.6s`;
+      words.forEach((word, i) => {
+        word.style = `--delay:${wordDelay + 0.05 * i}s`;
+      });
+
+      let yearCount = 0;
+      moves.forEach((move, i) => {
+        move.style = `--delay:${moveDelay + 0.05 * i}s`;
+        yearCount++;
+      });
+      year.style = `--delay:${moveDelay + 0.05 * yearCount}s`;
+    });
+  }
+}
+
+function loadLightBox(url) {
+  let lighBox = document.querySelector("#__lightbox");
+  let html = document.querySelector("html");
+  html.classList.add("lenis-stopped");
+
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function () {
+    lighBox.innerHTML = this.responseText;
+  };
+  xhttp.open("GET", url);
+  xhttp.send();
+  let direction = 'horizontal';
+  if(window.innerWidth <= 480 )  {
+    direction = 'vertical';
+  }
+  setTimeout(function () {
+    new Swiper(".slider_viewport", {
+      direction: direction,
+      slidesPerView: "auto",
+      grabCursor: true,
+      freeMode: {
+        enabled: true,
+        momentumBounce: true,
+      },
+      mousewheel: {
+        invert: false,
+        releaseOnEdges: true,
+        sensitivity: 1,
+        thresholdDelta: 150,
+        thresholdTime: 0.2,
+      },
+    });
+    loadingImg();
+    document.querySelector(".modals").classList.add("modals_enterDone");
+    document
+      .querySelector(".lightbox_bar--close")
+      .addEventListener("click", () => {
+        document.querySelector(".modals").classList.remove("modals_enterDone");
+        html.classList.remove("lenis-stopped");
+        setTimeout(() => {
+          lighBox.innerHTML = "";
+        }, 1100);
+      });
+  }, 100);
+}
+
+function workAnimation() {
+  const obj = {
+    swith: document.querySelectorAll(".work_switch--but"),
+    hover: document.querySelector(".work_switch--hover"),
+    active: "work_switch--active",
+    color: "initial",
+    colorActive: "#fff",
+    dataClass: "data-grid",
+  };
+  switchAnimation(obj);
+  workSplitTag();
+  splitWorkBlock();
+  workBlockDelay();
+
+  // Album
+  document.querySelectorAll(".workGrid_item").forEach((elm, index) => {
+    elm.addEventListener("click", () => {
+      loadLightBox("services/banyana-ba-style.html");
+    });
+  });
+
+}
+
+function caseStudiesAnimation() {
+  const obj = {
+    swith: document.querySelectorAll(".caseStudies_view--but"),
+    hover: document.querySelector(".caseStudies_view--hover"),
+    active: "caseStudies_view--acitve",
+    color: "#fff",
+    colorActive: "#2a2a2a",
+    dataClass: "data-full",
+  };
+  studiesSlider();
+  switchAnimation(obj);
+  switcCaseStudiesClick(obj);
+}
+
+function caseDetailAnimation() {
+  fullImgSlider();
+}
+
+function serviceAnimation() {
+  workSplitTag();
+  splitWorkBlock();
+  workBlockDelay();
+  heroBannerAnimation();
+
+  const faq = {
+    items: ".services_accordion .services_accordion--item",
+    activeBtn: '.services_accordion button[aria-expanded="true"]',
+    activeBody: '.client_brand--body[aria-hidden="false"]',
+    detail: ".services_accordion--body",
+  };
+  faqAnimation(faq);
+
+  document.querySelectorAll(".workGrid_item").forEach((elm, index) => {
+    elm.addEventListener("click", () => {
+      loadLightBox("services/banyana-ba-style.html");
+    });
+  });
+}
+
+function aboutAnimation() {
+  heroBannerAnimation();
+  gallerySlider();
+  let listWrap = document.querySelectorAll(".pillar_list");
+  if (listWrap) {
+    listWrap.forEach((wrap, r) => {
+      if (wrap) {
+        let listItem = wrap.querySelectorAll(".pillar_list--item"),
+          separator = wrap.querySelector(".pillar_separator--bg");
+        if (listItem.length > 0) {
+          ScrollTrigger.create({
+            trigger: wrap,
+            start: "clamp(top 80px)",
+            end: "clamp(bottom 80px)",
+            scrub: true,
+            animation: gsap.fromTo(
+              document.querySelector(".pillar_progress--bg"),
+              {
+                x: "-100%",
+              },
+              {
+                x: "100%",
+              }
+            ),
+          });
+          if (window.innerWidth > 480) {
+            let r = gsap.timeline({
+              scrollTrigger: {
+                trigger: wrap,
+                start: "clamp(0% 100%)",
+                end: "clamp(100% 20%)",
+                scrub: true,
+              },
+            });
+            r.to(listItem, {
+              x: 0,
+              ease: "quartOut",
+              stagger: 0.03,
+            }),
+              separator &&
+                r.to(
+                  separator,
+                  {
+                    x: 0,
+                    ease: "quartOut",
+                  },
+                  "<55%"
+                );
+          } else {
+            let r = gsap.timeline({
+              scrollTrigger: {
+                trigger: listItem,
+                start: "clamp(0% 120%)",
+                end: "clamp(100% 0%)",
+                scrub: true,
+              },
+            });
+            r.to(listItem, {
+              x: 0,
+              ease: "quartOut",
+              stagger: 0.02,
+            }),
+              separator &&
+                r.to(
+                  separator,
+                  {
+                    x: 0,
+                    ease: "quartOut",
+                  },
+                  "<30%"
+                );
+          }
+        }
+      }
+    });
+
+    ScrollTrigger.create({
+      trigger: document.querySelector(".pillar_wrap"),
+      start: "clamp(top 80px)",
+      end: "clamp(bottom 120px)",
+      scrub: true,
+      animation: gsap.fromTo(
+        document.querySelector(".pillar_heading--items"),
+        {
+          y: 0,
+        },
+        {
+          y: -((100 / listWrap.length) * (listWrap.length - 1)) + "%",
+        }
+      ),
+    });
+
+    ScrollTrigger.create({
+      trigger: document.querySelector(".pillar_wrap"),
+      start: "clamp(top 80px)",
+      end: "clamp(bottom 200px)",
+      scrub: true,
+      animation: gsap.fromTo(
+        document.querySelector(".pillar_number--list"),
+        {
+          y: 0,
+        },
+        {
+          y: -((100 / listWrap.length) * (listWrap.length - 1)) + "%",
+        }
+      ),
+    });
+  }
+}
+
+function insightsAnimation() {}
+
+function contactAnimation() {}
+
+(function () {
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
+  lenis.on("scroll", (e) => {});
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+
+  // Common animation
+  appAnimation();
+  
+  // Before loaded
+  if (document.querySelector("#homePage")) {
+    homePageAnimation();
+  } else if (document.querySelector("#workPage")) {
+    workAnimation();
+  } else if (document.querySelector("#studiesPage")) {
+    caseStudiesAnimation();
+  } else if (document.querySelector("#caseDetail")) {
+    caseDetailAnimation();
+  } else if (document.querySelector("#servicePage")) {
+    serviceAnimation();
+  } else if (document.querySelector("#aboutPage")) {
+    aboutAnimation();
+  } else if (document.querySelector("#insightsPage")) {
+    insightsAnimation();
+  } else if (document.querySelector("#contactPage")) {
+    contactAnimation();
+  }
+
+  setTimeout(function () {
     document
       .querySelector(".transition_wrapper__loading")
       .classList.add("transition_loaded");
+    if (document.querySelector("#studiesPage")) {
+      document.querySelector("html").classList.add("lenis-stopped");
+    }
     document.querySelector("html").classList.add("animation_ready");
     setTimeout(function () {
       document
@@ -806,8 +1142,6 @@ studiesSlider();
     }, 800);
   }, 3000);
 
-  aboutAnimation();
-
   // Gotop
   if (document.querySelector(".footer_totop")) {
     document.querySelector(".footer_totop").addEventListener("click", () => {
@@ -815,13 +1149,3 @@ studiesSlider();
     });
   }
 })();
-
-
-
-
-function studiesAnimation() {
-  //hover: "CaseStudies_hover__tV3mf",
-  //active: "CaseStudies_active__YYwS3",
-  let s = document.querySelector('.CaseStudies_hover__tV3mf');
-
-}

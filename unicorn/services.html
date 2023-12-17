@@ -30,9 +30,10 @@
     <link href="css/common.css" rel="preload stylesheet" as="style">
     <link href="css/service.css" rel="preload stylesheet" as="style">
     <link href="css/footer.css" rel="preload stylesheet" as="style">
+    <link href="css/modal.css" rel="preload stylesheet" as="style">
 </head>
 
-<body>
+<body id="servicePage">
     <div id="__next">
         <div class="transition_wrapper__loading">
             <div class="transition_logo">
@@ -151,12 +152,12 @@
                     </div>
                 </section>
             </header>
-            <section data-slice-type="services_overview" data-slice-variation="default"
-                class="ServicesOverview_section__Aw8iN global_margin">
-                <div class="ServicesOverview_serviceSection__yzCwH">
-                    <div class="ServicesOverview_serviceInfo__4LBjP">
-                        <div class="ServicesOverview_serviceHeading__Z4Vbw Text_M__tK_lp">Branding</div>
-                        <div class="ServicesOverview_serviceDescription__qAUWP text_normal">
+            
+            <section data-slice-type="services_overview" data-slice-variation="default" class="overview global_margin">
+                <div class="overview_box">
+                    <div class="overview_info">
+                        <div class="overview_heading text_mtK">Branding</div>
+                        <div class="overview_description text_normal">
                             <p>Branding is arguably the most important part of any business - big or small. We design
                                 brands with memorable and relatable identities that cultivate a deep sense of trust and
                                 emotional connection for long-term consumer loyalty.</p>
@@ -174,80 +175,46 @@
                                 </div>
                             </div>
                         </a>
-                    </div><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9 ServicesOverview_block__ZV7Lg"
+                    </div>
+                    <button class="workGrid_item item__relative overview_block--work"
                         data-hover="Banyana Ba Style">
                         <div id="banyana-ba-style"></div>
                         <div>
-                            <div class="WorkBlock_visualWrap__6kIpG">
-                                <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+                            <div class="workGrid_media">
+                                <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                                         sizes="(max-width: 480px) 92vw, 48vw"
                                         srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w4480.webp 4480w"
                                         src="https://dashdigital.studio/_next/static/chunks/images/Work_Banyana_Cover_w4480.webp">
                                 </div>
-                                <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" playsinline=""
+                                <div class="workGrid_video"><video class="lozad" autoplay loop playsinline
                                         preload="metadata"
                                         src="https://player.vimeo.com/progressive_redirect/playback/848289632/rendition/1080p/file.mp4?loc=external&amp;signature=0d428e4c70e1b9c08efb4c2b5c90f546382961ffdb325a037f97f7133a82b2dd">
                                         <source
-                                            src="https://player.vimeo.com/progressive_redirect/playback/848289632/rendition/1080p/file.mp4?loc=external&amp;signature=0d428e4c70e1b9c08efb4c2b5c90f546382961ffdb325a037f97f7133a82b2dd">
+                                            data-src="https://player.vimeo.com/progressive_redirect/playback/848289632/rendition/1080p/file.mp4?loc=external&amp;signature=0d428e4c70e1b9c08efb4c2b5c90f546382961ffdb325a037f97f7133a82b2dd">
                                     </video></div>
                             </div>
-                            <div class="WorkBlock_infoWrap__gQeJv">
-                                <div class="WorkBlock_info__8cSKV">
-                                    <div class="WorkBlock_tagList__w3Ycc">
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Brand Identity</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Creative Direction</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Digital Design</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="WorkBlock_yearWrap__rz_OE">
-                                        <div class="text_xxs__co--size">2022</div>
+                            <div class="workGrid_info">
+                                <div class="workGrid_info--text">
+                                    <div class="workGrid_tag">Brand Identity - Creative Direction - Digital Design</div>
+                                    <div class="workGrid_year">
+                                        <div class="text_xxs__co--size animation_moveUp">2022</div>
                                     </div>
                                 </div>
-                                <div class="WorkBlock_nameWrap___u_Q_">
-                                    <h2 class="WorkBlock_name__iLhIg text_s--size split done"
-                                        aria-label="Banyana Ba Style ">
-                                        <div class="wrap" aria-hidden="true">
-                                            <div class="line">
-                                                <div class="wrap">
-                                                    <div class="word animation_moveUp">
-                                                        Banyana </div>
-                                                </div>
-                                                <div class="wrap">
-                                                    <div class="word animation_moveUp">Ba
-                                                    </div>
-                                                </div>
-                                                <div class="wrap">
-                                                    <div class="word animation_moveUp">
-                                                        Style </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </h2>
+                                <div class="workBlock_name--wrap">
+                                    <h2 class="workBlock_name--heading text_s--size split"
+                                        aria-label="Banyana Ba Style">Banyana <br>Ba <br>Style</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                            <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+                        <div class="workGrid_border workGrid_border__left">
+                            <div class="workGrid_border__line workBlock_filled__bd"></div>
                         </div>
                     </button>
                 </div>
-                <div class="ServicesOverview_serviceSection__yzCwH">
-                    <div class="ServicesOverview_serviceInfo__4LBjP">
-                        <div class="ServicesOverview_serviceHeading__Z4Vbw Text_M__tK_lp">E-commerce</div>
-                        <div class="ServicesOverview_serviceDescription__qAUWP text_normal">
+                <div class="overview_box">
+                    <div class="overview_info">
+                        <div class="overview_heading text_mtK">E-commerce</div>
+                        <div class="overview_description text_normal">
                             <p>E-commerce is all about creating an experience that keeps your customers coming back. To
                                 set you apart from your competitors, we first take inventory and analyse your unique
                                 business goals and landscape. It’s only after we’ve established a strategy-driven
@@ -267,82 +234,43 @@
                                 </div>
                             </div>
                         </a>
-                    </div><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9 ServicesOverview_block__ZV7Lg"
+                    </div><button class="workGrid_item item__relative overview_block--work"
                         data-hover="Fitsole">
                         <div id="fitsole"></div>
                         <div>
-                            <div class="WorkBlock_visualWrap__6kIpG">
-                                <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+                            <div class="workGrid_media">
+                                <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                                         sizes="(max-width: 480px) 92vw, 48vw"
                                         srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w4480.webp 4480w"
                                         src="https://dashdigital.studio/_next/static/chunks/images/Work_Fitsole_Cover_w4480.webp">
                                 </div>
-                                <div class="WorkBlock_video__HHW7t"><video autoplay="" loop="" playsinline=""
+                                <div class="workGrid_video"><video class="lozad" autoplay loop playsinline
                                         preload="metadata">
                                         <source
-                                            src="https://player.vimeo.com/progressive_redirect/playback/848294809/rendition/1080p/file.mp4?loc=external&amp;signature=e94b8ae94f5fa581d866693c8fa3ae602ca26ed182d2b233e4195d188d8bf9ea">
+                                            data-src="https://player.vimeo.com/progressive_redirect/playback/848294809/rendition/1080p/file.mp4?loc=external&amp;signature=e94b8ae94f5fa581d866693c8fa3ae602ca26ed182d2b233e4195d188d8bf9ea">
                                     </video></div>
                             </div>
-                            <div class="WorkBlock_infoWrap__gQeJv">
-                                <div class="WorkBlock_info__8cSKV">
-                                    <div class="WorkBlock_tagList__w3Ycc">
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Strategy</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Brand Identity</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Creative Direction</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Digital Design</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Web Development</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="WorkBlock_yearWrap__rz_OE">
-                                        <div class="text_xxs__co--size">2022</div>
+                            <div class="workGrid_info">
+                                <div class="workGrid_info--text">
+                                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                                    <div class="workGrid_year">
+                                        <div class="text_xxs__co--size animation_moveUp">2022</div>
                                     </div>
                                 </div>
-                                <div class="WorkBlock_nameWrap___u_Q_">
-                                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Fitsole">
-                                        <div class="wrap" aria-hidden="true">
-                                            <div class="line">
-                                                <div class="wrap">
-                                                    <div class="word animation_moveUp">
-                                                        Fitsole</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </h2>
+                                <div class="workBlock_name--wrap">
+                                    <h2 class="workBlock_name--heading text_s--size split" aria-label="Fitsole">Fitsole</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                            <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+                        <div class="workGrid_border workGrid_border__left">
+                            <div class="workGrid_border__line workBlock_filled__bd"></div>
                         </div>
                     </button>
                 </div>
-                <div class="ServicesOverview_serviceSection__yzCwH">
-                    <div class="ServicesOverview_serviceInfo__4LBjP">
-                        <div class="ServicesOverview_serviceHeading__Z4Vbw Text_M__tK_lp">Websites</div>
-                        <div class="ServicesOverview_serviceDescription__qAUWP text_normal">
+                <div class="overview_box">
+                    <div class="overview_info">
+                        <div class="overview_heading text_mtK">Websites</div>
+                        <div class="overview_description text_normal">
                             <p>By understanding how customers connect with your brand, we design and develop beautifully
                                 crafted and scalable digital experiences with meaningful interactions that drive change.
                                 Combining robust utility, intuitive design, and the irresistible power of storytelling,
@@ -361,85 +289,48 @@
                                 </div>
                             </div>
                         </a>
-                    </div><button class="WorkBlock_block__cjTRJ Work_block__JQ6q9 ServicesOverview_block__ZV7Lg"
+                    </div>
+                    <button class="workGrid_item item__relative overview_block--work"
                         data-hover="Blocklords">
                         <div id="blocklords"></div>
                         <div>
-                            <div class="WorkBlock_visualWrap__6kIpG">
-                                <div class="WorkBlock_img__rUw9_"><img alt="" loading="lazy" width="2560" height="1920"
+                            <div class="workGrid_media">
+                                <div class="workGrid_img"><img alt="" loading="lazy" width="2560" height="1920"
                                         sizes="(max-width: 480px) 92vw, 48vw"
                                         srcset="https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w128.webp 128w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w256.webp 256w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w390.webp 390w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w640.webp 640w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w780.webp 780w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w856.webp 856w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w1024.webp 1024w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w1280.webp 1280w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w1920.webp 1920w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w2880.webp 2880w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w3072.webp 3072w, https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w4480.webp 4480w"
                                         src="https://dashdigital.studio/_next/static/chunks/images/Work_Blocklords_Cover_w4480.webp">
                                 </div>
-                                <div class="WorkBlock_video__HHW7t WorkBlock_contained__aBOYf"><video autoplay=""
-                                        loop="" playsinline="" preload="metadata">
+                                <div class="workGrid_video WorkBlock_contained__aBOYf"><video class="lozad" autoplay
+                                        loop playsinline preload="metadata">
                                         <source
-                                            src="https://player.vimeo.com/progressive_redirect/playback/848293373/rendition/1080p/file.mp4?loc=external&amp;signature=4a32958428ac89c87c494c82107d91a97d7dd3209be5a2c8afe38b557830c012">
+                                            data-src="https://player.vimeo.com/progressive_redirect/playback/848293373/rendition/1080p/file.mp4?loc=external&amp;signature=4a32958428ac89c87c494c82107d91a97d7dd3209be5a2c8afe38b557830c012">
                                     </video></div>
                             </div>
-                            <div class="WorkBlock_infoWrap__gQeJv">
-                                <div class="WorkBlock_info__8cSKV">
-                                    <div class="WorkBlock_tagList__w3Ycc">
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Strategy</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Brand Identity</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Creative Direction</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Digital Design</div>
-                                                <div class="WorkBlock_tagDash__gTFky text_xxs__co--size">-</div>
-                                            </div>
-                                        </div>
-                                        <div class="WorkBlock_tagWrap__MJETI">
-                                            <div class="WorkBlock_tagMove__TSqmE">
-                                                <div class="text_xxs__co--size">Web Development</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="WorkBlock_yearWrap__rz_OE">
-                                        <div class="text_xxs__co--size">2022</div>
+                            <div class="workGrid_info">
+                                <div class="workGrid_info--text">
+                                    <div class="workGrid_tag">Strategy - Brand Identity - Creative Direction - Digital Design - Web Development</div>
+                                    <div class="workGrid_year">
+                                        <div class="text_xxs__co--size animation_moveUp">2022</div>
                                     </div>
                                 </div>
-                                <div class="WorkBlock_nameWrap___u_Q_">
-                                    <h2 class="WorkBlock_name__iLhIg text_s--size split done" aria-label="Blocklords">
-                                        <div class="wrap" aria-hidden="true">
-                                            <div class="line">
-                                                <div class="wrap">
-                                                    <div class="word animation_moveUp">
-                                                        Blocklords</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </h2>
+                                <div class="workBlock_name--wrap">
+                                    <h2 class="workBlock_name--heading text_s--size split"
+                                        aria-label="Blocklords">Blocklords</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="WorkBlock_blockBorderWrap__iZr5z WorkBlock_left__yymhh">
-                            <div class="WorkBlock_blockBorder__HvCo1 WorkBlock_filled__VTxOQ"></div>
+                        <div class="workGrid_border workGrid_border__left">
+                            <div class="workGrid_border__line workBlock_filled__bd"></div>
                         </div>
                     </button>
                 </div>
             </section>
-            <section data-slice-type="services_list" data-slice-variation="default"
-                class="ServicesList_section__phaOU global_margin">
-                <div class="ServicesList_grid__XFyRj">
-                    <header class="ServicesList_header__aqQ9k">
-                        <h2 class="ServicesList_heading__OVMIE text_l--size">Services Unpacked</h2>
-                        <div class="ServicesList_description___B36v text_s--size">
+
+            <section data-slice-type="services_list" data-slice-variation="default" class="servicesList_section global_margin">
+                <div class="servicesList_grid">
+                    <header class="servicesList_heading">
+                        <h2 class="servicesList_heading--title text_l--size">Services Unpacked</h2>
+                        <div class="servicesList_heading--description text_s--size">
                             <p>Elevating brands with cutting-edge digital design and branding solutions.</p>
                         </div><a class="button_container" href="/contact.html">
                             <div class="button_inner">
@@ -456,8 +347,8 @@
                             </div>
                         </a>
                     </header>
-                    <div class="ServicesList_pillarGrid__lGQQl">
-                        <div class="ServicesList_pillar__2Ak3y">
+                    <div class="servicesList_pillar">
+                        <div class="servicesList_pillar--item">
                             <h3 class="text_s--size">Research</h3>
                             <ul>
                                 <li class="text_normal">Customer Research</li>
@@ -469,7 +360,7 @@
                                 <li class="text_normal">Analytics Reports</li>
                             </ul>
                         </div>
-                        <div class="ServicesList_pillar__2Ak3y">
+                        <div class="servicesList_pillar--item">
                             <h3 class="text_s--size">Strategy</h3>
                             <ul>
                                 <li class="text_normal">Product Ideation</li>
@@ -483,7 +374,7 @@
                                 <li class="text_normal">Post-Launch Strategy</li>
                             </ul>
                         </div>
-                        <div class="ServicesList_pillar__2Ak3y">
+                        <div class="servicesList_pillar--item">
                             <h3 class="text_s--size">Design</h3>
                             <ul>
                                 <li class="text_normal">Art Direction</li>
@@ -502,7 +393,7 @@
                                 <li class="text_normal">Quality Assurance</li>
                             </ul>
                         </div>
-                        <div class="ServicesList_pillar__2Ak3y">
+                        <div class="servicesList_pillar--item">
                             <h3 class="text_s--size">Development</h3>
                             <ul>
                                 <li class="text_normal">Technical Strategy</li>
@@ -519,7 +410,7 @@
                                 <li class="text_normal">Quality Assurance</li>
                             </ul>
                         </div>
-                        <div class="ServicesList_pillar__2Ak3y">
+                        <div class="servicesList_pillar--item">
                             <h3 class="text_s--size">Content</h3>
                             <ul>
                                 <li class="text_normal">Copywriting</li>
@@ -530,17 +421,18 @@
                             </ul>
                         </div>
                     </div>
-                    <ol class="ServicesList_accordion__sykvx" aria-label="Accordion Buttons" role="tablist">
-                        <li class="ServicesList_accordionItem__l4NXh" role="tab"><button id="acc-control-0"
+                    <ol class="services_accordion" aria-label="Accordion Buttons" role="tablist">
+                        <li class="services_accordion--item" role="tab">
+                            <button id="acc-control-0"
                                 aria-expanded="false" aria-controls="acc-content-0">
                                 <h3 class="text_xs--size">Research</h3>
-                                <div class="">
+                                <div class="acc_action client_heading--wrap">
                                     <div class="ServicesList_more__COCKZ text_xxs__co--size">More +</div>
                                     <div class="ServicesList_less__olIvU text_xxs__co--size">Less —</div>
                                 </div>
                             </button>
-                            <div id="acc-content-0" class="client_brand--body" aria-hidden="true">
-                                <ul class="ServicesList_tabBody__Wjzdz">
+                            <div id="acc-content-0" class="client_brand--body" aria-hidden="true" style="height: 0px;">
+                                <ul class="services_accordion--body">
                                     <li class="text_normal">Customer Research</li>
                                     <li class="text_normal">Trends Analysis</li>
                                     <li class="text_normal">Competitor Review</li>
@@ -556,16 +448,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="ServicesList_accordionItem__l4NXh" role="tab"><button id="acc-control-1"
+                        <li class="services_accordion--item" role="tab">
+                            <button id="acc-control-1"
                                 aria-expanded="false" aria-controls="acc-content-1">
                                 <h3 class="text_xs--size">Strategy</h3>
-                                <div class="">
+                                <div class="acc_action client_heading--wrap">
                                     <div class="ServicesList_more__COCKZ text_xxs__co--size">More +</div>
                                     <div class="ServicesList_less__olIvU text_xxs__co--size">Less —</div>
                                 </div>
                             </button>
-                            <div id="acc-content-1" class="client_brand--body" aria-hidden="true">
-                                <ul class="ServicesList_tabBody__Wjzdz">
+                            <div id="acc-content-1" class="client_brand--body" aria-hidden="true" style="height: 0px;">
+                                <ul class="services_accordion--body">
                                     <li class="text_normal">Product Ideation</li>
                                     <li class="text_normal">Brand Positioning &amp; Architecture</li>
                                     <li class="text_normal">Brand Naming &amp; Strategy</li>
@@ -583,16 +476,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="ServicesList_accordionItem__l4NXh" role="tab"><button id="acc-control-2"
+                        <li class="services_accordion--item" role="tab">
+                            <button id="acc-control-2"
                                 aria-expanded="false" aria-controls="acc-content-2">
                                 <h3 class="text_xs--size">Design</h3>
-                                <div class="">
+                                <div class="acc_action client_heading--wrap">
                                     <div class="ServicesList_more__COCKZ text_xxs__co--size">More +</div>
                                     <div class="ServicesList_less__olIvU text_xxs__co--size">Less —</div>
                                 </div>
                             </button>
-                            <div id="acc-content-2" class="client_brand--body" aria-hidden="true">
-                                <ul class="ServicesList_tabBody__Wjzdz">
+                            <div id="acc-content-2" class="client_brand--body" aria-hidden="true" style="height: 0px;">
+                                <ul class="services_accordion--body">
                                     <li class="text_normal">Art Direction</li>
                                     <li class="text_normal">Brand Identity Design</li>
                                     <li class="text_normal">Design Systems</li>
@@ -615,16 +509,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="ServicesList_accordionItem__l4NXh" role="tab"><button id="acc-control-3"
+                        <li class="services_accordion--item" role="tab">
+                            <button id="acc-control-3"
                                 aria-expanded="false" aria-controls="acc-content-3">
                                 <h3 class="text_xs--size">Development</h3>
-                                <div class="">
+                                <div class="acc_action client_heading--wrap">
                                     <div class="ServicesList_more__COCKZ text_xxs__co--size">More +</div>
                                     <div class="ServicesList_less__olIvU text_xxs__co--size">Less —</div>
                                 </div>
                             </button>
-                            <div id="acc-content-3" class="client_brand--body" aria-hidden="true">
-                                <ul class="ServicesList_tabBody__Wjzdz">
+                            <div id="acc-content-3" class="client_brand--body" aria-hidden="true" style="height: 0px;">
+                                <ul class="services_accordion--body">
                                     <li class="text_normal">Technical Strategy</li>
                                     <li class="text_normal">Technical Consulting</li>
                                     <li class="text_normal">CMS Implementation</li>
@@ -645,16 +540,17 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="ServicesList_accordionItem__l4NXh" role="tab"><button id="acc-control-4"
+                        <li class="services_accordion--item" role="tab">
+                            <button id="acc-control-4"
                                 aria-expanded="false" aria-controls="acc-content-4">
                                 <h3 class="text_xs--size">Content</h3>
-                                <div class="">
+                                <div class="acc_action client_heading--wrap">
                                     <div class="ServicesList_more__COCKZ text_xxs__co--size">More +</div>
                                     <div class="ServicesList_less__olIvU text_xxs__co--size">Less —</div>
                                 </div>
                             </button>
-                            <div id="acc-content-4" class="client_brand--body" aria-hidden="true">
-                                <ul class="ServicesList_tabBody__Wjzdz">
+                            <div id="acc-content-4" class="client_brand--body" aria-hidden="true" style="height: 0px;">
+                                <ul class="services_accordion--body">
                                     <li class="text_normal">Copywriting</li>
                                     <li class="text_normal">SEO Copy Analysis &amp; Refinement</li>
                                     <li class="text_normal">Thematic Keyword Research</li>
@@ -671,10 +567,11 @@
                     </ol>
                 </div>
             </section>
+
             <section data-slice-type="awards" data-slice-variation="default"
-                class="Awards_section__1kI4N global_margin">
-                <div class="Awards_inner__rZS2f">
-                    <h2 class="Awards_heading__elexl text_l--size">Awards &amp; Recognitions</h2>
+                class="awards_section global_margin">
+                <div class="awards_heading">
+                    <h2 class="awards_heading--title text_l--size">Awards &amp; Recognitions</h2>
                     <div class="text_normal">
                         <p>Our passion for technology drives us to excel in research, strategy, branding, UX/UI, and
                             development. Our focus is on creating impactful experiences that bring value to our clients
@@ -682,36 +579,37 @@
                             recognition for our work.</p>
                     </div>
                 </div>
-                <div class="Awards_groups__nLVjM">
-                    <div class="Awards_group__lYxvO">
-                        <div class="Awards_logoWrap__5rEZP"><img class="Awards_logo__a0Mbe"
+                <div class="awards_group">
+                    <div class="awards_group--item">
+                        <div class="awards_group--logo"><img class="Awards_logo__a0Mbe"
                                 src="https://dashdigital.cdn.prismic.io/dashdigital/9f696195-3482-4810-9b94-68100fa6db8a_awwwards.svg"
                                 width="171" height="40" alt=""></div>
-                        <div class="Awards_groupInner__hq0Aw">
-                            <div class="Text_M__tK_lp">13</div>
+                        <div class="awards_group--info">
+                            <div class="text_mtK">13</div>
                             <div class="text_xs--size">Awwwards</div>
                         </div>
                     </div>
-                    <div class="Awards_group__lYxvO">
-                        <div class="Awards_logoWrap__5rEZP"><img class="Awards_logo__a0Mbe"
+                    <div class="awards_group--item">
+                        <div class="awards_group--logo"><img class="Awards_logo__a0Mbe"
                                 src="https://dashdigital.cdn.prismic.io/dashdigital/e47c14e4-628c-4db0-9f53-f0f34269650d_the-fwa.svg"
                                 width="92" height="40" alt=""></div>
-                        <div class="Awards_groupInner__hq0Aw">
-                            <div class="Text_M__tK_lp">02</div>
+                        <div class="awards_group--info">
+                            <div class="text_mtK">02</div>
                             <div class="text_xs--size">The FWA</div>
                         </div>
                     </div>
-                    <div class="Awards_group__lYxvO">
-                        <div class="Awards_logoWrap__5rEZP"><img class="Awards_logo__a0Mbe"
+                    <div class="awards_group--item">
+                        <div class="awards_group--logo"><img class="Awards_logo__a0Mbe"
                                 src="https://dashdigital.cdn.prismic.io/dashdigital/c697c5e0-8b8d-467c-b9eb-76e7cb602676_css-design-awards.svg"
                                 width="261" height="40" alt=""></div>
-                        <div class="Awards_groupInner__hq0Aw">
-                            <div class="Text_M__tK_lp">24</div>
+                        <div class="awards_group--info">
+                            <div class="text_mtK">24</div>
                             <div class="text_xs--size">CSS Design Awards</div>
                         </div>
                     </div>
                 </div>
             </section>
+
         </main>
 
         <div class="footer_content">
@@ -803,6 +701,7 @@
     <div id="__lightbox"></div>
 
     <script src="js/lenis.min.js"></script>
+    <script src="js/lozad.min.js"></script>
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
