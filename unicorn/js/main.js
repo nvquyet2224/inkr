@@ -552,7 +552,7 @@ function cardSlider() {
 
 function fullImgSlider() {
   if (document.querySelector(".fullSliderSwiper")) {
-    document.querySelectorAll(".fullSliderSwiper").forEach((elm, index)=>{
+    document.querySelectorAll(".fullSliderSwiper").forEach((elm, index) => {
       new Swiper(elm, {
         loop: false,
         slidesPerView: "auto",
@@ -673,50 +673,50 @@ function heroBannerAnimation() {
 }
 
 function switchAnimation(obj) {
-  let { swith, hover, active, color, colorActive, dataClass } = obj;
+  let { button, hover, active, color, colorActive, dataClass } = obj;
   function handleEnter(e) {
     hover.style.width = e.target.clientWidth + "px";
     if (e.target.hasAttribute(dataClass)) {
-      hover.style.width = swith[0].clientWidth + "px";
+      hover.style.width = button[0].clientWidth + "px";
       hover.style.transform = "translateX(0px)";
-      swith[0].style.color = colorActive;
-      swith[1].style.color = color;
+      button[0].style.color = colorActive;
+      button[1].style.color = color;
     } else {
-      hover.style.width = swith[1].clientWidth + "px";
-      hover.style.transform = `translateX(${swith[1].clientWidth}px)`;
-      swith[0].style.color = color;
-      swith[1].style.color = colorActive;
+      hover.style.width = button[1].clientWidth + "px";
+      hover.style.transform = `translateX(${button[1].clientWidth}px)`;
+      button[0].style.color = color;
+      button[1].style.color = colorActive;
     }
   }
   function handleLeave(e) {
     if (!e.target.classList.contains(active)) {
       if (e.target.hasAttribute(dataClass)) {
-        hover.style.width = swith[1].clientWidth + "px";
-        swith[0].style.color = color;
-        swith[1].style.color = colorActive;
-        hover.style.transform = `translateX(${swith[1].clientWidth}px)`;
+        hover.style.width = button[1].clientWidth + "px";
+        button[0].style.color = color;
+        button[1].style.color = colorActive;
+        hover.style.transform = `translateX(${button[1].clientWidth}px)`;
       } else {
-        hover.style.width = swith[0].clientWidth + "px";
+        hover.style.width = button[0].clientWidth + "px";
         hover.style.transform = `translateX(0px)`;
-        swith[0].style.color = colorActive;
-        swith[1].style.color = color;
+        button[0].style.color = colorActive;
+        button[1].style.color = color;
       }
     }
   }
-  swith[0].addEventListener("mouseenter", handleEnter);
-  swith[0].addEventListener("mouseleave", handleLeave);
-  swith[1].addEventListener("mouseenter", handleEnter);
-  swith[1].addEventListener("mouseleave", handleLeave);
+  button[0].addEventListener("mouseenter", handleEnter);
+  button[0].addEventListener("mouseleave", handleLeave);
+  button[1].addEventListener("mouseenter", handleEnter);
+  button[1].addEventListener("mouseleave", handleLeave);
 
-  hover.style.width = swith[0].clientWidth + "px";
+  hover.style.width = button[0].clientWidth + "px";
   hover.style.transform = "translateX(0px)";
-  swith[0].style.color = colorActive;
-  swith[1].style.color = color;
-  swith[0].classList.add(active);
+  button[0].style.color = colorActive;
+  button[1].style.color = color;
+  button[0].classList.add(active);
 }
 
 function switcCaseStudiesClick(obj) {
-  let { swith, active } = obj;
+  let { button, active } = obj;
   const openClass = "caseStudies_gridOpen";
   let caseBg = document.querySelector(".caseStudies_bgImg--wrap");
   let caseThumb = document.querySelector(".caseStudies_csImg--list");
@@ -725,20 +725,20 @@ function switcCaseStudiesClick(obj) {
     ".caseStudies_grid--list .caseStudies_grid--item"
   );
 
-  swith[0].addEventListener("click", (e) => {
+  button[0].addEventListener("click", (e) => {
     if (!e.target.classList.contains(active)) {
-      swith[1].classList.remove(active);
-      swith[0].classList.add(active);
+      button[1].classList.remove(active);
+      button[0].classList.add(active);
       caseBg.classList.remove(openClass);
       caseThumb.classList.remove(openClass);
       caseGrid.classList.remove(openClass);
     }
   });
 
-  swith[1].addEventListener("click", (e) => {
+  button[1].addEventListener("click", (e) => {
     if (!e.target.classList.contains(active)) {
-      swith[1].classList.add(active);
-      swith[0].classList.remove(active);
+      button[1].classList.add(active);
+      button[0].classList.remove(active);
       caseBg.classList.add(openClass);
       caseThumb.classList.add(openClass);
       caseGrid.classList.add(openClass);
@@ -759,29 +759,35 @@ function switcCaseStudiesClick(obj) {
   });
 }
 
-function switchWorkClick(obj) {}
+function switchWorkClick(obj) { }
 
-function splitWorkBlock() {
-  const headings = document.querySelectorAll(".workBlock_name--heading");
-  headings.forEach((elm, index) => {
+function splitDownLine(obj) {
+  const { lines, delay } = obj;
+  const headings = document.querySelectorAll(lines);
+  headings.forEach((elm, _index) => {
     let mainText = elm.innerHTML
       .replace(/\t/g, " ")
       .replace(/\r/g, " ")
       .replace(/\n/g, " ")
       .replace(/\s+/g, " ");
     mainText = mainText.trim().split("<br>");
-    let count = 0;
+    //let count = 0;
     let headingHtml = "";
     headingHtml += '<div class="wrap" aria-hidden="true"><div class="line">';
-    for (let key of mainText) {
-      const items = key.trim().split(" ");
-      for (let i = 0; i < items.length; i++) {
-        const space = `&nbsp;`;
-        const delay = ((count + 1) * 0.05 + 0.7).toFixed(2) + "s";
-        headingHtml += `<div class="wrap"><div class="word animation_moveUp" style='--delay: ${delay}'>${items[i]}${space}</div></div>`;
-        count++;
-      }
+    for (let i = 0; i < mainText.length; i++) {
+      let space = i < (mainText.length - 1) ? `&nbsp;` : '';
+      const _delay = (delay + 0.05 * i).toFixed(2) + "s";
+      headingHtml += `<div class="wrap"><div class="word animation_moveUp" style='--delay: ${_delay}'>${mainText[i]}${space}</div></div>`;
     }
+    // for (let key of mainText) {
+    //   const items = key.trim().split(" ");
+    //   for (let i = 0; i < items.length; i++) {
+    //     const space = `&nbsp;`;
+    //     const delay = ((count + 1) * 0.05 + 0.7).toFixed(2) + "s";
+    //     headingHtml += `<div class="wrap"><div class="word animation_moveUp" style='--delay: ${delay}'>${items[i]}${space}</div></div>`;
+    //     count++;
+    //   }
+    // }
     headingHtml += "</div></div>";
     elm.innerHTML = headingHtml;
     elm.classList.add("done");
@@ -809,8 +815,9 @@ function homePageAnimation() {
   faqAnimation(faq);
 }
 
-function workSplitTag() {
-  let tags = document.querySelectorAll(".workGrid_tag");
+function splitTags(obj) {
+  const { tagsClass, tagItem, moveItem, txtItem, sprItem, splitBy, delay } = obj;
+  let tags = document.querySelectorAll(tagsClass);
   if (tags) {
     tags.forEach((elm, _index) => {
       let tagHtml = "";
@@ -819,25 +826,57 @@ function workSplitTag() {
         .replace(/\r/g, " ")
         .replace(/\n/g, " ")
         .replace(/\s+/g, " ");
-      tagText = tagText.split("-");
+      tagText = tagText.split(splitBy);
       for (let i = 0; i < tagText.length; i++) {
-        let txt = `<div class="text_xxs__co--size">${tagText[i]}</div>`;
-        let spr = `<div class="workGrid_tag--dash text_xxs__co--size"> - </div>`;
-        if (i === tagText.length - 1) {
-          spr = "";
+        let txt = `${tagText[i]}`;
+        if(txtItem !== '') {
+          txt = `<div class="${txtItem}">${tagText[i]}</div>`;
+        }
+        let spr = '';
+        if(sprItem !== '' && i !== tagText.length - 1) {
+          spr = `<div class="${sprItem}"> ${splitBy} </div>`;
         }
         tagHtml += `
-          <div class="workGrid_tag--item">
-            <div class="workGrid_tag--move animation_moveUp">
-              ${txt}
-              ${spr}
+            <div class="${tagItem}">
+              <div class="${moveItem}">
+                ${txt}
+                ${spr}
+              </div>
             </div>
-          </div>
-        `;
+          `;
       }
       elm.innerHTML = tagHtml;
     });
   }
+
+  // let tags = document.querySelectorAll(".workGrid_tag");
+  // if (tags) {
+  //   tags.forEach((elm, _index) => {
+  //     let tagHtml = "";
+  //     let tagText = elm.innerHTML
+  //       .replace(/\t/g, " ")
+  //       .replace(/\r/g, " ")
+  //       .replace(/\n/g, " ")
+  //       .replace(/\s+/g, " ");
+  //     tagText = tagText.split("-");
+  //     for (let i = 0; i < tagText.length; i++) {
+  //       let txt = `<div class="text_xxs__co--size">${tagText[i]}</div>`;
+  //       let spr = `<div class="workGrid_tag--dash text_xxs__co--size"> - </div>`;
+  //       if (i === tagText.length - 1) {
+  //         spr = "";
+  //       }
+  //       tagHtml += `
+  //         <div class="workGrid_tag--item">
+  //           <div class="workGrid_tag--move animation_moveUp">
+  //             ${txt}
+  //             ${spr}
+  //           </div>
+  //         </div>
+  //       `;
+  //     }
+  //     elm.innerHTML = tagHtml;
+  //   });
+  // }
 }
 
 function workBlockDelay() {
@@ -881,7 +920,7 @@ function loadLightBox(url) {
   xhttp.open("GET", url);
   xhttp.send();
   let direction = 'horizontal';
-  if(window.innerWidth <= 480 )  {
+  if (window.innerWidth <= 480) {
     direction = 'vertical';
   }
   setTimeout(function () {
@@ -916,17 +955,32 @@ function loadLightBox(url) {
 }
 
 function workAnimation() {
-  const obj = {
-    swith: document.querySelectorAll(".work_switch--but"),
+  const switchObj = {
+    button: document.querySelectorAll(".work_switch--but"),
     hover: document.querySelector(".work_switch--hover"),
     active: "work_switch--active",
     color: "initial",
     colorActive: "#fff",
     dataClass: "data-grid",
   };
-  switchAnimation(obj);
-  workSplitTag();
-  splitWorkBlock();
+  switchAnimation(switchObj);
+
+  const tagsObj = {
+    tagsClass: '.workGrid_tag', 
+    tagItem: 'workGrid_tag--item', 
+    moveItem: 'workGrid_tag--move animation_moveUp', 
+    txtItem: 'text_xxs__co--size', 
+    sprItem: 'workGrid_tag--dash text_xxs__co--size', 
+    splitBy: '-',
+    delay: 1
+  };
+  splitTags(tagsObj);
+
+  const downObj = {
+    lines: '.workBlock_name--heading',
+    delay: 1.4
+  }
+  splitDownLine(downObj);
   workBlockDelay();
 
   // Album
@@ -939,8 +993,8 @@ function workAnimation() {
 }
 
 function caseStudiesAnimation() {
-  const obj = {
-    swith: document.querySelectorAll(".caseStudies_view--but"),
+  const switchObj = {
+    button: document.querySelectorAll(".caseStudies_view--but"),
     hover: document.querySelector(".caseStudies_view--hover"),
     active: "caseStudies_view--acitve",
     color: "#fff",
@@ -948,17 +1002,42 @@ function caseStudiesAnimation() {
     dataClass: "data-full",
   };
   studiesSlider();
-  switchAnimation(obj);
-  switcCaseStudiesClick(obj);
+  switchAnimation(switchObj);
+  switcCaseStudiesClick(switchObj);
 }
 
 function caseDetailAnimation() {
   fullImgSlider();
+  const tagsObj = {
+    tagsClass: '.caseStudy_tags--wrap', 
+    tagItem: 'caseStudy_tags--item', 
+    moveItem: 'text_xs--size animation_moveUp', 
+    txtItem: '', 
+    sprItem: '',
+    splitBy: '<br>',
+    delay: 1
+  };
+  splitTags(tagsObj);
+  //const { tagsClass, tagItem, moveItem, txtItem, sprItem, delay } = obj;
 }
 
 function serviceAnimation() {
-  workSplitTag();
-  splitWorkBlock();
+  const tagsObj = {
+    tagsClass: '.workGrid_tag', 
+    tagItem: 'workGrid_tag--item', 
+    moveItem: 'workGrid_tag--move animation_moveUp', 
+    txtItem: 'text_xxs__co--size', 
+    sprItem: 'workGrid_tag--dash text_xxs__co--size',
+    splitBy: '-', 
+    delay: 1
+  };
+  splitTags(tagsObj);
+
+  const downObj = {
+    lines: '.workBlock_name--heading',
+    delay: 1.4
+  }
+  splitDownLine(downObj);
   workBlockDelay();
   heroBannerAnimation();
 
@@ -1017,14 +1096,14 @@ function aboutAnimation() {
               stagger: 0.03,
             }),
               separator &&
-                r.to(
-                  separator,
-                  {
-                    x: 0,
-                    ease: "quartOut",
-                  },
-                  "<55%"
-                );
+              r.to(
+                separator,
+                {
+                  x: 0,
+                  ease: "quartOut",
+                },
+                "<55%"
+              );
           } else {
             let r = gsap.timeline({
               scrollTrigger: {
@@ -1040,14 +1119,14 @@ function aboutAnimation() {
               stagger: 0.02,
             }),
               separator &&
-                r.to(
-                  separator,
-                  {
-                    x: 0,
-                    ease: "quartOut",
-                  },
-                  "<30%"
-                );
+              r.to(
+                separator,
+                {
+                  x: 0,
+                  ease: "quartOut",
+                },
+                "<30%"
+              );
           }
         }
       }
@@ -1087,16 +1166,16 @@ function aboutAnimation() {
   }
 }
 
-function insightsAnimation() {}
+function insightsAnimation() { }
 
-function contactAnimation() {}
+function contactAnimation() { }
 
 (function () {
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   });
-  lenis.on("scroll", (e) => {});
+  lenis.on("scroll", (e) => { });
 
   function raf(time) {
     lenis.raf(time);
@@ -1107,7 +1186,7 @@ function contactAnimation() {}
 
   // Common animation
   appAnimation();
-  
+
   // Before loaded
   if (document.querySelector("#homePage")) {
     homePageAnimation();

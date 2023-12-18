@@ -974,7 +974,7 @@
         margin-bottom: 4vw
     }
 
-    .imgVid.ImgVidGrid_interview__2qVG2 {
+    .imgVid.imgVid_interview {
         margin-top: 12vw;
         margin-bottom: 12vw
     }
@@ -1005,7 +1005,7 @@
     object-fit: cover
 }
 
-.ParallaxImage_caption__Yxq3b {
+.parallax_image--caption {
     margin-top: 1vw
 }
 @keyframes TextPin_video-load__qXcvY {
@@ -1052,11 +1052,11 @@
     gap: 2vw
 }
 
-.TextPin_posterWrap__eS1Tp {
+.textPin_poster {
     width: 34.75vw
 }
 
-.TextPin_img__vc3fQ {
+.TextPin_img {
     width: 100%;
     object-fit: cover
 }
@@ -1124,7 +1124,7 @@
         gap: 4vw
     }
 
-    .TextPin_posterWrap__eS1Tp {
+    .textPin_poster {
         width: 100%
     }
 

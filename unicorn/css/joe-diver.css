@@ -448,7 +448,7 @@
     }
 }
 
-.InterviewBlock_block__UtrXp {
+.interviewBlock_box {
     display: grid;
     grid-template-areas: "Area Area-2";
     grid-template-columns: repeat(2, 1fr);
@@ -457,32 +457,32 @@
     padding: 2vw 0
 }
 
-.InterviewBlock_info__UjsYE {
+.interviewBlock_info {
     grid-area: Area;
     display: flex;
     flex-direction: column;
     justify-content: space-between
 }
 
-.InterviewBlock_details__a5Mmv {
+.interviewBlock_detail {
     display: flex;
     column-gap: .3vw;
     overflow: hidden
 }
 
-.InterviewBlock_titleWrap__hzKHx {
+.interviewBlock_info--title {
     display: flex;
     flex-direction: column;
     row-gap: 1vw
 }
 
-.InterviewBlock_inner___iFCZ {
+.interviewBlock_author {
     display: flex;
     justify-content: space-between;
     align-items: flex-end
 }
 
-.InterviewBlock_excerpt__3HNOW {
+.interviewBlock_excerpt {
     width: 22.5vw
 }
 
@@ -491,7 +491,7 @@
     height: 1.66666vw
 }
 
-.InterviewBlock_img__d9nIz {
+.interviewBlock_img {
     grid-area: Area-2;
     position: relative;
     overflow: hidden
@@ -506,11 +506,11 @@
     background-color: hsla(33, 16%, 76%, .3)
 }
 
-.InterviewBlock_comingSoon__359yc {
+.interview_comingSoon--box {
     padding-bottom: 3vw
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_notifyWrap__GyI_S {
+.interview_comingSoon--box .interviewBlock_notify {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -522,20 +522,20 @@
     background: rgba(0, 0, 0, .7)
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_tagWrap__kbdQM {
+.interview_comingSoon--box .interviewBlock_tag {
     margin-top: 1.1111111111vw
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_title__irhrM {
+.interview_comingSoon--box .interviewBlock_title {
     margin-top: .5555555555vw
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_excerpt__3HNOW {
+.interview_comingSoon--box .interviewBlock_excerpt {
     margin-top: .6944444444vw
 }
 
 @media screen and (max-width: 480px) {
-    .InterviewBlock_block__UtrXp {
+    .interviewBlock_box {
         display: grid;
         grid-template-areas: "Area-2" "Area";
         grid-template-columns: 1fr;
@@ -544,20 +544,20 @@
         padding: 4vw 0
     }
 
-    .InterviewBlock_details__a5Mmv {
+    .interviewBlock_detail {
         column-gap: 1.2vw;
         margin-bottom: 10vw
     }
 
-    .InterviewBlock_titleWrap__hzKHx {
+    .interviewBlock_info--title {
         row-gap: 4vw
     }
 
-    .InterviewBlock_title__irhrM {
+    .interviewBlock_title {
         column-gap: 1.2vw
     }
 
-    .InterviewBlock_excerpt__3HNOW {
+    .interviewBlock_excerpt {
         width: 90%
     }
 
@@ -565,28 +565,28 @@
         display: none
     }
 
-    .InterviewBlock_comingSoon__359yc {
+    .interview_comingSoon--box {
         padding: 4vw 0;
         border-bottom: 1px solid hsla(33, 16%, 76%, .3)
     }
 
-    .InterviewBlock_comingSoon__359yc:last-child {
+    .interview_comingSoon--box:last-child {
         border-bottom: 0
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_notifyWrap__GyI_S .InterviewBlock_notify__GMV8h {
+    .interview_comingSoon--box .interviewBlock_notify .InterviewBlock_notify__GMV8h {
         column-gap: 1.2vw
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_tagWrap__kbdQM {
+    .interview_comingSoon--box .interviewBlock_tag {
         margin-top: 4vw
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_title__irhrM {
+    .interview_comingSoon--box .interviewBlock_title {
         margin-top: 10vw
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_excerpt__3HNOW {
+    .interview_comingSoon--box .interviewBlock_excerpt {
         margin-top: 4vw
     }
 }
@@ -732,7 +732,7 @@
     height: 114%
 }
 
-.Interview_comingSoon__z_LIa {
+.interview_comingSoon {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -741,14 +741,14 @@
     padding-top: 1vw
 }
 
-.Interview_comingSoon__z_LIa .Interview_borderH__pjUvs {
+.interview_comingSoon .interview_borderH__line {
     position: absolute;
     width: 100%;
     height: 1px;
     background-color: hsla(33, 16%, 76%, .3)
 }
 
-.Interview_comingSoon__z_LIa .Interview_borderV__e1BaL {
+.interview_comingSoon .interview_borderV__line {
     position: absolute;
     top: 1px;
     left: 50%;
@@ -802,12 +802,12 @@
         height: 114%
     }
 
-    .Interview_comingSoon__z_LIa {
+    .interview_comingSoon {
         grid-template-columns: 1fr;
         margin-top: 0
     }
 
-    .Interview_comingSoon__z_LIa .Interview_borderV__e1BaL {
+    .interview_comingSoon .interview_borderV__line {
         display: none
     }
 }
@@ -885,89 +885,89 @@
     }
 }
 
-.InterviewSlice_section__VcGqQ {
+.interviewSlice_section {
     position: relative;
     margin-top: 8vw;
     margin-bottom: 8vw
 }
 
-.InterviewSlice_qa__iUonW {
+.interviewSlice_item {
     width: 34.75vw;
     margin-bottom: 2vw;
     margin-left: auto;
     margin-right: 12.25vw
 }
 
-.InterviewSlice_qa__iUonW:last-child {
+.interviewSlice_item:last-child {
     margin-bottom: 0
 }
 
-.InterviewSlice_person__LskcB {
+.interviewSlice_person {
     display: grid;
     grid-template-columns: 4vw 1fr;
     margin-bottom: 1vw
 }
 
-.InterviewSlice_person__LskcB:last-child {
+.interviewSlice_person:last-child {
     margin-bottom: 0
 }
 
-.InterviewSlice_wImage___MuT3 {
+.interviewSlice_image {
     display: grid;
     align-items: start;
     grid-template-columns: repeat(2, 1fr)
 }
 
-.InterviewSlice_wImage___MuT3 .InterviewSlice_qaWrap__L04Og {
+.interviewSlice_image .interviewSlice_image--box {
     position: -webkit-sticky;
     position: sticky;
     top: 80px
 }
 
-.InterviewSlice_wImage___MuT3 .InterviewSlice_qa__iUonW {
+.interviewSlice_image .interviewSlice_item {
     margin-left: 0;
     margin-right: 0
 }
 
-.InterviewSlice_wImage___MuT3 .InterviewSlice_imageWrap__znmgu {
+.interviewSlice_image .interviewSlice_image--wrap {
     display: flex;
     flex-direction: column;
     row-gap: 2vw
 }
 
-.InterviewSlice_wImage___MuT3 .InterviewSlice_imageContainer__hvsZq img {
+.interviewSlice_image .interviewSlice_image--img img {
     margin-bottom: 1vw
 }
 
 @media screen and (max-width: 480px) {
-    .InterviewSlice_section__VcGqQ {
+    .interviewSlice_section {
         margin-top: 12vw;
         margin-bottom: 12vw
     }
 
-    .InterviewSlice_qa__iUonW {
+    .interviewSlice_item {
         width: 100%;
         margin-bottom: 8vw;
         margin-left: 0;
         margin-right: 0
     }
 
-    .InterviewSlice_person__LskcB {
+    .interviewSlice_person {
         grid-template-columns: 10vw 1fr;
         margin-bottom: 3vw
     }
 
-    .InterviewSlice_wImage___MuT3 {
+    .interviewSlice_image {
         grid-template-columns: 1fr;
         row-gap: 12vw
     }
 
-    .InterviewSlice_wImage___MuT3 .InterviewSlice_qaWrap__L04Og {
+    .interviewSlice_image .interviewSlice_image--box {
         position: relative;
         top: 0
     }
 
-    .InterviewSlice_wImage___MuT3 .InterviewSlice_imageWrap__znmgu {
+    .interviewSlice_image .interviewSlice_image--wrap {
         row-gap: 8vw
     }
 }
@@ -1054,7 +1054,7 @@
         margin-bottom: 4vw
     }
 
-    .imgVid.ImgVidGrid_interview__2qVG2 {
+    .imgVid.imgVid_interview {
         margin-top: 12vw;
         margin-bottom: 12vw
     }
@@ -1098,7 +1098,7 @@
     object-fit: cover
 }
 
-.ParallaxImage_caption__Yxq3b {
+.parallax_image--caption {
     margin-top: 1vw
 }
 
@@ -1146,11 +1146,11 @@
     gap: 2vw
 }
 
-.TextPin_posterWrap__eS1Tp {
+.textPin_poster {
     width: 34.75vw
 }
 
-.TextPin_img__vc3fQ {
+.TextPin_img {
     width: 100%;
     object-fit: cover
 }
@@ -1218,7 +1218,7 @@
         gap: 4vw
     }
 
-    .TextPin_posterWrap__eS1Tp {
+    .textPin_poster {
         width: 100%
     }
 

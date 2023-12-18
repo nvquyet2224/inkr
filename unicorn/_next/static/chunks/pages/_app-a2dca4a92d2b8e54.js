@@ -10708,7 +10708,7 @@
         e.exports = {
             container: "global_container",
             container404: "Global_container404__oZ0O_",
-            containerContact: "Global_containerContact__S6LgU",
+            containerContact: "global_container--contact",
             casesContainer: "global_cases--container",
             margin: "global_margin",
             overflow: "work_title--number",
@@ -10738,7 +10738,7 @@
             XL: "text_xl--size",
             italic: "text_italic__style",
             p: "Text_p__wRN6l",
-            regular: "Text_regular__M24Vo"
+            regular: "text_regular__style"
         }
     },
     7663: function(e) {

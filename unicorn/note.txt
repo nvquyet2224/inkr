@@ -15,7 +15,10 @@ https://codepen.io/olig/pen/rgmPyb
 // mouse swipe2
 https://codepen.io/pierremy/pen/eYRpOjX
 
-
+// Normal swipe
+https://github.com/nolimits4web/swiper/issues/3910
+https://github.com/nolimits4web/swiper/issues/5841
+https://stackblitz.com/edit/web-platform-c2srbg?file=index.html
 
 // Gsap + swipe
 https://gsap.com/community/forums/topic/38060-swiper-slide-change-on-scroll-using-scroll-trigger-with-pin/

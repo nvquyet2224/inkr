@@ -449,7 +449,7 @@
     }
 }
 
-.InterviewBlock_block__UtrXp {
+.interviewBlock_box {
     display: grid;
     grid-template-areas: "Area Area-2";
     grid-template-columns: repeat(2, 1fr);
@@ -458,32 +458,32 @@
     padding: 2vw 0
 }
 
-.InterviewBlock_info__UjsYE {
+.interviewBlock_info {
     grid-area: Area;
     display: flex;
     flex-direction: column;
     justify-content: space-between
 }
 
-.InterviewBlock_details__a5Mmv {
+.interviewBlock_detail {
     display: flex;
     column-gap: .3vw;
     overflow: hidden
 }
 
-.InterviewBlock_titleWrap__hzKHx {
+.interviewBlock_info--title {
     display: flex;
     flex-direction: column;
     row-gap: 1vw
 }
 
-.InterviewBlock_inner___iFCZ {
+.interviewBlock_author {
     display: flex;
     justify-content: space-between;
     align-items: flex-end
 }
 
-.InterviewBlock_excerpt__3HNOW {
+.interviewBlock_excerpt {
     width: 22.5vw
 }
 
@@ -492,7 +492,7 @@
     height: 1.66666vw
 }
 
-.InterviewBlock_img__d9nIz {
+.interviewBlock_img {
     grid-area: Area-2;
     position: relative;
     overflow: hidden
@@ -507,11 +507,11 @@
     background-color: hsla(33, 16%, 76%, .3)
 }
 
-.InterviewBlock_comingSoon__359yc {
+.interview_comingSoon--box {
     padding-bottom: 3vw
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_notifyWrap__GyI_S {
+.interview_comingSoon--box .interviewBlock_notify {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -523,20 +523,20 @@
     background: rgba(0, 0, 0, .7)
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_tagWrap__kbdQM {
+.interview_comingSoon--box .interviewBlock_tag {
     margin-top: 1.1111111111vw
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_title__irhrM {
+.interview_comingSoon--box .interviewBlock_title {
     margin-top: .5555555555vw
 }
 
-.InterviewBlock_comingSoon__359yc .InterviewBlock_excerpt__3HNOW {
+.interview_comingSoon--box .interviewBlock_excerpt {
     margin-top: .6944444444vw
 }
 
 @media screen and (max-width: 480px) {
-    .InterviewBlock_block__UtrXp {
+    .interviewBlock_box {
         display: grid;
         grid-template-areas: "Area-2" "Area";
         grid-template-columns: 1fr;
@@ -545,20 +545,20 @@
         padding: 4vw 0
     }
 
-    .InterviewBlock_details__a5Mmv {
+    .interviewBlock_detail {
         column-gap: 1.2vw;
         margin-bottom: 10vw
     }
 
-    .InterviewBlock_titleWrap__hzKHx {
+    .interviewBlock_info--title {
         row-gap: 4vw
     }
 
-    .InterviewBlock_title__irhrM {
+    .interviewBlock_title {
         column-gap: 1.2vw
     }
 
-    .InterviewBlock_excerpt__3HNOW {
+    .interviewBlock_excerpt {
         width: 90%
     }
 
@@ -566,33 +566,33 @@
         display: none
     }
 
-    .InterviewBlock_comingSoon__359yc {
+    .interview_comingSoon--box {
         padding: 4vw 0;
         border-bottom: 1px solid hsla(33, 16%, 76%, .3)
     }
 
-    .InterviewBlock_comingSoon__359yc:last-child {
+    .interview_comingSoon--box:last-child {
         border-bottom: 0
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_notifyWrap__GyI_S .InterviewBlock_notify__GMV8h {
+    .interview_comingSoon--box .interviewBlock_notify .InterviewBlock_notify__GMV8h {
         column-gap: 1.2vw
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_tagWrap__kbdQM {
+    .interview_comingSoon--box .interviewBlock_tag {
         margin-top: 4vw
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_title__irhrM {
+    .interview_comingSoon--box .interviewBlock_title {
         margin-top: 10vw
     }
 
-    .InterviewBlock_comingSoon__359yc .InterviewBlock_excerpt__3HNOW {
+    .interview_comingSoon--box .interviewBlock_excerpt {
         margin-top: 4vw
     }
 }
 
-.Interviews_header__ME70r {
+.interviews_header {
     padding: 6vw 0 1.3333333vw;
     display: grid;
     align-items: start;
@@ -605,7 +605,7 @@
     justify-items: start
 }
 
-.Interviews_heading__62um_ {
+.interviews_header--title {
     grid-area: Area;
     display: flex;
     flex-wrap: wrap;
@@ -613,25 +613,25 @@
     column-gap: 1vw
 }
 
-.Interviews_heading__62um_>span {
+.interviews_header--title>span {
     overflow: hidden
 }
 
-.Interviews_heading__62um_>span:first-child>span {
+.interviews_header--title>span:first-child>span {
     padding-right: .3vw
 }
 
-.Interviews_subheading__DzP8g {
+.interviews_header--subTitle {
     grid-area: Area-2;
     overflow: hidden
 }
 
-.Interviews_paragraph__0AYbI {
+.interviews_description {
     grid-area: Area-3;
     margin-bottom: 3vw
 }
 
-.Interviews_filter__m3G5B {
+.interviews_filter {
     position: relative;
     grid-area: Area-4;
     display: flex;
@@ -640,16 +640,16 @@
     align-self: center
 }
 
-.Interviews_filter__m3G5B button {
+.interviews_filter button {
     text-align: left
 }
 
-.Interviews_openFilter__1S590 {
+.interviews_openFilter {
     display: flex;
     column-gap: .3vw
 }
 
-.Interviews_filterDropdown__L6cAN {
+.interviews_filterDropdown {
     position: absolute;
     top: 100%;
     overflow: hidden;
@@ -662,32 +662,32 @@
     transition: height 1s cubic-bezier(.25, 1, .5, 1)
 }
 
-.Interviews_filterLabel__gLVy0 {
+.interviews_filterLabel {
     padding: .8vw .9vw
 }
 
-.Interviews_filterLabel__gLVy0:hover {
+.interviews_filterLabel:hover {
     background: #0f0f0f
 }
 
-.Interviews_button__GqICB {
+.interviews_button {
     grid-area: Area-5;
     display: flex;
     column-gap: 12px;
     overflow: hidden
 }
 
-.Interviews_button__GqICB svg {
+.interviews_button svg {
     width: 22px;
     height: 22px
 }
 
-.Interviews_borderH__aCS4j {
+.interviews_borderH__line {
     height: 1px;
     background-color: hsla(33, 16%, 76%, .3)
 }
 
-.Interviews_comingSoon__x5XR_ {
+.interviews_comingSoon {
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -696,7 +696,7 @@
     margin-top: 1vw
 }
 
-.Interviews_comingSoon__x5XR_ .Interviews_borderV__glCUe {
+.interviews_comingSoon .interviews_borderV__line {
     position: absolute;
     top: -1vw;
     left: 50%;
@@ -706,61 +706,61 @@
 }
 
 @media screen and (max-width: 480px) {
-    .Interviews_header__ME70r {
+    .interviews_header {
         padding: 24vw 0 3vw;
         grid-template-areas: "Area Area" "Area-2 Area-2" "Area-3 Area-3" "Area-4 Area-5";
         grid-template-columns: repeat(2, 1fr)
     }
 
-    .Interviews_heading__62um_ {
+    .interviews_header--title {
         column-gap: 1vw
     }
 
-    .Interviews_paragraph__0AYbI {
+    .interviews_description {
         margin-top: 8vw
     }
 
-    .Interviews_filterText__V9gh_ {
+    .interviews_filterText {
         display: flex
     }
 
-    .Interviews_filterText__V9gh_,
-    .Interviews_openFilter__1S590 {
+    .interviews_filterText,
+    .interviews_openFilter {
         height: 40px;
         align-items: center
     }
 
-    .Interviews_filterDropdown__L6cAN {
+    .interviews_filterDropdown {
         border-radius: 4px
     }
 
-    .Interviews_filterLabel__gLVy0 {
+    .interviews_filterLabel {
         padding: 13px 16px
     }
 
-    .Interviews_button__GqICB {
+    .interviews_button {
         align-items: center;
         justify-self: flex-end;
         align-self: center
     }
 
-    .Interviews_button__GqICB svg {
+    .interviews_button svg {
         width: 30px;
         height: 30px
     }
 
-    .Interviews_comingSoon__x5XR_ {
+    .interviews_comingSoon {
         grid-template-columns: 1fr;
         margin-top: 0
     }
 
-    .Interviews_comingSoon__x5XR_ .Interviews_borderV__glCUe {
+    .interviews_comingSoon .interviews_borderV__line {
         display: none
     }
 }
 
 @media screen and (min-width: 1921px) {
-    .Interviews_button__GqICB svg {
+    .interviews_button svg {
         width: 30px;
         height: 30px
     }

@@ -586,37 +586,37 @@
     }
 }
 
-.TeamMembers_section__AtHg5 {
+.teamMember {
     margin: 10vw 0
 }
 
-.TeamMembers_inner__e9fm_ {
+.teamMember_box {
     width: 100%
 }
 
-.TeamMembers_headingWrap__PjJE5 {
+.teamMember_heading {
     display: flex;
     align-items: flex-start;
     margin: 0 2vw 2vw
 }
 
-.TeamMembers_num__cZWMH {
+.teamMember_number {
     margin: .6vw 0 0 1vw;
     font-size: 1.2vw;
     line-height: .8
 }
 
-.TeamMembers_sliderViewport__y5aBH {
+.teamMember_viewport {
     padding: 0 0 0 2vw;
     cursor: auto
 }
 
-.TeamMembers_sliderContainer__MuKLL {
+.teamMember_container {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr
 }
 
-.TeamMembers_sliderSlide__coZvn {
+.teamMember_item {
     width: 22.5vw !important;
     display: flex;
     margin-right: 2vw;
@@ -627,19 +627,19 @@
     border-top: 1px solid #2a2a2a
 }
 
-.TeamMembers_sliderSlide__coZvn:nth-child(n+5) {
+.teamMember_item:nth-child(n+5) {
     border-bottom: 1px solid #2a2a2a
 }
 
-.TeamMembers_sliderSlide__coZvn:hover .TeamMembers_imgWrap__ASoHq {
+.teamMember_item:hover .teamMember_img {
     border-radius: 50%
 }
 
-.TeamMembers_info__9F_Or {
+.teamMember_info {
     margin-top: 1.2vw
 }
 
-.TeamMembers_imgWrap__ASoHq {
+.teamMember_img {
     overflow: hidden;
     height: 20vw;
     width: 14vw;
@@ -647,46 +647,46 @@
     transition: border-radius .5s cubic-bezier(.165, .84, .44, 1)
 }
 
-.TeamMembers_imgWrap__ASoHq img {
+.teamMember_img img {
     width: 100%;
     height: 100%;
     object-fit: cover
 }
 
 @media screen and (max-width: 480px) {
-    .TeamMembers_headingWrap__PjJE5 {
+    .teamMember_heading {
         margin: 0 4vw 4vw
     }
 
-    .TeamMembers_num__cZWMH {
+    .teamMember_number {
         font-size: 4vw;
         margin: .8vw 0 0 1.6vw
     }
 
-    .TeamMembers_sliderViewport__y5aBH {
+    .teamMember_viewport {
         padding: 0 0 0 4vw
     }
 
-    .TeamMembers_sliderContainer__MuKLL {
+    .teamMember_container {
         display: flex !important
     }
 
-    .TeamMembers_sliderSlide__coZvn {
+    .teamMember_item {
         width: 80vw !important;
         margin-right: 4vw;
         padding-bottom: 4vw;
         border-bottom: 1px solid #2a2a2a
     }
 
-    .TeamMembers_sliderSlide__coZvn:hover .TeamMembers_imgWrap__ASoHq {
+    .teamMember_item:hover .teamMember_img {
         border-radius: 0
     }
 
-    .TeamMembers_info__9F_Or {
+    .teamMember_info {
         margin-top: 4vw
     }
 
-    .TeamMembers_imgWrap__ASoHq {
+    .teamMember_img {
         height: auto;
         width: 60vw;
         margin: 4vw 0
@@ -694,22 +694,22 @@
 }
 
 @media screen and (min-width: 481px)and (max-width:768px) {
-    .TeamMembers_sliderSlide__coZvn {
+    .teamMember_item {
         width: 48vw !important
     }
 
-    .TeamMembers_num__cZWMH {
+    .teamMember_number {
         margin-top: .4vw;
         font-size: 12px
     }
 }
 
-.TextButton_section__3iUmy {
+.textButton {
     position: relative;
     margin: 28vw 0 20vw
 }
 
-.TextButton_grid__gkFo8 {
+.textButton_grid {
     display: grid;
     grid-template-areas: "Area" "Area-2" "Area-3";
     grid-template-columns: 1fr;
@@ -719,7 +719,7 @@
     row-gap: 2vw
 }
 
-.TextButton_heading__T9gzZ {
+.textButton_heading {
     grid-area: Area;
     align-self: start;
     justify-self: start;
@@ -727,111 +727,111 @@
     display: flex
 }
 
-.TextButton_num__ijzhF {
+.textButton_number {
     margin: .6vw 0 0 1vw;
     font-size: 1.2vw;
     line-height: .8
 }
 
-.TextButton_subHeading__ggZAB {
+.textButton_subHeading {
     grid-area: Area-2;
     align-self: start;
     justify-self: start;
     width: 72%
 }
 
-.TextButton_inner__utGRM {
+.textButton_box {
     grid-area: Area-3
 }
 
-.TextButton_paragraph__YeuZ0 {
+.textButton_paragraph {
     margin-bottom: 10vw
 }
 
-.TextButton_innerGrid__dakZW {
+.textButton_info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2vw
 }
 
-.TextButton_city__02YSp {
+.textButton_city {
     margin-bottom: .4vw
 }
 
 @media screen and (max-width: 480px) {
-    .TextButton_section__3iUmy {
+    .textButton {
         margin: 12vw 0
     }
 
-    .TextButton_grid__gkFo8 {
+    .textButton_grid {
         grid-template-areas: "Area" "Area-2" "Area-3";
         grid-template-columns: 1fr;
         column-gap: 2vw;
         row-gap: 4vw
     }
 
-    .TextButton_num__ijzhF {
+    .textButton_number {
         font-size: 4vw;
         margin: .8vw 0 0 1.6vw
     }
 
-    .TextButton_paragraph__YeuZ0 {
+    .textButton_paragraph {
         margin-bottom: 8vw
     }
 
-    .TextButton_innerGrid__dakZW {
+    .textButton_info {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 8vw
     }
 }
 
 @media screen and (min-width: 481px)and (max-width:768px) {
-    .TextButton_section__3iUmy {
+    .textButton {
         margin: 8vw 0
     }
 
-    .TextButton_grid__gkFo8 {
+    .textButton_grid {
         grid-template-areas: "Area" "Area-2" "Area-3";
         grid-template-columns: 1fr;
         column-gap: 2vw;
         row-gap: 4vw
     }
 
-    .TextButton_num__ijzhF {
+    .textButton_number {
         margin-top: .4vw;
         font-size: 12px
     }
 
-    .TextButton_paragraph__YeuZ0 {
+    .textButton_paragraph {
         margin-bottom: 4vw
     }
 
-    .TextButton_innerGrid__dakZW {
+    .textButton_info {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 4vw
     }
 }
 
 @media screen and (min-width: 769px) {
-    .TextButton_grid__gkFo8 {
+    .textButton_grid {
         grid-template-areas: "Area Area Area Area Area Area Area Area" "Area-2 Area-2 Area-2 . Area-3 Area-3 Area-3 .";
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto
     }
 
-    .TextButton_num__ijzhF {
+    .textButton_number {
         margin: .6vw 0 0 1vw;
         font-size: 1.2vw;
         line-height: .8
     }
 
-    .TextButton_paragraph__YeuZ0 {
+    .textButton_paragraph {
         margin-bottom: 2vw
     }
 }
 
 @media screen and (min-width: 1281px) {
-    .TextButton_section__3iUmy {
+    .textButton {
         margin: 8vw 0 4vw
     }
 }

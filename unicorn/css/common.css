@@ -73,7 +73,7 @@
     font-weight: 300
 }
 
-.text_normal.Text_regular__M24Vo {
+.text_normal.text_regular__style {
     font-weight: 600
 }
 
@@ -310,7 +310,7 @@
 }
 
 .Global_container404__oZ0O_,
-.Global_containerContact__S6LgU,
+.global_container--contact,
 .global_container {
     position: relative;
     padding-top: 55px;

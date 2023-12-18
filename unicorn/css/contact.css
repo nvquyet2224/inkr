@@ -1,28 +1,28 @@
-.Form_formGrid__cFE_P {
+.form_grid {
     display: grid;
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
     grid-template-columns: repeat(2, 1fr)
 }
 
-.Form_formGrid__cFE_P .Form_message__URb70:not(.Form_inputs__NaeI4) {
+.form_grid .Form_message__URb70:not(.Form_inputs__NaeI4) {
     grid-column: 1/span 2
 }
 
-.Form_formGrid__cFE_P input::placeholder {
+.form_grid input::placeholder {
     color: transparent
 }
 
-.Form_formGrid__cFE_P textarea::placeholder {
+.form_grid textarea::placeholder {
     color: transparent
 }
 
-.Form_field__5UEwb {
+.form_field {
     position: relative;
     height: 100%
 }
 
-.Form_input__653_E {
+.form_input {
     width: 100%;
     height: auto;
     padding-top: 24px;
@@ -35,7 +35,7 @@
     opacity: 0
 }
 
-.Form_label__HqQ1f {
+.form_label {
     pointer-events: none;
     position: absolute;
     top: 24px;
@@ -46,30 +46,30 @@
     font-weight: 400
 }
 
-.Form_input__653_E:focus+.Form_label__HqQ1f,
-.Form_input__653_E:not(:placeholder-shown)+.Form_label__HqQ1f {
+.form_input:focus+.form_label,
+.form_input:not(:placeholder-shown)+.form_label {
     color: #949494;
     transform: translateY(-100%) scale(.75)
 }
 
-.Form_phone__rYVB5 {
+.form_phone {
     display: flex;
     flex-direction: column;
     justify-content: flex-end
 }
 
-.Form_phone__rYVB5 .Form_input__653_E {
+.form_phone .form_input {
     margin-left: 40px;
     width: calc(100% - 40px)
 }
 
-.Form_phone__rYVB5 .Form_label__HqQ1f {
+.form_phone .form_label {
     margin-left: 40px;
     top: auto;
     bottom: 12px
 }
 
-.Form_phone__rYVB5 .Form_countrySelector__01Gzl {
+.form_phone .Form_countrySelector__01Gzl {
     position: absolute;
     width: 40px;
     height: 48px;
@@ -80,15 +80,15 @@
     cursor: pointer
 }
 
-.Form_phone__rYVB5 .Form_countrySelector__01Gzl svg {
+.form_phone .Form_countrySelector__01Gzl svg {
     width: 8px
 }
 
-.Form_phone__rYVB5 .Form_countrySelector__01Gzl.Form_flip__Aib_B svg {
+.form_phone .Form_countrySelector__01Gzl.Form_flip__Aib_B svg {
     transform: rotate(180deg)
 }
 
-.Form_phone__rYVB5 .Form_countryList__Ov74Q {
+.form_phone .Form_countryList__Ov74Q {
     position: absolute;
     top: 132%;
     width: 100%;
@@ -102,11 +102,11 @@
     box-shadow: 0 6px 12px 0 rgba(56, 56, 56, .16)
 }
 
-.Form_phone__rYVB5 .Form_countryList__Ov74Q.Form_open__Zam4f {
+.form_phone .Form_countryList__Ov74Q.Form_open__Zam4f {
     height: 20vw
 }
 
-.Form_phone__rYVB5 .Form_countryList__Ov74Q li {
+.form_phone .Form_countryList__Ov74Q li {
     width: 100%;
     padding: 16px 20px;
     flex-direction: row;
@@ -115,70 +115,70 @@
     cursor: pointer
 }
 
-.Form_phone__rYVB5 .Form_countryList__Ov74Q li:focus,
-.Form_phone__rYVB5 .Form_countryList__Ov74Q li:hover,
-.Form_phone__rYVB5 .Form_countryList__Ov74Q li[tabindex="0"] {
+.form_phone .Form_countryList__Ov74Q li:focus,
+.form_phone .Form_countryList__Ov74Q li:hover,
+.form_phone .Form_countryList__Ov74Q li[tabindex="0"] {
     background-color: #d6d6d6
 }
 
-.Form_phone__rYVB5 .Form_countryList__Ov74Q li.Form_divider__kTZpO {
+.form_phone .Form_countryList__Ov74Q li.Form_divider__kTZpO {
     height: 1px;
     padding: 0;
     margin: 4px 0;
     background-color: #d6d6d6
 }
 
-.Form_phone__rYVB5 .Form_countryList__Ov74Q li span:nth-of-type(2) {
+.form_phone .Form_countryList__Ov74Q li span:nth-of-type(2) {
     color: #999
 }
 
-.Form_phone__rYVB5 .Form_flag__XNbbM {
+.form_phone .Form_flag__XNbbM {
     width: auto;
     height: 20px
 }
 
-.Form_select__SI2X2 {
+.form_select {
     position: relative
 }
 
-.Form_select__SI2X2 .Form_selectControl__Mlgpj {
+.form_select .Form_selectControl__Mlgpj {
     min-height: 0;
     cursor: text
 }
 
-.Form_select__SI2X2 .Form_selectValueContainer__QmCoR {
+.form_select .Form_selectValueContainer__QmCoR {
     column-gap: 8px;
     row-gap: 2px
 }
 
-.Form_select__SI2X2 .Form_selectMultiValueLabel__HAE9I {
+.form_select .Form_selectMultiValueLabel__HAE9I {
     overflow: visible;
     padding-bottom: 2px
 }
 
-.Form_select__SI2X2 .Form_selectClearIndicator__Xl08K,
-.Form_select__SI2X2 .Form_selectMultiValueRemove__zGEML {
+.form_select .Form_selectClearIndicator__Xl08K,
+.form_select .Form_selectMultiValueRemove__zGEML {
     padding: 4px;
     margin-left: 2px;
     border-radius: 99px;
     cursor: pointer
 }
 
-.Form_select__SI2X2 .Form_selectClearIndicator__Xl08K svg,
-.Form_select__SI2X2 .Form_selectMultiValueRemove__zGEML svg {
+.form_select .Form_selectClearIndicator__Xl08K svg,
+.form_select .Form_selectMultiValueRemove__zGEML svg {
     width: 8px
 }
 
-.Form_select__SI2X2 .Form_selectClearIndicator__Xl08K:hover,
-.Form_select__SI2X2 .Form_selectMultiValueRemove__zGEML:hover {
+.form_select .Form_selectClearIndicator__Xl08K:hover,
+.form_select .Form_selectMultiValueRemove__zGEML:hover {
     background-color: #d6d6d6
 }
 
-.Form_select__SI2X2 .Form_selectMultiValueRemove__zGEML {
+.form_select .Form_selectMultiValueRemove__zGEML {
     border-radius: 99px
 }
 
-.Form_select__SI2X2 .Form_selectDropdownIndicator__7emPy {
+.form_select .Form_selectDropdownIndicator__7emPy {
     padding: 6px 4px;
     margin-top: -1px;
     margin-left: 2px;
@@ -186,19 +186,19 @@
     cursor: pointer
 }
 
-.Form_select__SI2X2 .Form_selectDropdownIndicator__7emPy:hover {
+.form_select .Form_selectDropdownIndicator__7emPy:hover {
     background-color: #d6d6d6
 }
 
-.Form_select__SI2X2 .Form_selectDropdownIndicator__7emPy svg {
+.form_select .Form_selectDropdownIndicator__7emPy svg {
     width: 8px
 }
 
-.Form_select__SI2X2 .Form_selectDropdownIndicator__7emPy.Form_flip__Aib_B svg {
+.form_select .Form_selectDropdownIndicator__7emPy.Form_flip__Aib_B svg {
     transform: rotate(180deg)
 }
 
-.Form_select__SI2X2 .Form_selectMenu__pCIgZ {
+.form_select .Form_selectMenu__pCIgZ {
     position: absolute;
     top: 132%;
     width: 100%;
@@ -212,26 +212,26 @@
     transition: height 1s ease(quartOut), opacity 1s ease(quartIn)
 }
 
-.Form_select__SI2X2 .Form_selectMenuList__H51Xc>div {
+.form_select .Form_selectMenuList__H51Xc>div {
     padding: 16px 20px
 }
 
-.Form_select__SI2X2 .Form_selectMenuList__H51Xc div:hover {
+.form_select .Form_selectMenuList__H51Xc div:hover {
     background-color: #d6d6d6;
     cursor: pointer
 }
 
-.Form_select__SI2X2 .Form_input__653_E:not(:placeholder-shown)+.Form_label__HqQ1f {
+.form_select .form_input:not(:placeholder-shown)+.form_label {
     color: inherit;
     transform: none
 }
 
-.Form_select__SI2X2 .Form_label__HqQ1f.Form_selected__opzpP {
+.form_select .form_label.Form_selected__opzpP {
     color: #949494 !important;
     transform: translateY(-100%) scale(.75) !important
 }
 
-.Form_lineWrap__tN7k3 {
+.form_line {
     position: relative;
     width: 100%;
     height: 1px;
@@ -240,14 +240,14 @@
     background-color: #d6d6d6
 }
 
-.Form_line__EwAjJ {
+.form_line--bg {
     width: 100%;
     height: 100%;
     background-color: #0f0f0f;
     transform: translateX(-100%)
 }
 
-.Form_invalid__2cEyQ .Form_line__EwAjJ {
+.Form_invalid__2cEyQ .form_line--bg {
     background-color: #ea3f3f;
     transform: translateX(0) !important
 }
@@ -294,16 +294,16 @@
 }
 
 @media screen and (max-width: 480px) {
-    .Form_formGrid__cFE_P {
+    .form_grid {
         grid-template-columns: 1fr
     }
 
-    .Form_field__5UEwb,
-    .Form_formGrid__cFE_P .Form_message__URb70 {
+    .form_field,
+    .form_grid .Form_message__URb70 {
         grid-column: 1
     }
 
-    .Form_input__653_E {
+    .form_input {
         font-size: 16px
     }
 
@@ -312,16 +312,16 @@
     }
 }
 
-.Contact_container__r7opT {
+.contact_container {
     position: relative;
     padding-top: 2vw
 }
 
-.Contact_inner__RbrSC {
+.contact_inner {
     min-height: calc(100vh - 56px - 2vw)
 }
 
-.Contact_grid__KS_a_ {
+.contact_grid {
     padding-bottom: 6vw;
     display: grid;
     grid-column-gap: 2vw;
@@ -330,12 +330,12 @@
     align-items: start
 }
 
-.Contact_grid__KS_a_ form,
-.Contact_title__WrIUX {
+.contact_grid form,
+.contact_title {
     position: relative
 }
 
-.Contact_form__RiK3V {
+.contact_form {
     margin-bottom: 4vw;
     grid-area: Area-2
 }
@@ -352,18 +352,18 @@
 }
 
 @media screen and (max-width: 480px) {
-    .Contact_container__r7opT {
+    .contact_container {
         padding-top: 24vw
     }
 
-    .Contact_grid__KS_a_ {
+    .contact_grid {
         margin-bottom: 12vw;
         grid-row-gap: 12vw;
         grid-template-areas: "Area" "Area-2" "Area-3" "Area-4";
         grid-template-columns: 1fr
     }
 
-    .Contact_form__RiK3V {
+    .contact_form {
         margin-bottom: 8vw
     }
 

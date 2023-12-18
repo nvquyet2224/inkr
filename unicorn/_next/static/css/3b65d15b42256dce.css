@@ -1,9 +1,9 @@
-.TextButton_section__3iUmy {
+.textButton {
     position: relative;
     margin: 28vw 0 20vw
 }
 
-.TextButton_grid__gkFo8 {
+.textButton_grid {
     display: grid;
     grid-template-areas: "Area" "Area-2" "Area-3";
     grid-template-columns: 1fr;
@@ -13,7 +13,7 @@
     row-gap: 2vw
 }
 
-.TextButton_heading__T9gzZ {
+.textButton_heading {
     grid-area: Area;
     align-self: start;
     justify-self: start;
@@ -21,111 +21,111 @@
     display: flex
 }
 
-.TextButton_num__ijzhF {
+.textButton_number {
     margin: .6vw 0 0 1vw;
     font-size: 1.2vw;
     line-height: .8
 }
 
-.TextButton_subHeading__ggZAB {
+.textButton_subHeading {
     grid-area: Area-2;
     align-self: start;
     justify-self: start;
     width: 72%
 }
 
-.TextButton_inner__utGRM {
+.textButton_box {
     grid-area: Area-3
 }
 
-.TextButton_paragraph__YeuZ0 {
+.textButton_paragraph {
     margin-bottom: 10vw
 }
 
-.TextButton_innerGrid__dakZW {
+.textButton_info {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2vw
 }
 
-.TextButton_city__02YSp {
+.textButton_city {
     margin-bottom: .4vw
 }
 
 @media screen and (max-width:480px) {
-    .TextButton_section__3iUmy {
+    .textButton {
         margin: 12vw 0
     }
 
-    .TextButton_grid__gkFo8 {
+    .textButton_grid {
         grid-template-areas: "Area" "Area-2" "Area-3";
         grid-template-columns: 1fr;
         column-gap: 2vw;
         row-gap: 4vw
     }
 
-    .TextButton_num__ijzhF {
+    .textButton_number {
         font-size: 4vw;
         margin: .8vw 0 0 1.6vw
     }
 
-    .TextButton_paragraph__YeuZ0 {
+    .textButton_paragraph {
         margin-bottom: 8vw
     }
 
-    .TextButton_innerGrid__dakZW {
+    .textButton_info {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 8vw
     }
 }
 
 @media screen and (min-width:481px)and (max-width:768px) {
-    .TextButton_section__3iUmy {
+    .textButton {
         margin: 8vw 0
     }
 
-    .TextButton_grid__gkFo8 {
+    .textButton_grid {
         grid-template-areas: "Area" "Area-2" "Area-3";
         grid-template-columns: 1fr;
         column-gap: 2vw;
         row-gap: 4vw
     }
 
-    .TextButton_num__ijzhF {
+    .textButton_number {
         margin-top: .4vw;
         font-size: 12px
     }
 
-    .TextButton_paragraph__YeuZ0 {
+    .textButton_paragraph {
         margin-bottom: 4vw
     }
 
-    .TextButton_innerGrid__dakZW {
+    .textButton_info {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 4vw
     }
 }
 
 @media screen and (min-width:769px) {
-    .TextButton_grid__gkFo8 {
+    .textButton_grid {
         grid-template-areas: "Area Area Area Area Area Area Area Area" "Area-2 Area-2 Area-2 . Area-3 Area-3 Area-3 .";
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto
     }
 
-    .TextButton_num__ijzhF {
+    .textButton_number {
         margin: .6vw 0 0 1vw;
         font-size: 1.2vw;
         line-height: .8
     }
 
-    .TextButton_paragraph__YeuZ0 {
+    .textButton_paragraph {
         margin-bottom: 2vw
     }
 }
 
 @media screen and (min-width:1281px) {
-    .TextButton_section__3iUmy {
+    .textButton {
         margin: 8vw 0 4vw
     }
 }
