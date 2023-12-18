@@ -779,15 +779,6 @@ function splitDownLine(obj) {
       const _delay = (delay + 0.05 * i).toFixed(2) + "s";
       headingHtml += `<div class="wrap"><div class="word animation_moveUp" style='--delay: ${_delay}'>${mainText[i]}${space}</div></div>`;
     }
-    // for (let key of mainText) {
-    //   const items = key.trim().split(" ");
-    //   for (let i = 0; i < items.length; i++) {
-    //     const space = `&nbsp;`;
-    //     const delay = ((count + 1) * 0.05 + 0.7).toFixed(2) + "s";
-    //     headingHtml += `<div class="wrap"><div class="word animation_moveUp" style='--delay: ${delay}'>${items[i]}${space}</div></div>`;
-    //     count++;
-    //   }
-    // }
     headingHtml += "</div></div>";
     elm.innerHTML = headingHtml;
     elm.classList.add("done");
@@ -836,9 +827,10 @@ function splitTags(obj) {
         if(sprItem !== '' && i !== tagText.length - 1) {
           spr = `<div class="${sprItem}"> ${splitBy} </div>`;
         }
+        const _delay = (delay + 0.05 * i).toFixed(2) + "s";
         tagHtml += `
             <div class="${tagItem}">
-              <div class="${moveItem}">
+              <div class="${moveItem}" style='--delay: ${_delay}'>
                 ${txt}
                 ${spr}
               </div>
@@ -1007,7 +999,12 @@ function caseStudiesAnimation() {
 }
 
 function caseDetailAnimation() {
-  fullImgSlider();
+  const downObj = {
+    lines: '.global_pagename',
+    delay: 0.75
+  }
+  splitDownLine(downObj);
+
   const tagsObj = {
     tagsClass: '.caseStudy_tags--wrap', 
     tagItem: 'caseStudy_tags--item', 
@@ -1015,9 +1012,11 @@ function caseDetailAnimation() {
     txtItem: '', 
     sprItem: '',
     splitBy: '<br>',
-    delay: 1
+    delay: 1.1
   };
   splitTags(tagsObj);
+
+  fullImgSlider();
   //const { tagsClass, tagItem, moveItem, txtItem, sprItem, delay } = obj;
 }
 

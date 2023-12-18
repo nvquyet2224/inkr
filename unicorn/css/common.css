@@ -1,3 +1,14 @@
+header,
+main,
+.footer_content {
+    opacity: 0;
+}
+html.lenis-smooth header,
+html.lenis-smooth main,
+html.lenis-smooth .footer_content {
+    opacity: 1;
+}
+
 .text_l--size,
 .text_ML,
 .text_mtK,
