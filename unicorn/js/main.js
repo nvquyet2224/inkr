@@ -840,35 +840,6 @@ function splitTags(obj) {
       elm.innerHTML = tagHtml;
     });
   }
-
-  // let tags = document.querySelectorAll(".workGrid_tag");
-  // if (tags) {
-  //   tags.forEach((elm, _index) => {
-  //     let tagHtml = "";
-  //     let tagText = elm.innerHTML
-  //       .replace(/\t/g, " ")
-  //       .replace(/\r/g, " ")
-  //       .replace(/\n/g, " ")
-  //       .replace(/\s+/g, " ");
-  //     tagText = tagText.split("-");
-  //     for (let i = 0; i < tagText.length; i++) {
-  //       let txt = `<div class="text_xxs__co--size">${tagText[i]}</div>`;
-  //       let spr = `<div class="workGrid_tag--dash text_xxs__co--size"> - </div>`;
-  //       if (i === tagText.length - 1) {
-  //         spr = "";
-  //       }
-  //       tagHtml += `
-  //         <div class="workGrid_tag--item">
-  //           <div class="workGrid_tag--move animation_moveUp">
-  //             ${txt}
-  //             ${spr}
-  //           </div>
-  //         </div>
-  //       `;
-  //     }
-  //     elm.innerHTML = tagHtml;
-  //   });
-  // }
 }
 
 function workBlockDelay() {
@@ -927,9 +898,9 @@ function loadLightBox(url) {
       mousewheel: {
         invert: false,
         releaseOnEdges: true,
-        sensitivity: 1,
-        thresholdDelta: 150,
-        thresholdTime: 0.2,
+        sensitivity: 0.75,
+        //thresholdDelta: 150,
+        //thresholdTime: 0.2,
       },
     });
     loadingImg();
