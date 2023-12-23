@@ -854,14 +854,14 @@
             description: "hero_description",
             lrgImg: "hero_banner",
             caseStudies: "Hero_caseStudies__35gcu",
-            lrgVid: "Hero_lrgVid__pW2ID",
-            darkExpand: "Hero_darkExpand__RxpSB",
-            inner: "Hero_inner__HVMay",
-            loader: "Hero_loader__eWJ4u",
-            progressWrap: "Hero_progressWrap__sCkMV",
-            progress: "Hero_progress__zA5SN",
+            lrgVid: "hero_expand",
+            darkExpand: "hero_expand--darkBg",
+            inner: "hero_expand--box",
+            loader: "hero_expand--loader",
+            progressWrap: "hero_expand--progress",
+            progress: "hero_expand--progress__value",
             "video-load": "Hero_video-load__NlUop",
-            expand: "Hero_expand__uxAy5"
+            expand: "hero_expand--media"
         }
     }
 }]);

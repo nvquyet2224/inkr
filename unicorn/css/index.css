@@ -63,14 +63,14 @@
   height: 100%
 }
 
-.Hero_lrgVid__pW2ID {
+.hero_expand {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center
 }
 
-.Hero_darkExpand__RxpSB {
+.hero_expand--darkBg {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -79,21 +79,21 @@
   background-color: #0f0f0f
 }
 
-.Hero_inner__HVMay {
+.hero_expand--box {
   position: relative;
   height: 100%;
   width: 80vw;
   padding: 6vw 0
 }
 
-.Hero_inner__HVMay,
-.Hero_loader__eWJ4u {
+.hero_expand--box,
+.hero_expand--loader {
   display: flex;
   justify-content: center;
   align-items: center
 }
 
-.Hero_loader__eWJ4u {
+.hero_expand--loader {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -102,21 +102,21 @@
   z-index: 1
 }
 
-.Hero_progressWrap__sCkMV {
+.hero_expand--progress {
   overflow: hidden;
   height: 1px;
   width: 10vw;
   background-color: #949494
 }
 
-.Hero_progress__zA5SN {
+.hero_expand--progress__value {
   height: 100%;
   width: 100%;
   background-color: #2a2a2a;
   animation: Hero_video-load__NlUop 2s linear 0s infinite forwards
 }
 
-.Hero_expand__uxAy5 {
+.hero_expand--media {
   position: relative;
   z-index: 2;
   display: flex;
@@ -157,11 +157,11 @@
     object-fit: cover
   }
 
-  .Hero_darkExpand__RxpSB {
+  .hero_expand--darkBg {
     width: 100%
   }
 
-  .Hero_inner__HVMay {
+  .hero_expand--box {
     width: 92vw;
     padding: 4vw 0
   }

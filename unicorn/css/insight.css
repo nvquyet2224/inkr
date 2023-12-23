@@ -637,11 +637,18 @@
     display: flex;
     align-items: center;
     column-gap: .8vw;
-    align-self: center
+    align-self: center;
+    overflow: hidden;
+}
+
+.interviews_filter.show {
+    overflow:visible;
 }
 
 .interviews_filter button {
-    text-align: left
+    text-align: left;
+    width: 100%;
+    margin: 0;
 }
 
 .interviews_openFilter {

@@ -1,12 +1,10 @@
-//document.addEventListener('touchstart', ()=>{}, { passive: true });
-
 document
   .querySelector(".transition_wrapper__loading")
   .classList.add("transition_loading");
 
 function loadingImg() {
   const observer = lozad(".lozad", {
-    rootMargin: "200px 0px",
+    rootMargin: "400px 0px",
     threshold: 0.1,
     enableAutoReload: true,
   });
@@ -338,13 +336,15 @@ function faqAnimation(obj) {
     });
     e.addEventListener("mouseenter", handleEnter),
       e.addEventListener("mouseleave", handleLeave);
-  }),
-    () => {
-      document.querySelectorAll(items).forEach((e) => {
-        e.removeEventListener("mouseenter", handleEnter),
-          e.removeEventListener("mouseleave", handleLeave);
-      });
-    };
+  });
+
+  // ,
+  //   () => {
+  //     document.querySelectorAll(items).forEach((e) => {
+  //       e.removeEventListener("mouseenter", handleEnter),
+  //         e.removeEventListener("mouseleave", handleLeave);
+  //     });
+  //   };
 }
 
 function buttonAnimation() {
@@ -1018,12 +1018,23 @@ function serviceAnimation() {
     detail: ".services_accordion--body",
   };
   faqAnimation(faq);
-
   document.querySelectorAll(".workGrid_item").forEach((elm, index) => {
     elm.addEventListener("click", () => {
       loadLightBox("services/banyana-ba-style.html");
     });
   });
+
+  // Faq for service item
+  const faqDetail = {
+    items: ".process_accordion li",
+    activeBtn: '.process_accordion button[aria-expanded="true"]',
+    activeBody: '.process_accordion--body[aria-hidden="false"]',
+    detail: ".process_accordion--detail",
+  };
+  faqAnimation(faqDetail);
+  if(document.querySelector('.process_accordion')) {
+    document.querySelectorAll('.process_accordion')[0].querySelector('button').click();
+  }
 }
 
 function aboutAnimation() {
@@ -1136,7 +1147,33 @@ function aboutAnimation() {
   }
 }
 
-function insightsAnimation() { }
+function insightsAnimation() { 
+  if(document.querySelector('.interview_share--but')) {
+    document.querySelector('.interview_share--but').addEventListener('click', function(){
+      const bodyNext = this.nextElementSibling;
+      const bodyH = bodyNext.querySelector('.interview_share--detail').offsetHeight;
+      const curH = bodyNext.style.height;
+      if(curH === '0px') {
+        bodyNext.style.height = bodyH + 'px';
+      } else {
+        bodyNext.style.height = '0px';
+      }
+    });
+  }
+  if(document.querySelector('.interviews_openFilter')) {
+    document.querySelector('.interviews_openFilter').addEventListener('click', function(){
+      document.querySelector('.interviews_filter').classList.add('show');
+      const bodyNext = this.nextElementSibling;
+      const bodyH = bodyNext.querySelector('.interviews_filterDropdown--detail').offsetHeight;
+      const curH = bodyNext.style.height;
+      if(curH === '0px') {
+        bodyNext.style.height = bodyH + 'px';
+      } else {
+        bodyNext.style.height = '0px';
+      }
+    });
+  }
+}
 
 function contactAnimation() { }
 
